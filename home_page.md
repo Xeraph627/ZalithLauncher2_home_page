@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-10 08:05:27
+// 生成时间：2026-05-10 08:06:52
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,11 +10,11 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16, 12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"你选择我的时候，我也选择了你。"*
+> *"虽然人生在世有种种不如意，但你仍可以在幸福与不幸中做选择。"*
 
         ...row-start horizontal=spacedBy(12)
             ...button-filled-tonal text="🔄 刷新" event="copy{https://v1.hitokoto.cn/?c=a}" width=100dp
-            ...button-text text="📋 复制" event="copy{你选择我的时候，我也选择了你。}"
+            ...button-text text="📋 复制" event="copy{虽然人生在世有种种不如意，但你仍可以在幸福与不幸中做选择。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
         ...row-end
         ...row-start horizontal=spacedBy(8)
             ...button-filled-tonal text="💬 MCBBS" event="url{https://www.mcbbs.net/}" weight=(1)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Pocket_Edition_v0.12.1_alpha_build_2}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Mini_Game_Masters_Skin_Pack}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
@@ -123,9 +123,9 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Pocket Edition v0.12.1 alpha build 2](https://minecraft.wiki/Pocket_Edition_v0.12.1_alpha_build_2)
+📖 **Wiki 推荐**：[Mini Game Masters Skin Pack](https://minecraft.wiki/Mini_Game_Masters_Skin_Pack)
 
-⏰ 更新时间：2026-05-10 08:05:27
+⏰ 更新时间：2026-05-10 08:06:52
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
