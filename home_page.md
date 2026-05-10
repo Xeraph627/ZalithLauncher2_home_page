@@ -1,7 +1,7 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026/5/10 07:48:20
-// 数据来源：Bing | 一言 | Mojang | Modrinth
+// 生成时间：2026-05-10 07:55:30
+// 数据来源：Bing | 一言 | Mojang | Modrinth | WorldTimeAPI
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
@@ -10,13 +10,13 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16, 12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"这个世界很大，告别的方式有多少种，人生的正确答案就有多少个。"*
+> *"一个人唯有身处烈火中才能领悟做人的真谛。"*
 
-—— 南唐闲人
+—— 本人 · 本人
 
         ...row-start horizontal=spacedBy(12)
             ...button-filled-tonal text="🔄 刷新" event="copy{https://v1.hitokoto.cn/?c=a}" width=100dp
-            ...button-text text="📋 复制" event="copy{这个世界很大，告别的方式有多少种，人生的正确答案就有多少个。}"
+            ...button-text text="📋 复制" event="copy{一个人唯有身处烈火中才能领悟做人的真谛。}"
         ...row-end
     ...column-end
 ...card-end
@@ -134,7 +134,7 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-⏰ 更新时间：2026/5/10 07:48:20
+⏰ 更新时间：2026-05-10 07:55:30
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
