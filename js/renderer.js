@@ -44,18 +44,27 @@ function parseCustomComponents(mdText) {
         let line = lines[i];
         const trimmed = line.trim();
 
+        // 代码块
         if (trimmed.startsWith('```')) {
             inCode = !inCode;
             result += line + '\n';
             i++;
             continue;
         }
-        if (inCode || trimmed.startsWith('//')) {
+        
+        if (inCode) {
             result += line + '\n';
             i++;
             continue;
         }
+        
+        // 忽略注释行
+        if (trimmed.startsWith('//')) {
+            i++;
+            continue;
+        }
 
+        // 检测扩展组件
         const match = trimmed.match(/^\.\.\.([a-z-]+)(?:\s+(.*))?$/);
         if (match) {
             const tag = match[1];
@@ -74,7 +83,7 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 卡片
+            // 卡片开始
             if (tag === 'card-start') {
                 const title = getAttr(attrs, 'title');
                 let style = '';
@@ -96,11 +105,23 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 布局
-            if (tag === 'row-start') { result += '<div class="custom-row">\n'; stack.push({ tag: 'row' }); i++; continue; }
-            if (tag === 'column-start') { result += '<div class="custom-column">\n'; stack.push({ tag: 'column' }); i++; continue; }
+            // 横向布局
+            if (tag === 'row-start') {
+                result += '<div class="custom-row">\n';
+                stack.push({ tag: 'row' });
+                i++;
+                continue;
+            }
+            
+            // 纵向布局
+            if (tag === 'column-start') {
+                result += '<div class="custom-column">\n';
+                stack.push({ tag: 'column' });
+                i++;
+                continue;
+            }
 
-            // 按钮
+            // 按钮组件
             if (['button', 'button-outlined', 'button-filled-tonal', 'button-text'].includes(tag)) {
                 const text = getAttr(attrs, 'text');
                 const eventVal = getAttr(attrs, 'event');
@@ -118,12 +139,12 @@ function parseCustomComponents(mdText) {
                     else if (width.endsWith('dp')) style = `width: ${parseFloat(width)}px;`;
                 }
                 const onClick = eventVal ? `onclick="window.handleEvent('${escapeHtml(eventVal).replace(/'/g, "\\'")}')"` : '';
-                result += `<button class="${btnClass}" style="${style}" ${onClick}>${escapeHtml(text)}</button>`;
+                result += `<button class="${btnClass}" style="${style}" ${onClick}>${escapeHtml(text)}</button>\n`;
                 i++;
                 continue;
             }
 
-            // 图片
+            // 图片组件
             if (tag === 'image') {
                 const url = getAttr(attrs, 'url');
                 const width = getAttr(attrs, 'width');
@@ -132,30 +153,46 @@ function parseCustomComponents(mdText) {
                     if (width.endsWith('%')) style = `width: ${width};`;
                     else if (width.endsWith('dp')) style = `width: ${parseFloat(width)}px;`;
                 }
-                result += `<img class="custom-image" src="${escapeHtml(url)}" style="${style}" alt="image" onerror="this.src='https://placehold.co/400x200?text=加载失败'">`;
+                result += `<img class="custom-image" src="${escapeHtml(url)}" style="${style}" alt="image" loading="lazy" onerror="this.src='https://placehold.co/400x200?text=加载失败'">\n`;
                 i++;
                 continue;
             }
 
+            // 未知组件，作为注释
             result += `<!-- 组件: ${tag} -->\n`;
             i++;
             continue;
         }
 
+        // 普通文本行 - 直接保留，让 marked 处理
+        // 但要排除单独一行的 "---" 可能被 marked 误解析为水平线
+        // 我们保留原样，marked 会正确处理
         result += line + '\n';
         i++;
     }
 
-    // 保护 HTML 标签
+    // 关闭未闭合的标签（防止 HTML 结构错误）
+    while (stack.length) {
+        const item = stack.pop();
+        if (item.tag === 'card') result += '</div></div>\n';
+        else if (item.tag === 'row') result += '</div>\n';
+        else if (item.tag === 'column') result += '</div>\n';
+    }
+
+    // 保护我们生成的 HTML 标签不被 marked 转义
     const placeholders = [];
-    let processed = result.replace(/<div class="custom-[^"]+">|<\/div>|<button[^>]*>.*?<\/button>|<img[^>]*>/gs, (match) => {
+    let processed = result.replace(/<div class="custom-card[^>]*>|<\/div>|<div class="card-title">.*?<\/div>|<div class="card-content">|<div class="custom-row">|<div class="custom-column">|<button[^>]*>.*?<\/button>|<img[^>]*>/gs, (match) => {
         const idx = placeholders.length;
         placeholders.push(match);
         return `%%HTML_${idx}%%`;
     });
 
+    // 使用 marked 解析 Markdown
     let finalHtml = marked.parse(processed, { async: false });
+    
+    // 恢复被保护的 HTML 标签
     finalHtml = finalHtml.replace(/%%HTML_(\d+)%%/g, (_, idx) => placeholders[parseInt(idx)] || '');
+    
     return finalHtml;
 }
 
@@ -167,8 +204,10 @@ function renderPreview(content) {
         return;
     }
     try {
-        previewDiv.innerHTML = parseCustomComponents(content);
+        const html = parseCustomComponents(content);
+        previewDiv.innerHTML = html;
     } catch (e) {
+        console.error('渲染错误:', e);
         previewDiv.innerHTML = `<div class="error">解析错误: ${e.message}</div>`;
     }
 }
