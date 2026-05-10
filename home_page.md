@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-10 08:06:52
+// 生成时间：2026-05-10 13:46:00
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,11 +10,11 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16, 12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"虽然人生在世有种种不如意，但你仍可以在幸福与不幸中做选择。"*
+> *"鞭炮再响，可哪有我想你那么想"*
 
         ...row-start horizontal=spacedBy(12)
             ...button-filled-tonal text="🔄 刷新" event="copy{https://v1.hitokoto.cn/?c=a}" width=100dp
-            ...button-text text="📋 复制" event="copy{虽然人生在世有种种不如意，但你仍可以在幸福与不幸中做选择。}"
+            ...button-text text="📋 复制" event="copy{鞭炮再响，可哪有我想你那么想}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
         ...row-end
         ...row-start horizontal=spacedBy(8)
             ...button-filled-tonal text="💬 MCBBS" event="url{https://www.mcbbs.net/}" weight=(1)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Mini_Game_Masters_Skin_Pack}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Editor_0.4.4}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
@@ -67,28 +67,28 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(10) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/t4M26zkN/c2fcfbeb2209bfed46f9714cf6be77871065b4db_96.webp" width=24dp shape=4dp
-            ...button-text text="Immersive Chests - This project adds a configurable camera  (0.0M)" event="url{https://modrinth.com/mod/immersivechests}"
+            ...image url="https://cdn.modrinth.com/data/f4LI2xOT/c9ae815c4e02b0f4933bb634af15e8b7a0ddd32d_96.webp" width=24dp shape=4dp
+            ...button-text text="Craft Complete - Completes crafting recipes such as saddl (0.0M)" event="url{https://modrinth.com/mod/craft-complete}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/eDSgW1zD/2f522f27776e6d91ece38dfba5575adc4d9fee8e_96.webp" width=24dp shape=4dp
-            ...button-text text="BL Inventory Peek - This mod adds a small preview of your in (0.0M)" event="url{https://modrinth.com/mod/bl-inventory-peek}"
+            ...image url="https://cdn.modrinth.com/data/uVMG0MzO/1db3be2f57ed47d7b0dfd30902c437768c34d966.png" width=24dp shape=4dp
+            ...button-text text="Iridium Skyblock - A New Era of Skyblock plugins (0.0M)" event="url{https://modrinth.com/mod/iridiumskyblock}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/ULzrAD1U/5b220eabadd9031e6851ce803a62c961db96f118_96.webp" width=24dp shape=4dp
-            ...button-text text="Create: SchematicChecker - A mod for fix all schematic problem from (0.1M)" event="url{https://modrinth.com/mod/createschematicchecker}"
+            ...image url="https://cdn.modrinth.com/data/ZcR9yCFU/23d7e0f1a70b68af7cb27c6291a8bea11ee84e06_96.webp" width=24dp shape=4dp
+            ...button-text text="Origins: Skybloom - Adds the magical skybloom origin to mine (0.0M)" event="url{https://modrinth.com/mod/origins-skybloom}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/bra6fsBj/e6b81eaa153612d4c0b2d6d135839d479bcca1fc_96.webp" width=24dp shape=4dp
-            ...button-text text="Starter pack - Adds starter pack to your game (0.0M)" event="url{https://modrinth.com/mod/starter-pack-mod}"
+            ...image url="https://cdn.modrinth.com/data/ffLDUGbm/1787470c1ca81b2d0e0b3a9370d6f039d4f13207_96.webp" width=24dp shape=4dp
+            ...button-text text="MossyLib - Library with basic utilities for Mossy p (0.8M)" event="url{https://modrinth.com/mod/mossylib}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/LdhhdMPS/c1e0c5a6ad17df204ca0681cd06ef06df4dc6878_96.webp" width=24dp shape=4dp
-            ...button-text text="Lyro PvP ULTIMATE - The ULTIMATE PvP Texture Pack you'll eve (0.0M)" event="url{https://modrinth.com/mod/lyro-ultimate}"
+            ...image url="https://cdn.modrinth.com/data/NgVN6prx/35ee7ec2cd6b8160aa32eacfb5b86192a9461949_96.webp" width=24dp shape=4dp
+            ...button-text text="EternalCore - EternalCore is a modern, actively mainta (0.0M)" event="url{https://modrinth.com/mod/eternalcore}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8)
@@ -123,9 +123,9 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Mini Game Masters Skin Pack](https://minecraft.wiki/Mini_Game_Masters_Skin_Pack)
+📖 **Wiki 推荐**：[Bedrock Editor 0.4.4](https://minecraft.wiki/Bedrock_Editor_0.4.4)
 
-⏰ 更新时间：2026-05-10 08:06:52
+⏰ 更新时间：2026-05-10 13:46:00
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
