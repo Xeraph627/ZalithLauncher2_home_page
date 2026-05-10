@@ -59,23 +59,32 @@ function uploadFile() {
     input.click();
 }
 
-// 新建文件
+// 新建文件（使用符合教程的示例）
 function newFile() {
     const defaultContent = `// Zalith Launcher2 自定义主页
 // 欢迎使用可视化编辑器！
+// 注释行以 // 开头，不会显示在主页中
 
 # 🎮 我的游戏中心
 
-...card-start title="快速开始"
-这是一个示例卡片。点击右上角"编辑"按钮开始修改！
+...card-start title="快速开始" shape=medium contentPadding=(16,12)
+这是一个示例卡片。点击右上角 **编辑** 按钮开始修改！
 
-...button-filled-tonal text="点击测试" event="copy{Hello World!}"
+...button-filled-tonal text="点击测试" event="copy {Hello World!}"
 ...card-end
 
 ---
-### 试试看
 
-点击左侧的组件按钮，快速添加卡片、按钮、图片等内容！
+### 横向布局示例
+
+...row-start horizontal=spacedBy(8) vertical=Center
+    ...button text="按钮1" weight=(1)
+    ...button text="按钮2" weight=(1)
+...row-end
+
+### 图片示例
+
+...image url="https://picsum.photos/800/200" width=100% shape=12dp
 `;
     loadContent(defaultContent, '我的主页.md');
     showToast('已创建新文件');
