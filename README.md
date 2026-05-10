@@ -1,4 +1,4 @@
-# 🎮 Zalith Launcher 2 自动更新主页
+# 🎮 Zalith Launcher 2 自动更新主页和编辑
 
 全自动生成的自定义主页，支持多种数据源实时更新。
 
