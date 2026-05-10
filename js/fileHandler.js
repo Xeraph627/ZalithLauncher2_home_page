@@ -2,13 +2,10 @@
  * 文件处理 - 加载、保存、下载、上传
  */
 
-let currentMarkdown = '';
-let currentFileName = 'home_page.md';
-
 // 加载内容
 function loadContent(content, filename) {
-    currentMarkdown = content;
-    currentFileName = filename;
+    window.currentMarkdown = content;
+    window.currentFileName = filename;
     renderPreview(content);
     document.getElementById('fileName').textContent = filename;
     
@@ -33,18 +30,18 @@ async function loadFromUrl(url) {
 
 // 下载文件
 function downloadFile() {
-    if (!currentMarkdown) {
+    if (!window.currentMarkdown) {
         showToast('没有内容可下载');
         return;
     }
-    const blob = new Blob([currentMarkdown], { type: 'text/markdown' });
+    const blob = new Blob([window.currentMarkdown], { type: 'text/markdown' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = currentFileName;
+    a.download = window.currentFileName;
     a.click();
     URL.revokeObjectURL(url);
-    showToast(`已下载: ${currentFileName}`);
+    showToast(`已下载: ${window.currentFileName}`);
 }
 
 // 上传文件
@@ -88,8 +85,16 @@ function newFile() {
 function saveFromEditor() {
     const editor = document.getElementById('editor');
     if (editor) {
-        currentMarkdown = editor.value;
-        renderPreview(currentMarkdown);
+        window.currentMarkdown = editor.value;
+        renderPreview(window.currentMarkdown);
         showToast('已保存并刷新预览');
     }
 }
+
+// 导出到全局
+window.loadContent = loadContent;
+window.loadFromUrl = loadFromUrl;
+window.downloadFile = downloadFile;
+window.uploadFile = uploadFile;
+window.newFile = newFile;
+window.saveFromEditor = saveFromEditor;
