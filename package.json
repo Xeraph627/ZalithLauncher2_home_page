@@ -1,0 +1,22 @@
+{
+  "name": "zalith-homepage-updater",
+  "version": "1.0.0",
+  "description": "Zalith Launcher 2 自定义主页自动更新系统",
+  "main": "scripts/update.js",
+  "scripts": {
+    "update": "node scripts/update.js",
+    "test": "node scripts/update.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "keywords": [
+    "minecraft",
+    "zalith-launcher",
+    "homepage",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
