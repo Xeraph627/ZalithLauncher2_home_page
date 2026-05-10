@@ -164,14 +164,12 @@ function parseCustomComponents(mdText) {
             continue;
         }
 
-        // 普通文本行 - 直接保留，让 marked 处理
-        // 但要排除单独一行的 "---" 可能被 marked 误解析为水平线
-        // 我们保留原样，marked 会正确处理
+        // 普通文本行 - 直接保留
         result += line + '\n';
         i++;
     }
 
-    // 关闭未闭合的标签（防止 HTML 结构错误）
+    // 关闭未闭合的标签
     while (stack.length) {
         const item = stack.pop();
         if (item.tag === 'card') result += '</div></div>\n';
@@ -211,3 +209,33 @@ function renderPreview(content) {
         previewDiv.innerHTML = `<div class="error">解析错误: ${e.message}</div>`;
     }
 }
+
+// 全局事件处理（供预览按钮使用）
+window.handleEvent = function(eventStr) {
+    const urlMatch = eventStr.match(/url\{\s*(.*?)\s*\}/);
+    if (urlMatch) {
+        window.open(urlMatch[1], '_blank');
+        showToast(`🔗 打开链接: ${urlMatch[1]}`);
+        return;
+    }
+    const copyMatch = eventStr.match(/copy\{\s*(.*?)\s*\}/);
+    if (copyMatch) {
+        navigator.clipboard.writeText(copyMatch[1]);
+        showToast(`📋 已复制: ${copyMatch[1].substring(0, 50)}${copyMatch[1].length > 50 ? '...' : ''}`);
+        return;
+    }
+    if (eventStr === 'launch_game') {
+        showToast('🎮 启动游戏');
+    } else if (eventStr === 'check_update') {
+        showToast('🔄 检查更新');
+    } else if (eventStr.startsWith('open_folder')) {
+        const folder = eventStr.match(/open_folder\{([^}]+)\}/);
+        showToast(`📁 打开文件夹: ${folder ? folder[1] : '未知'}`);
+    } else {
+        showToast(`⚡ 事件: ${eventStr}`);
+    }
+};
+
+// 导出
+window.parseCustomComponents = parseCustomComponents;
+window.renderPreview = renderPreview;
