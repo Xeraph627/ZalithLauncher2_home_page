@@ -2,21 +2,26 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
+// ============ 路径配置 ============
+const SCRIPT_DIR = __dirname;                  // scripts 目录
+const ROOT_DIR = path.join(SCRIPT_DIR, '..');  // 根目录
+const CONFIG_PATH = path.join(SCRIPT_DIR, 'config.json');
+const OUTPUT_PATH = path.join(ROOT_DIR, 'home_page.md');
+
 // ============ 读取配置文件 ============
 let CONFIG = {
     qqGroup: '123456789',
     discordInvite: 'discord.gg/xxxx',
     fallbackWallpaper: 'https://api.bimg.cc/random?resolution=1920x1080',
-    authorUrl: 'https://ssbtt114514.github.io/',   // 作者链接
+    authorUrl: 'https://ssbtt114514.github.io/',
     authorName: 'ssbtt114514'
 };
 
 try {
-    const configPath = path.join(__dirname, 'config.json');
-    if (fs.existsSync(configPath)) {
-        const userConfig = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    if (fs.existsSync(CONFIG_PATH)) {
+        const userConfig = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
         CONFIG = { ...CONFIG, ...userConfig };
-        console.log('✅ 已加载配置文件 config.json');
+        console.log('✅ 已加载配置文件:', CONFIG_PATH);
     } else {
         console.log('⚠️ 未找到 config.json，使用默认配置');
     }
@@ -41,6 +46,42 @@ async function getCachedOrFetch(key, fetchFn, ttl = CACHE_TTL) {
     } catch (e) {
         console.error(`❌ 获取 ${key} 失败:`, e.message);
         return null;
+    }
+}
+
+// ============ 网络时间获取（北京时间）============
+async function fetchBeijingTime() {
+    try {
+        const res = await axios.get('https://worldtimeapi.org/api/timezone/Asia/Shanghai', { timeout: 8000 });
+        const datetime = res.data.datetime;
+        const beijingTime = new Date(datetime);
+        
+        const year = beijingTime.getFullYear();
+        const month = String(beijingTime.getMonth() + 1).padStart(2, '0');
+        const day = String(beijingTime.getDate()).padStart(2, '0');
+        const hours = String(beijingTime.getHours()).padStart(2, '0');
+        const minutes = String(beijingTime.getMinutes()).padStart(2, '0');
+        const seconds = String(beijingTime.getSeconds()).padStart(2, '0');
+        
+        return {
+            full: `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`,
+            date: `${year}-${month}-${day}`,
+            time: `${hours}:${minutes}:${seconds}`
+        };
+    } catch (e) {
+        console.error('❌ 网络时间获取失败，使用本地时间:', e.message);
+        const localNow = new Date();
+        const year = localNow.getFullYear();
+        const month = String(localNow.getMonth() + 1).padStart(2, '0');
+        const day = String(localNow.getDate()).padStart(2, '0');
+        const hours = String(localNow.getHours()).padStart(2, '0');
+        const minutes = String(localNow.getMinutes()).padStart(2, '0');
+        const seconds = String(localNow.getSeconds()).padStart(2, '0');
+        return {
+            full: `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`,
+            date: `${year}-${month}-${day}`,
+            time: `${hours}:${minutes}:${seconds}`
+        };
     }
 }
 
@@ -93,14 +134,18 @@ async function fetchModrinthHot() {
         url: `https://modrinth.com/mod/${hit.slug}`,
         description: hit.description.substring(0, 40),
         downloads: hit.downloads ? `${(hit.downloads / 1000000).toFixed(1)}M` : 'N/A',
-        iconUrl: hit.icon_url || `https://cdn.modrinth.com/data/${hit.project_id}/icon.png` // fallback
+        iconUrl: hit.icon_url || `https://cdn.modrinth.com/data/${hit.project_id}/icon.png`
     }));
 }
 
 // ============ 生成主页 ============
 async function generateHomePage() {
     console.log('🚀 开始生成主页...');
-    console.log('⏰', new Date().toLocaleString('zh-CN'));
+    
+    // 获取网络时间
+    const now = await fetchBeijingTime();
+    console.log('⏰ 网络时间:', now.full);
+    console.log('📁 输出路径:', OUTPUT_PATH);
 
     const [bing, hitokoto, mcVersions, modrinthMods] = await Promise.all([
         getCachedOrFetch('bing', fetchBingWallpaper),
@@ -109,7 +154,7 @@ async function generateHomePage() {
         getCachedOrFetch('modrinth', fetchModrinthHot)
     ]);
 
-    // Modrinth 后备数据（当 API 失败时使用）
+    // Modrinth 后备数据
     const finalModrinthMods = modrinthMods || [
         { name: 'Sodium', slug: 'sodium', url: 'https://modrinth.com/mod/sodium', description: '高性能渲染引擎', downloads: '15M+', iconUrl: 'https://cdn.modrinth.com/data/AANobbMI/icon.png' },
         { name: 'Iris', slug: 'iris', url: 'https://modrinth.com/mod/iris', description: '现代光影加载器', downloads: '8M+', iconUrl: 'https://cdn.modrinth.com/data/YL57xq9U/icon.png' },
@@ -118,7 +163,7 @@ async function generateHomePage() {
         { name: 'Phosphor', slug: 'phosphor', url: 'https://modrinth.com/mod/phosphor', description: '光照引擎优化', downloads: '5M+', iconUrl: 'https://cdn.modrinth.com/data/9pc0y4kz/icon.png' }
     ];
 
-    // 构建 Modrinth 列表（带图片和按钮文本）
+    // 构建 Modrinth 列表
     const modrinthRows = finalModrinthMods.map(mod => {
         return `        ...row-start horizontal=spacedBy(8) vertical=Center
             ...image url="${mod.iconUrl}" width=24dp shape=4dp
@@ -126,14 +171,14 @@ async function generateHomePage() {
         ...row-end`;
     }).join('\n\n');
 
-    // 构建版本信息列表
+    // 构建版本信息
     const versionInfo = mcVersions.recentReleases.map(v => `- **${v.id}** (${v.date})`).join('\n        ');
 
-    // 生成最终 Markdown（已删除服务器部分）
+    // 生成完整 Markdown
     const md = `// ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：${new Date().toLocaleString('zh-CN')}
-// 数据来源：Bing | 一言 | Mojang | Modrinth
+// 生成时间：${now.full}
+// 数据来源：Bing | 一言 | Mojang | Modrinth | WorldTimeAPI
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
@@ -241,7 +286,7 @@ ${modrinthRows}
 
 👤 **作者**：[${CONFIG.authorName}](${CONFIG.authorUrl})
 
-⏰ 更新时间：${new Date().toLocaleString('zh-CN')}
+⏰ 更新时间：${now.full}
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
@@ -251,11 +296,10 @@ ${modrinthRows}
 ...card-end
 `;
 
-    // 以 UTF-8 写入文件（确保无乱码）
-    fs.writeFileSync('home_page.md', md, 'utf8');
+    fs.writeFileSync(OUTPUT_PATH, md, 'utf8');
     console.log('\n✅ 主页生成完成！');
-    console.log('📁 文件：home_page.md');
-    console.log(`📅 时间：${new Date().toLocaleString('zh-CN')}`);
+    console.log('📁 文件:', OUTPUT_PATH);
+    console.log(`📅 生成时间（网络）: ${now.full}`);
     console.log(`🖼️ 壁纸：${bing.title}`);
     console.log(`💬 一言：${hitokoto.text}`);
     console.log(`📦 MC版本：${mcVersions.latestRelease} / ${mcVersions.latestSnapshot}`);
