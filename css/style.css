@@ -436,3 +436,21 @@ body {
     .top-bar { flex-direction: column; gap: 10px; }
     .tool-buttons { flex-wrap: wrap; justify-content: center; }
 }
+/* 修复水平分割线样式 */
+.markdown-body hr {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background: #2a3150;
+}
+
+/* 确保预览区域正确显示 */
+.preview-body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 卡片内容中的 Markdown 样式 */
+.card-content .markdown-body hr {
+    margin: 16px 0;
+}
