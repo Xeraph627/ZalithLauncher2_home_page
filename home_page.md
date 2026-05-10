@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-10 13:46:00
+// 生成时间：2026-05-10 15:40:47
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,11 +10,11 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16, 12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"鞭炮再响，可哪有我想你那么想"*
+> *"任何一件事都具有两面性。"*
 
         ...row-start horizontal=spacedBy(12)
             ...button-filled-tonal text="🔄 刷新" event="copy{https://v1.hitokoto.cn/?c=a}" width=100dp
-            ...button-text text="📋 复制" event="copy{鞭炮再响，可哪有我想你那么想}"
+            ...button-text text="📋 复制" event="copy{任何一件事都具有两面性。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
         ...row-end
         ...row-start horizontal=spacedBy(8)
             ...button-filled-tonal text="💬 MCBBS" event="url{https://www.mcbbs.net/}" weight=(1)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Editor_0.4.4}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Minecraft%3A_The_Tournament}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
@@ -67,28 +67,28 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(10) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/f4LI2xOT/c9ae815c4e02b0f4933bb634af15e8b7a0ddd32d_96.webp" width=24dp shape=4dp
-            ...button-text text="Craft Complete - Completes crafting recipes such as saddl (0.0M)" event="url{https://modrinth.com/mod/craft-complete}"
+            ...image url="https://cdn.modrinth.com/data/ilxqKTHS/99fd253bd8a7c6b680d4661ce9045eb0ec5ab92c_96.webp" width=24dp shape=4dp
+            ...button-text text="Reimagined World Selection - Mod that changes the way how the World S (0.0M)" event="url{https://modrinth.com/mod/reimagined-world-selection}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/uVMG0MzO/1db3be2f57ed47d7b0dfd30902c437768c34d966.png" width=24dp shape=4dp
-            ...button-text text="Iridium Skyblock - A New Era of Skyblock plugins (0.0M)" event="url{https://modrinth.com/mod/iridiumskyblock}"
+            ...image url="https://cdn.modrinth.com/data/hOu0A7L5/bbba6e0522d88098a4e3cb3cdc666e268705ecb6_96.webp" width=24dp shape=4dp
+            ...button-text text="Diamond to Cobalt - changes diamond textures to cobalt (0.0M)" event="url{https://modrinth.com/mod/diamond-to-cobalt}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/ZcR9yCFU/23d7e0f1a70b68af7cb27c6291a8bea11ee84e06_96.webp" width=24dp shape=4dp
-            ...button-text text="Origins: Skybloom - Adds the magical skybloom origin to mine (0.0M)" event="url{https://modrinth.com/mod/origins-skybloom}"
+            ...image url="https://cdn.modrinth.com/data/T0ZNSMix/40e8cb5718646c0ca5f40c5c10bd13beaa0d65d3_96.webp" width=24dp shape=4dp
+            ...button-text text="Paxels - Paxels adds simple multi-tools that comb (0.0M)" event="url{https://modrinth.com/mod/paxels-tools}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/ffLDUGbm/1787470c1ca81b2d0e0b3a9370d6f039d4f13207_96.webp" width=24dp shape=4dp
-            ...button-text text="MossyLib - Library with basic utilities for Mossy p (0.8M)" event="url{https://modrinth.com/mod/mossylib}"
+            ...image url="https://cdn.modrinth.com/data/ONFFQRso/58dbf380b2f00195e56548c1305c2d769654d69c_96.webp" width=24dp shape=4dp
+            ...button-text text="Modpack Authors - Client-side Minecraft mod that adds a co (0.0M)" event="url{https://modrinth.com/mod/modpack-authors}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/NgVN6prx/35ee7ec2cd6b8160aa32eacfb5b86192a9461949_96.webp" width=24dp shape=4dp
-            ...button-text text="EternalCore - EternalCore is a modern, actively mainta (0.0M)" event="url{https://modrinth.com/mod/eternalcore}"
+            ...image url="https://cdn.modrinth.com/data/aBVLHiAW/eb1a5f242a024853d493df68d806ab7156e0a6e6_96.webp" width=24dp shape=4dp
+            ...button-text text="BentoBox - SkyBlock, OneBlock, Boxed, SkyGrid, Acid (0.0M)" event="url{https://modrinth.com/mod/bentobox}"
         ...row-end
 
         ...row-start horizontal=spacedBy(8)
@@ -123,9 +123,9 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Bedrock Editor 0.4.4](https://minecraft.wiki/Bedrock_Editor_0.4.4)
+📖 **Wiki 推荐**：[Minecraft: The Tournament](https://minecraft.wiki/Minecraft%3A_The_Tournament)
 
-⏰ 更新时间：2026-05-10 13:46:00
+⏰ 更新时间：2026-05-10 15:40:47
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
