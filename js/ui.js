@@ -31,57 +31,9 @@ function toggleEditMode() {
     }
 }
 
-// 按分类组织组件按钮
-const COMPONENT_CATEGORIES = [
-    {
-        name: '容器',
-        items: ['card']
-    },
-    {
-        name: '按钮',
-        items: ['button_filled', 'button_outlined', 'button_tonal', 'button_text']
-    },
-    {
-        name: '布局',
-        items: ['row', 'column']
-    },
-    {
-        name: '媒体',
-        items: ['image']
-    },
-    {
-        name: '排版',
-        items: ['divider', 'heading', 'quote', 'list']
-    },
-    {
-        name: '高级',
-        items: ['button_weighted']
-    }
-];
-
-// 获取组件显示名称
-function getComponentDisplay(type) {
-    const names = {
-        card: '📦 卡片',
-        button_filled: '🔵 填充按钮',
-        button_outlined: '🔲 边框按钮',
-        button_tonal: '🎨 柔和按钮',
-        button_text: '📝 文字按钮',
-        button_weighted: '⚖️ 权重按钮',
-        row: '↔️ 横向布局',
-        column: '↕️ 纵向布局',
-        image: '🖼️ 图片',
-        divider: '➖ 分割线',
-        heading: '📌 标题',
-        quote: '💬 引用块',
-        list: '📋 列表'
-    };
-    return names[type] || type;
-}
-
 // 渲染组件工具栏（按分类）
 function renderComponentBar() {
-    const container = document.querySelector('.component-list');
+    const container = document.getElementById('componentList');
     if (!container) return;
     
     container.innerHTML = '';
@@ -99,7 +51,7 @@ function renderComponentBar() {
                 const btn = document.createElement('button');
                 btn.className = 'comp-btn';
                 btn.dataset.type = type;
-                btn.textContent = getComponentDisplay(type);
+                btn.textContent = getComponentDisplayName(type);
                 btn.title = ComponentTemplates[type].name;
                 container.appendChild(btn);
             }
@@ -109,7 +61,7 @@ function renderComponentBar() {
 
 // 绑定组件按钮事件
 function bindComponentButtons() {
-    // 重新渲染工具栏
+    // 渲染工具栏
     renderComponentBar();
     
     // 绑定事件
@@ -130,6 +82,107 @@ function bindComponentButtons() {
             }
         });
     });
+}
+
+// 打开组件配置弹窗
+function openComponentModal(type) {
+    const template = ComponentTemplates[type];
+    if (!template) return;
+    
+    window.pendingComponent = type;
+    document.getElementById('modalTitle').textContent = `添加 ${template.name}`;
+    
+    let html = '';
+    for (const field of template.fields) {
+        html += `<div class="form-group">`;
+        html += `<label class="form-label">${field.label}${field.required ? ' <span style="color:#ef4444;">*</span>' : ''}</label>`;
+        
+        if (field.type === 'select') {
+            html += `<select class="form-select" id="field_${field.name}">`;
+            for (const opt of field.options) {
+                const selected = (field.default && opt === field.default) ? ' selected' : '';
+                html += `<option value="${opt}"${selected}>${opt}</option>`;
+            }
+            html += `</select>`;
+        } else if (field.type === 'textarea') {
+            html += `<textarea class="form-textarea" id="field_${field.name}" placeholder="${field.placeholder || ''}" rows="4"></textarea>`;
+        } else if (field.type === 'number') {
+            html += `<input type="number" class="form-input" id="field_${field.name}" placeholder="${field.placeholder || ''}" value="${field.default || ''}">`;
+        } else {
+            html += `<input type="text" class="form-input" id="field_${field.name}" placeholder="${field.placeholder || ''}" value="${field.default || ''}">`;
+        }
+        
+        if (field.hint) html += `<div class="form-hint">${field.hint}</div>`;
+        html += `</div>`;
+    }
+    
+    if (template.fields.length === 0) {
+        html = '<div style="color:#7f8ea3;">点击插入即可添加组件</div>';
+    }
+    
+    document.getElementById('modalBody').innerHTML = html;
+    document.getElementById('modal').style.display = 'flex';
+}
+
+// 关闭弹窗
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+    window.pendingComponent = null;
+}
+
+// 插入组件到编辑器
+function insertComponent() {
+    if (!window.pendingComponent) return;
+    
+    const template = ComponentTemplates[window.pendingComponent];
+    if (!template) return;
+    
+    const data = {};
+    for (const field of template.fields) {
+        const input = document.getElementById(`field_${field.name}`);
+        if (input) data[field.name] = input.value;
+    }
+    
+    // 检查必填
+    for (const field of template.fields) {
+        if (field.required && !data[field.name]) {
+            showToast(`请填写 ${field.label}`);
+            return;
+        }
+    }
+    
+    const code = template.template(data);
+    insertAtCursor(code);
+    closeModal();
+    showToast(`已添加 ${template.name}`);
+}
+
+// 在光标位置插入代码
+function insertAtCursor(code) {
+    const textarea = document.getElementById('editor');
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const text = textarea.value;
+    
+    let prefix = (start > 0 && text[start - 1] !== '\n') ? '\n' : '';
+    let suffix = (end < text.length && text[end] !== '\n') ? '\n' : '';
+    
+    const newText = text.substring(0, start) + prefix + code + suffix + text.substring(end);
+    textarea.value = newText;
+    
+    // 更新全局内容并刷新预览
+    window.currentMarkdown = newText;
+    renderPreview(newText);
+}
+
+// 打开帮助
+function openHelpModal() {
+    document.getElementById('helpBody').innerHTML = `<div class="help-body">${HelpContent}</div>`;
+    document.getElementById('helpModal').style.display = 'flex';
+}
+
+function closeHelpModal() {
+    document.getElementById('helpModal').style.display = 'none';
 }
 
 // 绑定弹窗关闭
@@ -170,9 +223,14 @@ function bindToolbarButtons() {
     };
 }
 
-// 导出全局函数
+// 导出到全局
 window.showToast = showToast;
 window.toggleEditMode = toggleEditMode;
 window.bindComponentButtons = bindComponentButtons;
 window.bindModalEvents = bindModalEvents;
 window.bindToolbarButtons = bindToolbarButtons;
+window.openComponentModal = openComponentModal;
+window.closeModal = closeModal;
+window.insertComponent = insertComponent;
+window.openHelpModal = openHelpModal;
+window.closeHelpModal = closeHelpModal;
