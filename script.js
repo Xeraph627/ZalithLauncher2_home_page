@@ -298,3 +298,346 @@ function parseCustomComponents(markdownText) {
     let inCodeBlock = false;
     
     const stack = [];
+    let i = 0;
+    
+    while (i < lines.length) {
+        let line = lines[i];
+        const trimmed = line.trim();
+        
+        if (trimmed.startsWith('```')) {
+            inCodeBlock = !inCodeBlock;
+            result += line + '\n';
+            i++;
+            continue;
+        }
+        
+        if (inCodeBlock) {
+            result += line + '\n';
+            i++;
+            continue;
+        }
+        
+        if (trimmed.startsWith('//')) {
+            i++;
+            continue;
+        }
+        
+        const componentMatch = trimmed.match(/^\.\.\.([a-z-]+)(?:\s+(.*))?$/);
+        if (componentMatch) {
+            const fullTag = componentMatch[1];
+            const attrLine = componentMatch[2] || '';
+            
+            if (fullTag.endsWith('-end')) {
+                const openTag = fullTag.replace('-end', '');
+                if (stack.length && stack[stack.length-1].tag === openTag) {
+                    stack.pop();
+                    if (openTag === 'card') result += '</div></div>\n';
+                    else if (openTag === 'row') result += '</div>\n';
+                    else if (openTag === 'column') result += '</div>\n';
+                    else result += `<!-- end ${fullTag} -->\n`;
+                }
+                i++;
+                continue;
+            }
+            
+            if (fullTag === 'card-start') {
+                const title = getAttribute(attrLine, 'title');
+                const shape = getAttribute(attrLine, 'shape');
+                const paddingRaw = getAttribute(attrLine, 'contentPadding');
+                const padding = parseTuple(paddingRaw);
+                let style = '';
+                if (shape) {
+                    if (shape.endsWith('dp')) style += `border-radius: ${parseFloat(shape)}px;`;
+                    else if (shape.endsWith('%')) style += `border-radius: ${shape};`;
+                    else if (['small','medium','large','extraSmall','extraLarge'].includes(shape)) {
+                        const radiusMap = { extraSmall: '4px', small: '8px', medium: '12px', large: '16px', extraLarge: '24px' };
+                        style += `border-radius: ${radiusMap[shape] || '12px'};`;
+                    }
+                }
+                let cardStyle = style ? ` style="${style}"` : '';
+                let html = `<div class="custom-card"${cardStyle}>`;
+                if (title) html += `<div class="card-title">${escapeHtml(title)}</div>`;
+                let contentStyle = '';
+                if (padding) {
+                    if (padding.all !== undefined) contentStyle = `padding: ${padding.all}px;`;
+                    else if (padding.horizontal !== undefined) contentStyle = `padding: ${padding.vertical}px ${padding.horizontal}px;`;
+                    else if (padding.left !== undefined) contentStyle = `padding: ${padding.top}px ${padding.right}px ${padding.bottom}px ${padding.left}px;`;
+                }
+                html += `<div class="card-content" style="${contentStyle}">`;
+                result += html;
+                stack.push({ tag: 'card' });
+                i++;
+                continue;
+            }
+            
+            if (fullTag === 'row-start') {
+                result += '<div class="custom-row">\n';
+                stack.push({ tag: 'row' });
+                i++;
+                continue;
+            }
+            
+            if (fullTag === 'column-start') {
+                result += '<div class="custom-column">\n';
+                stack.push({ tag: 'column' });
+                i++;
+                continue;
+            }
+            
+            if (['button', 'button-outlined', 'button-filled-tonal', 'button-text'].includes(fullTag)) {
+                const text = getAttribute(attrLine, 'text');
+                const eventVal = getAttribute(attrLine, 'event');
+                const width = getAttribute(attrLine, 'width');
+                const shape = getAttribute(attrLine, 'shape');
+                
+                let btnClass = 'btn';
+                if (fullTag === 'button') btnClass += ' btn-filled';
+                else if (fullTag === 'button-outlined') btnClass += ' btn-outlined';
+                else if (fullTag === 'button-filled-tonal') btnClass += ' btn-filled-tonal';
+                else if (fullTag === 'button-text') btnClass += ' btn-text';
+                
+                let style = '';
+                if (width) {
+                    if (width.endsWith('%')) style += `width: ${width};`;
+                    else if (width.endsWith('dp')) style += `width: ${parseFloat(width)}px;`;
+                }
+                if (shape) {
+                    if (shape.endsWith('dp')) style += `border-radius: ${parseFloat(shape)}px;`;
+                    else if (shape.endsWith('%')) style += `border-radius: ${shape};`;
+                }
+                
+                const onClick = eventVal ? `onclick="handleEvent('${escapeHtml(eventVal).replace(/'/g, "\\'")}')"` : '';
+                result += `<button class="${btnClass}" style="${style}" ${onClick}>${escapeHtml(text)}</button>`;
+                i++;
+                continue;
+            }
+            
+            if (fullTag === 'image') {
+                const url = getAttribute(attrLine, 'url');
+                const width = getAttribute(attrLine, 'width');
+                const shape = getAttribute(attrLine, 'shape');
+                let style = '';
+                if (width) {
+                    if (width.endsWith('%')) style += `width: ${width};`;
+                    else if (width.endsWith('dp')) style += `width: ${parseFloat(width)}px;`;
+                }
+                if (shape) {
+                    if (shape.endsWith('dp')) style += `border-radius: ${parseFloat(shape)}px;`;
+                    else if (shape.endsWith('%')) style += `border-radius: ${shape};`;
+                }
+                result += `<img class="custom-image" src="${escapeHtml(url)}" style="${style}" alt="image" loading="lazy" onerror="this.src='https://placehold.co/400x200?text=Image+Load+Error'">`;
+                i++;
+                continue;
+            }
+            
+            result += `<!-- 未识别的扩展组件: ${fullTag} -->\n`;
+            i++;
+            continue;
+        }
+        
+        result += line + '\n';
+        i++;
+    }
+    
+    // 用占位符保护 HTML 标签
+    const htmlPlaceholders = [];
+    let processed = result.replace(/<div class="custom-[^"]+">|<\/div>|<button[^>]*>.*?<\/button>|<img[^>]*>/gs, (match) => {
+        const idx = htmlPlaceholders.length;
+        htmlPlaceholders.push(match);
+        return `%%HTML_${idx}%%`;
+    });
+    
+    let finalHtml = marked.parse(processed, { async: false });
+    finalHtml = finalHtml.replace(/%%HTML_(\d+)%%/g, (match, idx) => htmlPlaceholders[parseInt(idx)] || '');
+    
+    return finalHtml;
+}
+
+// ============ 渲染预览 ============
+function renderPreview() {
+    const previewDiv = document.getElementById('previewContent');
+    if (!currentMarkdown) {
+        previewDiv.innerHTML = '<div class="error-msg">⚠️ 没有加载任何内容。请上传 MD 文件或新建文件。</div>';
+        return;
+    }
+    
+    try {
+        const htmlContent = parseCustomComponents(currentMarkdown);
+        previewDiv.innerHTML = htmlContent;
+        document.getElementById('fileInfo').textContent = `当前文件: ${currentFileName}`;
+    } catch (error) {
+        previewDiv.innerHTML = `<div class="error-msg">❌ 解析错误: ${error.message}</div>`;
+        console.error(error);
+    }
+}
+
+// ============ 文件操作 ============
+function loadMarkdown(content, filename = 'home_page.md') {
+    currentMarkdown = content;
+    currentFileName = filename;
+    renderPreview();
+    if (isEditMode) {
+        document.getElementById('editorTextarea').value = content;
+    }
+    showToast(`✅ 已加载: ${filename}`);
+}
+
+async function loadFromUrl(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const content = await response.text();
+        loadMarkdown(content, url.split('/').pop());
+    } catch (error) {
+        document.getElementById('previewContent').innerHTML = `<div class="error-msg">❌ 加载失败: ${error.message}<br><br>请确保文件存在，或使用上传功能。</div>`;
+        showToast('加载失败: ' + error.message);
+    }
+}
+
+function downloadMarkdown() {
+    if (!currentMarkdown) {
+        showToast('没有内容可下载');
+        return;
+    }
+    const blob = new Blob([currentMarkdown], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = currentFileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    showToast(`💾 已下载: ${currentFileName}`);
+}
+
+function uploadMarkdown() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.md,.markdown,.txt';
+    input.onchange = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            loadMarkdown(event.target.result, file.name);
+        };
+        reader.readAsText(file, 'UTF-8');
+    };
+    input.click();
+}
+
+function newFile() {
+    const defaultContent = `// Zalith Launcher2 自定义主页
+// 欢迎使用可视化编辑器！
+
+# 🎮 我的游戏中心
+
+...card-start title="快速开始"
+这是一个示例卡片。你可以：
+- 点击右侧的 **编辑模式** 开始修改
+- 使用 **组件工具栏** 快速添加按钮、卡片、图片等
+
+...button-filled-tonal text="点击测试" event="copy{Hello World!}"
+...card-end
+
+---
+### 试试看
+
+点击上方工具栏的 **编辑模式**，然后用中间的组件按钮插入新内容吧！
+`;
+    loadMarkdown(defaultContent, '新主页.md');
+    showToast('✨ 已创建新文件');
+}
+
+// ============ 编辑模式 ============
+function toggleEditMode() {
+    const editArea = document.getElementById('editArea');
+    const editBtn = document.getElementById('editModeBtn');
+    const componentBar = document.getElementById('componentBar');
+    
+    if (isEditMode) {
+        editArea.style.display = 'none';
+        editBtn.textContent = '✏️ 编辑模式';
+        isEditMode = false;
+        showToast('已退出编辑模式');
+    } else {
+        editArea.style.display = 'flex';
+        document.getElementById('editorTextarea').value = currentMarkdown;
+        editBtn.textContent = '👁️ 预览模式';
+        isEditMode = true;
+        showToast('进入编辑模式，可使用组件工具栏快速插入');
+    }
+}
+
+function saveAndPreview() {
+    const newContent = document.getElementById('editorTextarea').value;
+    currentMarkdown = newContent;
+    renderPreview();
+    showToast('💾 已保存并刷新预览');
+}
+
+function cancelEdit() {
+    document.getElementById('editorTextarea').value = currentMarkdown;
+    showToast('已取消修改');
+}
+
+// ============ 绑定组件按钮 ============
+function bindComponentButtons() {
+    const compBtns = document.querySelectorAll('.comp-btn');
+    compBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const compType = btn.dataset.component;
+            if (compType === 'help') {
+                openHelpModal();
+            } else if (componentTemplates[compType]) {
+                if (!isEditMode) {
+                    showToast('请先进入编辑模式再添加组件');
+                    return;
+                }
+                openComponentModal(compType);
+            } else {
+                showToast('组件开发中...');
+            }
+        });
+    });
+}
+
+// ============ 初始化 ============
+function init() {
+    // 绑定事件
+    document.getElementById('editModeBtn').onclick = toggleEditMode;
+    document.getElementById('downloadBtn').onclick = downloadMarkdown;
+    document.getElementById('uploadBtn').onclick = uploadMarkdown;
+    document.getElementById('newFileBtn').onclick = newFile;
+    document.getElementById('refreshPreviewBtn').onclick = () => renderPreview();
+    document.getElementById('saveEditBtn').onclick = saveAndPreview;
+    document.getElementById('cancelEditBtn').onclick = cancelEdit;
+    
+    // 弹窗事件
+    document.getElementById('modalCloseBtn').onclick = closeModal;
+    document.getElementById('modalCancelBtn').onclick = closeModal;
+    document.getElementById('modalConfirmBtn').onclick = insertComponent;
+    document.getElementById('helpCloseBtn').onclick = closeHelpModal;
+    document.getElementById('helpConfirmBtn').onclick = closeHelpModal;
+    
+    // 点击遮罩关闭
+    document.getElementById('modalOverlay').onclick = (e) => {
+        if (e.target === document.getElementById('modalOverlay')) closeModal();
+    };
+    document.getElementById('helpOverlay').onclick = (e) => {
+        if (e.target === document.getElementById('helpOverlay')) closeHelpModal();
+    };
+    
+    bindComponentButtons();
+    
+    // 尝试加载默认文件
+    loadFromUrl('home_page.md').catch(() => {
+        loadFromUrl('sample.md').catch(() => {
+            newFile();
+        });
+    });
+}
+
+// 启动
+init();
