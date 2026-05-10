@@ -4,10 +4,11 @@ const path = require('path');
 
 // ============ 读取配置文件 ============
 let CONFIG = {
-    serverIp: '',
-    qqGroup: '',
-    discordInvite: '',
-    fallbackWallpaper: 'https://api.bimg.cc/random?resolution=1920x1080'
+    qqGroup: '123456789',
+    discordInvite: 'discord.gg/xxxx',
+    fallbackWallpaper: 'https://api.bimg.cc/random?resolution=1920x1080',
+    authorUrl: 'https://ssbtt114514.github.io/',   // 作者链接
+    authorName: 'ssbtt114514'
 };
 
 try {
@@ -22,8 +23,6 @@ try {
 } catch (e) {
     console.error('❌ 配置文件解析失败，使用默认配置:', e.message);
 }
-
-if (process.env.SERVER_IP) CONFIG.serverIp = process.env.SERVER_IP;
 
 // ============ 简单缓存 ============
 const CACHE_TTL = 60 * 60 * 1000; // 1小时
@@ -82,7 +81,7 @@ async function fetchMinecraftVersions() {
     };
 }
 
-// ============ 4. Modrinth 热门模组 ============
+// ============ 4. Modrinth 热门模组（含图标）============
 async function fetchModrinthHot() {
     const res = await axios.get('https://api.modrinth.com/v2/search?limit=5&index=follows', {
         headers: { 'User-Agent': 'ZalithHomepage/1.0' },
@@ -90,27 +89,12 @@ async function fetchModrinthHot() {
     });
     return res.data.hits.map(hit => ({
         name: hit.title,
+        slug: hit.slug,
         url: `https://modrinth.com/mod/${hit.slug}`,
-        desc: hit.description.substring(0, 40),
-        downloads: hit.downloads ? `${(hit.downloads / 1000000).toFixed(1)}M` : 'N/A'
+        description: hit.description.substring(0, 40),
+        downloads: hit.downloads ? `${(hit.downloads / 1000000).toFixed(1)}M` : 'N/A',
+        iconUrl: hit.icon_url || `https://cdn.modrinth.com/data/${hit.project_id}/icon.png` // fallback
     }));
-}
-
-// ============ 5. MC 服务器状态 ============
-async function fetchServerStatus() {
-    if (!CONFIG.serverIp) return null;
-    const res = await axios.get(`https://api.mcstatus.io/v2/status/java/${CONFIG.serverIp}`, { timeout: 10000 });
-    const data = res.data;
-    return {
-        online: data.online,
-        ip: data.ip,
-        port: data.port,
-        players: data.players?.online || 0,
-        maxPlayers: data.players?.max || 0,
-        version: data.version?.name_clean || '未知',
-        motd: data.motd?.clean || '',
-        icon: data.icon
-    };
 }
 
 // ============ 生成主页 ============
@@ -118,54 +102,38 @@ async function generateHomePage() {
     console.log('🚀 开始生成主页...');
     console.log('⏰', new Date().toLocaleString('zh-CN'));
 
-    const [bing, hitokoto, mcVersions, modrinthMods, serverStatus] = await Promise.all([
+    const [bing, hitokoto, mcVersions, modrinthMods] = await Promise.all([
         getCachedOrFetch('bing', fetchBingWallpaper),
         getCachedOrFetch('hitokoto', fetchHitokoto),
         getCachedOrFetch('mcVersions', fetchMinecraftVersions),
-        getCachedOrFetch('modrinth', fetchModrinthHot),
-        getCachedOrFetch('serverStatus', fetchServerStatus, 2 * 60 * 1000)
+        getCachedOrFetch('modrinth', fetchModrinthHot)
     ]);
 
-    // Modrinth 后备数据
+    // Modrinth 后备数据（当 API 失败时使用）
     const finalModrinthMods = modrinthMods || [
-        { name: 'Sodium', url: 'https://modrinth.com/mod/sodium', desc: '高性能渲染引擎', downloads: '15M+' },
-        { name: 'Iris', url: 'https://modrinth.com/mod/iris', desc: '现代光影加载器', downloads: '8M+' },
-        { name: 'Fabric API', url: 'https://modrinth.com/mod/fabric-api', desc: 'Fabric 核心 API', downloads: '20M+' },
-        { name: 'Lithium', url: 'https://modrinth.com/mod/lithium', desc: '游戏逻辑优化', downloads: '10M+' },
-        { name: 'Phosphor', url: 'https://modrinth.com/mod/phosphor', desc: '光照引擎优化', downloads: '5M+' }
+        { name: 'Sodium', slug: 'sodium', url: 'https://modrinth.com/mod/sodium', description: '高性能渲染引擎', downloads: '15M+', iconUrl: 'https://cdn.modrinth.com/data/AANobbMI/icon.png' },
+        { name: 'Iris', slug: 'iris', url: 'https://modrinth.com/mod/iris', description: '现代光影加载器', downloads: '8M+', iconUrl: 'https://cdn.modrinth.com/data/YL57xq9U/icon.png' },
+        { name: 'Fabric API', slug: 'fabric-api', url: 'https://modrinth.com/mod/fabric-api', description: 'Fabric 核心 API', downloads: '20M+', iconUrl: 'https://cdn.modrinth.com/data/P7dR8mSH/icon.png' },
+        { name: 'Lithium', slug: 'lithium', url: 'https://modrinth.com/mod/lithium', description: '游戏逻辑优化', downloads: '10M+', iconUrl: 'https://cdn.modrinth.com/data/gvQqBUqZ/icon.png' },
+        { name: 'Phosphor', slug: 'phosphor', url: 'https://modrinth.com/mod/phosphor', description: '光照引擎优化', downloads: '5M+', iconUrl: 'https://cdn.modrinth.com/data/9pc0y4kz/icon.png' }
     ];
 
-    const modrinthList = finalModrinthMods.map(m => `- [${m.name}](${m.url}) - ${m.desc} (${m.downloads})`).join('\n        ');
+    // 构建 Modrinth 列表（带图片和按钮文本）
+    const modrinthRows = finalModrinthMods.map(mod => {
+        return `        ...row-start horizontal=spacedBy(8) vertical=Center
+            ...image url="${mod.iconUrl}" width=24dp shape=4dp
+            ...button-text text="${mod.name} - ${mod.description} (${mod.downloads})" event="url{${mod.url}}"
+        ...row-end`;
+    }).join('\n\n');
+
+    // 构建版本信息列表
     const versionInfo = mcVersions.recentReleases.map(v => `- **${v.id}** (${v.date})`).join('\n        ');
 
-    // 服务器状态卡片
-    let serverSection = '';
-    if (serverStatus) {
-        const statusColor = serverStatus.online ? '🟢' : '🔴';
-        const statusText = serverStatus.online ? '在线' : '离线';
-        const playerText = serverStatus.online ? `${serverStatus.players}/${serverStatus.maxPlayers}` : 'N/A';
-        serverSection = `
-// --- 🎮 服务器状态 ---
-...card-start title="🎮 我的服务器" shape=medium contentPadding=(12)
-    ...column-start vertical=spacedBy(4) horizontal=Start
-        ${statusColor} **${statusText}** | ${serverStatus.ip}:${serverStatus.port}
-
-        版本: ${serverStatus.version} | 在线玩家: ${playerText}
-
-        > ${serverStatus.motd || '欢迎来到服务器！'}
-
-        ...row-start horizontal=spacedBy(8)
-            ...button text="📋 复制IP" event="copy{${serverStatus.ip}:${serverStatus.port}}" weight=(1)
-            ...button-outlined text="🔄 刷新" event="url{https://api.mcstatus.io/v2/status/java/${CONFIG.serverIp}}" weight=(1)
-        ...row-end
-    ...column-end
-...card-end`;
-    }
-
+    // 生成最终 Markdown（已删除服务器部分）
     const md = `// ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
 // 生成时间：${new Date().toLocaleString('zh-CN')}
-// 数据来源：Bing | 一言 | Mojang | Modrinth | 静态配置
+// 数据来源：Bing | 一言 | Mojang | Modrinth
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
@@ -184,8 +152,6 @@ async function generateHomePage() {
         ...row-end
     ...column-end
 ...card-end
-
-${serverSection}
 
 // --- ⚡ 快捷操作 ---
 ...card-start title="🚀 快捷操作" shape=medium contentPadding=(12)
@@ -229,10 +195,10 @@ ${serverSection}
     ...column-end
 ...card-end
 
-// --- 🧩 Modrinth 热门（实时API）---
+// --- 🧩 Modrinth 热门（含模组图标）---
 ...card-start title="🧩 Modrinth 热门" shape=medium contentPadding=(12)
-    ...column-start vertical=spacedBy(6) horizontal=Start
-        ${modrinthList}
+    ...column-start vertical=spacedBy(10) horizontal=Start
+${modrinthRows}
 
         ...row-start horizontal=spacedBy(8)
             ...button text="📥 访问 Modrinth" event="url{https://modrinth.com/mods}" weight=(1)
@@ -244,15 +210,15 @@ ${serverSection}
 ...card-start title="🧰 实用工具" shape=medium contentPadding=(12)
     ...row-start horizontal=spacedBy(8) vertical=Top
         ...column-start weight=(1) vertical=spacedBy(8) horizontal=Center
-            ...button-outlined text="📋 复制服务器IP" event="copy{${CONFIG.serverIp || 'play.example.com'}}" width=100%
-            ...button-outlined text="📋 复制QQ群" event="copy{${CONFIG.qqGroup || '123456789'}}" width=100%
-            ...button-outlined text="📋 复制 Discord" event="copy{${CONFIG.discordInvite || 'discord.gg/xxxx'}}" width=100%
+            ...button-outlined text="📋 复制服务器IP" event="copy{play.mcmod.cn}" width=100%
+            ...button-outlined text="📋 复制QQ群" event="copy{${CONFIG.qqGroup}}" width=100%
+            ...button-outlined text="📋 复制 Discord" event="copy{${CONFIG.discordInvite}}" width=100%
         ...column-end
         ...column-start weight=(1) vertical=spacedBy(8) horizontal=Center
             ...button-outlined text="🌙 夜间模式" event="copy{夜间模式功能暂未接入}" width=100%
             ...button-outlined text="⚙️ 游戏设置" event="copy{请前往启动器设置}" width=100%
             ...button-outlined text="📁 存档目录" event="copy{请手动打开 .minecraft/saves}" width=100%
-        ...row-end
+        ...column-end
     ...row-end
 ...card-end
 
@@ -265,13 +231,15 @@ ${serverSection}
     ...row-end
 ...card-end
 
-// --- ℹ️ 关于 ---
+// --- ℹ️ 关于（含作者链接）---
 ...card-start title="ℹ️ 关于" shape=small contentPadding=(12)
     ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
 🖼️ 壁纸：${bing.title}
         ${bing.copyright ? '© ' + bing.copyright : ''}
+
+👤 **作者**：[${CONFIG.authorName}](${CONFIG.authorUrl})
 
 ⏰ 更新时间：${new Date().toLocaleString('zh-CN')}
 
@@ -283,15 +251,15 @@ ${serverSection}
 ...card-end
 `;
 
-    fs.writeFileSync('home_page.md', md);
+    // 以 UTF-8 写入文件（确保无乱码）
+    fs.writeFileSync('home_page.md', md, 'utf8');
     console.log('\n✅ 主页生成完成！');
     console.log('📁 文件：home_page.md');
     console.log(`📅 时间：${new Date().toLocaleString('zh-CN')}`);
     console.log(`🖼️ 壁纸：${bing.title}`);
     console.log(`💬 一言：${hitokoto.text}`);
     console.log(`📦 MC版本：${mcVersions.latestRelease} / ${mcVersions.latestSnapshot}`);
-    console.log(`🧩 Modrinth：${finalModrinthMods.length} 个模组`);
-    if (serverStatus) console.log(`🎮 服务器：${serverStatus.online ? '在线' : '离线'} ${serverStatus.players}/${serverStatus.maxPlayers}`);
+    console.log(`🧩 Modrinth：${finalModrinthMods.length} 个模组（含图标）`);
 }
 
 generateHomePage().catch(err => {
