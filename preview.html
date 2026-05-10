@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Zalith Launcher2 - 自定义主页预览器</title>
+    <!-- Markdown 解析库 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0e1a;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            padding: 24px;
+            color: #e2e8f0;
+        }
+
+        /* 主容器 - 模拟启动器窗口宽度 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #0f1322;
+            border-radius: 28px;
+            padding: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ========== 自定义组件样式 ========== */
+        
+        /* 卡片组件 */
+        .custom-card {
+            background: #1a1f33;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 14px 18px;
+            background: #1e2440;
+            border-bottom: 1px solid #2a3150;
+            color: #f0f3ff;
+        }
+        .card-content {
+            padding: 16px 20px;
+        }
+        
+        /* 按钮组件 */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+            font-family: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .btn-filled {
+            background: #3b82f6;
+            color: white;
+            box-shadow: 0 2px 6px rgba(59,130,246,0.3);
+        }
+        .btn-filled:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+        .btn-outlined {
+            background: transparent;
+            border: 1px solid #3b82f6;
+            color: #3b82f6;
+        }
+        .btn-outlined:hover {
+            background: rgba(59,130,246,0.1);
+        }
+        .btn-filled-tonal {
+            background: #2d3a5e;
+            color: #bbd7ff;
+        }
+        .btn-filled-tonal:hover {
+            background: #3b4a74;
+        }
+        .btn-text {
+            background: transparent;
+            color: #94a3b8;
+        }
+        .btn-text:hover {
+            color: #cbd5e1;
+            background: rgba(255,255,255,0.05);
+        }
+        
+        /* 布局组件 */
+        .custom-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .custom-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        
+        /* 图片组件 */
+        .custom-image {
+            max-width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        
+        /* 普通 Markdown 样式 */
+        .markdown-body {
+            line-height: 1.6;
+        }
+        .markdown-body h1 { font-size: 28px; margin: 16px 0 12px; color: #fff; }
+        .markdown-body h2 { font-size: 22px; margin: 14px 0 10px; color: #e2e8f0; }
+        .markdown-body h3 { font-size: 18px; margin: 12px 0 8px; }
+        .markdown-body p { margin: 8px 0; }
+        .markdown-body ul, .markdown-body ol { margin: 8px 0 8px 24px; }
+        .markdown-body li { margin: 4px 0; }
+        .markdown-body a { color: #60a5fa; text-decoration: none; }
+        .markdown-body a:hover { text-decoration: underline; }
+        .markdown-body blockquote {
+            border-left: 4px solid #3b82f6;
+            margin: 12px 0;
+            padding-left: 16px;
+            color: #94a3b8;
+            font-style: italic;
+        }
+        .markdown-body hr {
+            margin: 20px 0;
+            border: none;
+            height: 1px;
+            background: #2a3150;
+        }
+        
+        /* 提示区域 */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            z-index: 1000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .toast.show {
+            opacity: 1;
+        }
+        
+        /* 状态栏 */
+        .status-bar {
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            background: #0b0f1a;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #7f8ea3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .refresh-btn {
+            background: #2d3a5e;
+            border: none;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        .refresh-btn:hover {
+            background: #3b4a74;
+        }
+        
+        /* 错误提示 */
+        .error-msg {
+            background: #7f1a1a;
+            color: #fecaca;
+            padding: 16px;
+            border-radius: 16px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="status-bar">
+        <span>📄 预览模式 | 模拟 Zalith Launcher2 扩展组件</span>
+        <button class="refresh-btn" onclick="location.reload()">🔄 刷新预览</button>
+    </div>
+    <div id="content"></div>
+</div>
+<div id="toast" class="toast"></div>
+
+<script>
+    // ---------- 模拟启动器事件处理 ----------
+    function showToast(msg) {
+        const toast = document.getElementById('toast');
+        toast.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    function handleEvent(eventStr) {
+        // 解析 event 字符串，支持 url{...} 和 copy{...} 以及简单指令
+        const urlMatch = eventStr.match(/url\{\s*(.*?)\s*\}/);
+        if (urlMatch) {
+            window.open(urlMatch[1], '_blank');
+            return;
+        }
+        const copyMatch = eventStr.match(/copy\{\s*(.*?)\s*\}/);
+        if (copyMatch) {
+            const text = copyMatch[1];
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(`📋 已复制: ${text.length > 30 ? text.slice(0,30)+'…' : text}`);
+            }).catch(() => showToast('复制失败'));
+            return;
+        }
+        if (eventStr === 'launch_game') {
+            showToast('🎮 启动游戏 (演示模式)');
+        } else if (eventStr === 'check_update') {
+            showToast('🔄 检查更新 (演示模式)');
+        } else {
+            showToast(`⚡ 事件: ${eventStr}`);
+        }
+    }
+
+    // ---------- 解析自定义扩展组件 ----------
+    function parseCustomComponents(markdownText) {
+        const lines = markdownText.split(/\r?\n/);
+        let result = '';
+        let inCodeBlock = false;
+        let codeBlockLang = '';
+        
+        // 辅助函数：提取属性值
+        function getAttribute(line, attrName) {
+            const regex = new RegExp(`${attrName}=("([^"]*)"|([^\\s]+))`);
+            const match = line.match(regex);
+            if (match) return match[2] || match[3] || '';
+            return '';
+        }
+        
+        // 解析元组如 (12, 8) 或 (12)
+        function parseTuple(tupleStr) {
+            if (!tupleStr) return null;
+            const match = tupleStr.match(/^\(([\d\.,\s]+)\)$/);
+            if (!match) return null;
+            const parts = match[1].split(',').map(p => parseFloat(p.trim()));
+            if (parts.length === 1) return { all: parts[0] };
+            if (parts.length === 2) return { horizontal: parts[0], vertical: parts[1] };
+            if (parts.length === 4) return { left: parts[0], top: parts[1], right: parts[2], bottom: parts[3] };
+            return null;
+        }
+        
+        // 栈结构处理嵌套组件
+        const stack = [];
+        let i = 0;
+        while (i < lines.length) {
+            let line = lines[i];
+            const trimmed = line.trim();
+            
+            // 检测代码块
+            if (trimmed.startsWith('```')) {
+                if (!inCodeBlock) {
+                    inCodeBlock = true;
+                    codeBlockLang = trimmed.slice(3);
+                    result += line + '\n';
+                } else {
+                    inCodeBlock = false;
+                    result += line + '\n';
+                }
+                i++;
+                continue;
+            }
+            
+            if (inCodeBlock) {
+                result += line + '\n';
+                i++;
+                continue;
+            }
+            
+            // 忽略注释行（以 // 开头且不在代码块内）
+            if (trimmed.startsWith('//')) {
+                i++;
+                continue;
+            }
+            
+            // 检测扩展组件
+            const componentMatch = trimmed.match(/^\.\.\.([a-z-]+)(?:\s+(.*))?$/);
+            if (componentMatch) {
+                const fullTag = componentMatch[1];
+                const attrLine = componentMatch[2] || '';
+                
+                // 处理结束标签
+                if (fullTag.endsWith('-end')) {
+                    const openTag = fullTag.replace('-end', '');
+                    if (stack.length && stack[stack.length-1].tag === openTag) {
+                        const open = stack.pop();
+                        // 根据标签类型闭合 HTML
+                        if (openTag === 'card') result += '</div></div>\n';
+                        else if (openTag === 'row') result += '</div>\n';
+                        else if (openTag === 'column') result += '</div>\n';
+                        else result += `<!-- end ${fullTag} -->\n`;
+                    }
+                    i++;
+                    continue;
+                }
+                
+                // 处理开始标签
+                if (fullTag === 'card-start') {
+                    const title = getAttribute(attrLine, 'title');
+                    const shape = getAttribute(attrLine, 'shape');
+                    const paddingRaw = getAttribute(attrLine, 'contentPadding');
+                    const padding = parseTuple(paddingRaw);
+                    let style = '';
+                    if (shape) {
+                        if (shape.endsWith('dp')) style += `border-radius: ${parseFloat(shape)}px;`;
+                        else if (shape.endsWith('%')) style += `border-radius: ${shape};`;
+                        else if (['small','medium','large','extraSmall','extraLarge'].includes(shape)) {
+                            const radiusMap = { extraSmall: '4px', small: '8px', medium: '12px', large: '16px', extraLarge: '24px' };
+                            style += `border-radius: ${radiusMap[shape] || '12px'};`;
+                        }
+                    }
+                    let cardStyle = style ? ` style="${style}"` : '';
+                    let html = `<div class="custom-card"${cardStyle}>`;
+                    if (title) html += `<div class="card-title">${escapeHtml(title)}</div>`;
+                    let contentStyle = '';
+                    if (padding) {
+                        if (padding.all !== undefined) contentStyle = `padding: ${padding.all}px;`;
+                        else if (padding.horizontal !== undefined) contentStyle = `padding: ${padding.vertical}px ${padding.horizontal}px;`;
+                        else if (padding.left !== undefined) contentStyle = `padding: ${padding.top}px ${padding.right}px ${padding.bottom}px ${padding.left}px;`;
+                    }
+                    html += `<div class="card-content" style="${contentStyle}">`;
+                    result += html;
+                    stack.push({ tag: 'card' });
+                    i++;
+                    continue;
+                }
+                
+                if (fullTag === 'row-start') {
+                    let html = '<div class="custom-row">';
+                    result += html;
+                    stack.push({ tag: 'row' });
+                    i++;
+                    continue;
+                }
+                
+                if (fullTag === 'column-start') {
+                    let html = '<div class="custom-column">';
+                    result += html;
+                    stack.push({ tag: 'column' });
+                    i++;
+                    continue;
+                }
+                
+                // 按钮组件
+                if (['button', 'button-outlined', 'button-filled-tonal', 'button-text'].includes(fullTag)) {
+                    const text = getAttribute(attrLine, 'text');
+                    const eventVal = getAttribute(attrLine, 'event');
+                    const width = getAttribute(attrLine, 'width');
+                    const shape = getAttribute(attrLine, 'shape');
+                    
+                    let btnClass = 'btn';
+                    if (fullTag === 'button') btnClass += ' btn-filled';
+                    else if (fullTag === 'button-outlined') btnClass += ' btn-outlined';
+                    else if (fullTag === 'button-filled-tonal') btnClass += ' btn-filled-tonal';
+                    else if (fullTag === 'button-text') btnClass += ' btn-text';
+                    
+                    let style = '';
+                    if (width) {
+                        if (width.endsWith('%')) style += `width: ${width};`;
+                        else if (width.endsWith('dp')) style += `width: ${parseFloat(width)}px;`;
+                    }
+                    if (shape) {
+                        if (shape.endsWith('dp')) style += `border-radius: ${parseFloat(shape)}px;`;
+                        else if (shape.endsWith('%')) style += `border-radius: ${shape};`;
+                    }
+                    
+                    const onClick = eventVal ? `onclick="handleEvent('${escapeHtml(eventVal).replace(/'/g, "\\'")}')"` : '';
+                    result += `<button class="${btnClass}" style="${style}" ${onClick}>${escapeHtml(text)}</button>`;
+                    i++;
+                    continue;
+                }
+                
+                // 图片组件
+                if (fullTag === 'image') {
+                    const url = getAttribute(attrLine, 'url');
+                    const width = getAttribute(attrLine, 'width');
+                    const shape = getAttribute(attrLine, 'shape');
+                    let style = '';
+                    if (width) {
+                        if (width.endsWith('%')) style += `width: ${width};`;
+                        else if (width.endsWith('dp')) style += `width: ${parseFloat(width)}px;`;
+                    }
+                    if (shape) {
+                        if (shape.endsWith('dp')) style += `border-radius: ${parseFloat(shape)}px;`;
+                        else if (shape.endsWith('%')) style += `border-radius: ${shape};`;
+                    }
+                    result += `<img class="custom-image" src="${escapeHtml(url)}" style="${style}" alt="image" loading="lazy" onerror="this.src='https://placehold.co/400x200?text=Image+Load+Error'">`;
+                    i++;
+                    continue;
+                }
+                
+                // 未知组件，原样输出注释
+                result += `<!-- 未识别的扩展组件: ${fullTag} -->\n`;
+                i++;
+                continue;
+            }
+            
+            // 普通 Markdown 行：先处理一下可能的缩进文本，直接交给 marked 解析，但得包裹在 div 内才能正确渲染列表等
+            // 为了不破坏 HTML 结构，直接把普通文本收集起来，稍后用 marked 解析。
+            result += line + '\n';
+            i++;
+        }
+        
+        // 最终用 marked 解析 Markdown 内容，但要小心不要把已经生成的 HTML 标签又转义了。
+        // 简单办法： 将 result 中非 HTML 标签的 Markdown 区域转给 marked。
+        // 这里用一个分割技巧：把 result 分成纯 Markdown 块和 HTML 块，但是复杂度高。
+        // 更简单：让 marked 解析 result，但 marked 会转义 HTML 标签。所以要先把自定义的 HTML 保护起来。
+        // 我们采用一种临时方案：将我们生成的 HTML 标签用占位符临时替换，解析完再换回来。
+        const htmlPlaceholders = [];
+        let processed = result.replace(/<div class="custom-[^"]+">|<\/div>|<button[^>]*>.*?<\/button>|<img[^>]*>/gs, (match) => {
+            const idx = htmlPlaceholders.length;
+            htmlPlaceholders.push(match);
+            return `%%HTML_${idx}%%`;
+        });
+        
+        // 使用 marked 解析 Markdown
+        let finalHtml = marked.parse(processed, { async: false });
+        // 恢复占位符
+        finalHtml = finalHtml.replace(/%%HTML_(\d+)%%/g, (match, idx) => htmlPlaceholders[parseInt(idx)] || '');
+        
+        return finalHtml;
+    }
+    
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
+            return c;
+        });
+    }
+    
+    // ---------- 加载并渲染 home_page.md ----------
+    async function loadAndRender() {
+        const contentDiv = document.getElementById('content');
+        try {
+            const response = await fetch('home_page.md');
+            if (!response.ok) throw new Error(`HTTP ${response.status} - 文件不存在或无法访问`);
+            const mdText = await response.text();
+            const htmlContent = parseCustomComponents(mdText);
+            contentDiv.innerHTML = htmlContent;
+            // 给所有动态生成的按钮绑定事件（备用）
+            document.querySelectorAll('.btn').forEach(btn => {
+                const onclickAttr = btn.getAttribute('onclick');
+                if (!onclickAttr) {
+                    // 如果没有内联 onclick，尝试从自定义属性读取
+                    const eventVal = btn.getAttribute('data-event');
+                    if (eventVal) btn.addEventListener('click', () => handleEvent(eventVal));
+                }
+            });
+        } catch (error) {
+            contentDiv.innerHTML = `<div class="error-msg">❌ 加载失败: ${error.message}<br><br>请确保 home_page.md 文件存在于当前目录，且已通过 update.js 生成。</div>`;
+            console.error(error);
+        }
+    }
+    
+    loadAndRender();
+</script>
+</body>
+</html>
