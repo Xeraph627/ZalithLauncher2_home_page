@@ -51,17 +51,8 @@
             <!-- 可视化组件栏 -->
             <div class="component-bar">
                 <div class="bar-title">📦 插入组件</div>
-                <div class="component-list">
-                    <button class="comp-btn" data-type="card">📦 卡片</button>
-                    <button class="comp-btn" data-type="button-filled">🔵 填充按钮</button>
-                    <button class="comp-btn" data-type="button-outlined">🔲 边框按钮</button>
-                    <button class="comp-btn" data-type="button-tonal">🎨 柔和按钮</button>
-                    <button class="comp-btn" data-type="button-text">📝 文字按钮</button>
-                    <button class="comp-btn" data-type="image">🖼️ 图片</button>
-                    <button class="comp-btn" data-type="row">↔️ 横向布局</button>
-                    <button class="comp-btn" data-type="column">↕️ 纵向布局</button>
-                    <button class="comp-btn" data-type="divider">➖ 分割线</button>
-                    <button class="comp-btn" data-type="help">❓ 帮助</button>
+                <div class="component-list" id="componentList">
+                    <!-- 组件按钮会由 JS 动态生成 -->
                 </div>
             </div>
             
@@ -100,7 +91,7 @@
             <span>📖 组件语法速查</span>
             <button id="helpClose" class="modal-close">×</button>
         </div>
-        <div class="modal-body help-body"></div>
+        <div id="helpBody" class="modal-body help-body"></div>
         <div class="modal-footer">
             <button id="helpConfirm" class="btn-primary">知道了</button>
         </div>
