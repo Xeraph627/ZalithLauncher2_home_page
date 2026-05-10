@@ -3,15 +3,14 @@ const fs = require('fs');
 const path = require('path');
 
 // ============ 路径配置 ============
-const SCRIPT_DIR = __dirname;                  // scripts 目录
-const ROOT_DIR = path.join(SCRIPT_DIR, '..');  // 根目录
+const SCRIPT_DIR = __dirname;
+const ROOT_DIR = path.join(SCRIPT_DIR, '..');
 const CONFIG_PATH = path.join(SCRIPT_DIR, 'config.json');
 const OUTPUT_PATH = path.join(ROOT_DIR, 'home_page.md');
 
 // ============ 读取配置文件 ============
 let CONFIG = {
     qqGroup: '123456789',
-    discordInvite: 'discord.gg/xxxx',
     fallbackWallpaper: 'https://api.bimg.cc/random?resolution=1920x1080',
     authorUrl: 'https://ssbtt114514.github.io/',
     authorName: 'ssbtt114514'
@@ -30,7 +29,7 @@ try {
 }
 
 // ============ 简单缓存 ============
-const CACHE_TTL = 60 * 60 * 1000; // 1小时
+const CACHE_TTL = 60 * 60 * 1000;
 const cache = {};
 
 async function getCachedOrFetch(key, fetchFn, ttl = CACHE_TTL) {
@@ -96,15 +95,13 @@ async function fetchBingWallpaper() {
     };
 }
 
-// ============ 2. 每日一言 ============
+// ============ 2. 每日一言（只保留内容，删除作者）============
 async function fetchHitokoto() {
     const categories = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'];
     const randomCat = categories[Math.floor(Math.random() * categories.length)];
     const res = await axios.get(`https://v1.hitokoto.cn/?c=${randomCat}&encode=json`, { timeout: 5000 });
     return {
-        text: res.data.hitokoto,
-        from: res.data.from || '未知',
-        from_who: res.data.from_who || ''
+        text: res.data.hitokoto
     };
 }
 
@@ -117,54 +114,88 @@ async function fetchMinecraftVersions() {
     return {
         latestRelease: latest.release,
         latestSnapshot: latest.snapshot,
-        recentReleases: recentReleases.map(v => ({ id: v.id, date: v.releaseTime.split('T')[0] })),
-        snapshot: latestSnapshot ? { id: latestSnapshot.id, date: latestSnapshot.releaseTime.split('T')[0] } : null
+        recentReleases: recentReleases.map(v => ({ id: v.id, date: v.releaseTime.split('T')[0] }))
     };
 }
 
-// ============ 4. Modrinth 热门模组（含图标）============
-async function fetchModrinthHot() {
-    const res = await axios.get('https://api.modrinth.com/v2/search?limit=5&index=follows', {
-        headers: { 'User-Agent': 'ZalithHomepage/1.0' },
-        timeout: 10000
-    });
-    return res.data.hits.map(hit => ({
-        name: hit.title,
-        slug: hit.slug,
-        url: `https://modrinth.com/mod/${hit.slug}`,
-        description: hit.description.substring(0, 40),
-        downloads: hit.downloads ? `${(hit.downloads / 1000000).toFixed(1)}M` : 'N/A',
-        iconUrl: hit.icon_url || `https://cdn.modrinth.com/data/${hit.project_id}/icon.png`
-    }));
+// ============ 4. Minecraft Wiki 随机推荐 ============
+async function fetchMinecraftWiki() {
+    try {
+        // 获取 Minecraft Wiki 的随机页面
+        const res = await axios.get('https://minecraft.wiki/api.php', {
+            params: {
+                action: 'query',
+                format: 'json',
+                list: 'random',
+                rnnamespace: 0,
+                rnlimit: 1
+            },
+            timeout: 10000
+        });
+        
+        const page = res.data.query.random[0];
+        return {
+            title: page.title,
+            url: `https://minecraft.wiki/${encodeURIComponent(page.title.replace(/ /g, '_'))}`,
+            description: `推荐阅读：${page.title}`
+        };
+    } catch (e) {
+        console.error('❌ Minecraft Wiki 获取失败:', e.message);
+        return {
+            title: '红石电路',
+            url: 'https://minecraft.wiki/Redstone_circuit',
+            description: '推荐阅读：红石电路'
+        };
+    }
+}
+
+// ============ 5. Modrinth 最新模组（按最新更新时间排序）============
+async function fetchModrinthLatest() {
+    try {
+        // 按最新更新时间排序，获取最新的 5 个模组
+        const res = await axios.get('https://api.modrinth.com/v2/search?limit=5&index=updated', {
+            headers: { 'User-Agent': 'ZalithHomepage/1.0' },
+            timeout: 10000
+        });
+        return res.data.hits.map(hit => ({
+            name: hit.title,
+            slug: hit.slug,
+            url: `https://modrinth.com/mod/${hit.slug}`,
+            description: hit.description.substring(0, 40),
+            downloads: hit.downloads ? `${(hit.downloads / 1000000).toFixed(1)}M` : 'N/A',
+            iconUrl: hit.icon_url || `https://cdn.modrinth.com/data/${hit.project_id}/icon.png`,
+            updated: hit.updated
+        }));
+    } catch (e) {
+        console.error('❌ Modrinth 获取失败:', e.message);
+        return [
+            { name: 'Sodium', slug: 'sodium', url: 'https://modrinth.com/mod/sodium', description: '高性能渲染引擎', downloads: '15M+', iconUrl: 'https://cdn.modrinth.com/data/AANobbMI/icon.png' },
+            { name: 'Iris', slug: 'iris', url: 'https://modrinth.com/mod/iris', description: '现代光影加载器', downloads: '8M+', iconUrl: 'https://cdn.modrinth.com/data/YL57xq9U/icon.png' },
+            { name: 'Fabric API', slug: 'fabric-api', url: 'https://modrinth.com/mod/fabric-api', description: 'Fabric 核心 API', downloads: '20M+', iconUrl: 'https://cdn.modrinth.com/data/P7dR8mSH/icon.png' },
+            { name: 'Lithium', slug: 'lithium', url: 'https://modrinth.com/mod/lithium', description: '游戏逻辑优化', downloads: '10M+', iconUrl: 'https://cdn.modrinth.com/data/gvQqBUqZ/icon.png' },
+            { name: 'Phosphor', slug: 'phosphor', url: 'https://modrinth.com/mod/phosphor', description: '光照引擎优化', downloads: '5M+', iconUrl: 'https://cdn.modrinth.com/data/9pc0y4kz/icon.png' }
+        ];
+    }
 }
 
 // ============ 生成主页 ============
 async function generateHomePage() {
     console.log('🚀 开始生成主页...');
     
-    // 获取网络时间
     const now = await fetchBeijingTime();
     console.log('⏰ 网络时间:', now.full);
     console.log('📁 输出路径:', OUTPUT_PATH);
 
-    const [bing, hitokoto, mcVersions, modrinthMods] = await Promise.all([
+    const [bing, hitokoto, mcVersions, modrinthMods, wikiPage] = await Promise.all([
         getCachedOrFetch('bing', fetchBingWallpaper),
         getCachedOrFetch('hitokoto', fetchHitokoto),
         getCachedOrFetch('mcVersions', fetchMinecraftVersions),
-        getCachedOrFetch('modrinth', fetchModrinthHot)
+        getCachedOrFetch('modrinthLatest', fetchModrinthLatest, 10 * 60 * 1000), // 10分钟缓存
+        getCachedOrFetch('wiki', fetchMinecraftWiki, 30 * 60 * 1000) // 30分钟缓存
     ]);
 
-    // Modrinth 后备数据
-    const finalModrinthMods = modrinthMods || [
-        { name: 'Sodium', slug: 'sodium', url: 'https://modrinth.com/mod/sodium', description: '高性能渲染引擎', downloads: '15M+', iconUrl: 'https://cdn.modrinth.com/data/AANobbMI/icon.png' },
-        { name: 'Iris', slug: 'iris', url: 'https://modrinth.com/mod/iris', description: '现代光影加载器', downloads: '8M+', iconUrl: 'https://cdn.modrinth.com/data/YL57xq9U/icon.png' },
-        { name: 'Fabric API', slug: 'fabric-api', url: 'https://modrinth.com/mod/fabric-api', description: 'Fabric 核心 API', downloads: '20M+', iconUrl: 'https://cdn.modrinth.com/data/P7dR8mSH/icon.png' },
-        { name: 'Lithium', slug: 'lithium', url: 'https://modrinth.com/mod/lithium', description: '游戏逻辑优化', downloads: '10M+', iconUrl: 'https://cdn.modrinth.com/data/gvQqBUqZ/icon.png' },
-        { name: 'Phosphor', slug: 'phosphor', url: 'https://modrinth.com/mod/phosphor', description: '光照引擎优化', downloads: '5M+', iconUrl: 'https://cdn.modrinth.com/data/9pc0y4kz/icon.png' }
-    ];
-
     // 构建 Modrinth 列表
-    const modrinthRows = finalModrinthMods.map(mod => {
+    const modrinthRows = modrinthMods.map(mod => {
         return `        ...row-start horizontal=spacedBy(8) vertical=Center
             ...image url="${mod.iconUrl}" width=24dp shape=4dp
             ...button-text text="${mod.name} - ${mod.description} (${mod.downloads})" event="url{${mod.url}}"
@@ -178,7 +209,7 @@ async function generateHomePage() {
     const md = `// ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
 // 生成时间：${now.full}
-// 数据来源：Bing | 一言 | Mojang | Modrinth | WorldTimeAPI
+// 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
@@ -188,8 +219,6 @@ async function generateHomePage() {
 ...card-start title="📜 每日一言" shape=large contentPadding=(16, 12)
     ...column-start vertical=spacedBy(8) horizontal=Center
 > *"${hitokoto.text}"*
-
-—— ${hitokoto.from}${hitokoto.from_who ? ' · ' + hitokoto.from_who : ''}
 
         ...row-start horizontal=spacedBy(12)
             ...button-filled-tonal text="🔄 刷新" event="copy{https://v1.hitokoto.cn/?c=a}" width=100dp
@@ -230,8 +259,8 @@ async function generateHomePage() {
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="⬇️ 下载站" event="url{https://www.mcmod.cn/download.html}" weight=(1)
-            ...button-filled-tonal text="💬 论坛" event="url{https://bbs.mcmod.cn/}" weight=(1)
+            ...button-filled-tonal text="💬 MCBBS" event="url{https://www.mcbbs.net/}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{${wikiPage.url}}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
@@ -240,8 +269,8 @@ async function generateHomePage() {
     ...column-end
 ...card-end
 
-// --- 🧩 Modrinth 热门（含模组图标）---
-...card-start title="🧩 Modrinth 热门" shape=medium contentPadding=(12)
+// --- 🧩 Modrinth 最新模组（按更新时间排序）---
+...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(10) horizontal=Start
 ${modrinthRows}
 
@@ -253,18 +282,9 @@ ${modrinthRows}
 
 // --- 🛠️ 实用工具 ---
 ...card-start title="🧰 实用工具" shape=medium contentPadding=(12)
-    ...row-start horizontal=spacedBy(8) vertical=Top
-        ...column-start weight=(1) vertical=spacedBy(8) horizontal=Center
-            ...button-outlined text="📋 复制服务器IP" event="copy{play.mcmod.cn}" width=100%
-            ...button-outlined text="📋 复制QQ群" event="copy{${CONFIG.qqGroup}}" width=100%
-            ...button-outlined text="📋 复制 Discord" event="copy{${CONFIG.discordInvite}}" width=100%
-        ...column-end
-        ...column-start weight=(1) vertical=spacedBy(8) horizontal=Center
-            ...button-outlined text="🌙 夜间模式" event="copy{夜间模式功能暂未接入}" width=100%
-            ...button-outlined text="⚙️ 游戏设置" event="copy{请前往启动器设置}" width=100%
-            ...button-outlined text="📁 存档目录" event="copy{请手动打开 .minecraft/saves}" width=100%
-        ...column-end
-    ...row-end
+    ...column-start vertical=spacedBy(8) horizontal=Center
+        ...button-outlined text="📋 复制QQ群" event="copy{${CONFIG.qqGroup}}" width=50%
+    ...column-end
 ...card-end
 
 // --- 📸 精选壁纸 ---
@@ -276,7 +296,7 @@ ${modrinthRows}
     ...row-end
 ...card-end
 
-// --- ℹ️ 关于（含作者链接）---
+// --- ℹ️ 关于 ---
 ...card-start title="ℹ️ 关于" shape=small contentPadding=(12)
     ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
@@ -285,6 +305,8 @@ ${modrinthRows}
         ${bing.copyright ? '© ' + bing.copyright : ''}
 
 👤 **作者**：[${CONFIG.authorName}](${CONFIG.authorUrl})
+
+📖 **Wiki 推荐**：[${wikiPage.title}](${wikiPage.url})
 
 ⏰ 更新时间：${now.full}
 
@@ -299,11 +321,12 @@ ${modrinthRows}
     fs.writeFileSync(OUTPUT_PATH, md, 'utf8');
     console.log('\n✅ 主页生成完成！');
     console.log('📁 文件:', OUTPUT_PATH);
-    console.log(`📅 生成时间（网络）: ${now.full}`);
+    console.log(`📅 生成时间: ${now.full}`);
     console.log(`🖼️ 壁纸：${bing.title}`);
     console.log(`💬 一言：${hitokoto.text}`);
     console.log(`📦 MC版本：${mcVersions.latestRelease} / ${mcVersions.latestSnapshot}`);
-    console.log(`🧩 Modrinth：${finalModrinthMods.length} 个模组（含图标）`);
+    console.log(`🧩 Modrinth：${modrinthMods.length} 个最新模组`);
+    console.log(`📖 Wiki推荐：${wikiPage.title}`);
 }
 
 generateHomePage().catch(err => {
