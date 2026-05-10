@@ -204,8 +204,15 @@ function bindModalEvents() {
     };
 }
 
+// 作者页面跳转
+function openAuthorPage() {
+    window.open('https://ssbtt114514.github.io/', '_blank');
+    showToast('正在打开作者主页...');
+}
+
 // 绑定工具栏按钮
 function bindToolbarButtons() {
+    document.getElementById('authorBtn').onclick = openAuthorPage;
     document.getElementById('editBtn').onclick = toggleEditMode;
     document.getElementById('downloadBtn').onclick = downloadFile;
     document.getElementById('uploadBtn').onclick = uploadFile;
