@@ -389,9 +389,9 @@ async function generateHomePage() {
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16, 12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-        > *"${hitokoto.text}"*
+> *"${hitokoto.text}"*
 
-        —— ${hitokoto.from}${hitokoto.from_who ? ' · ' + hitokoto.from_who : ''}
+—— ${hitokoto.from}${hitokoto.from_who ? ' · ' + hitokoto.from_who : ''}
 
         ...row-start horizontal=spacedBy(12)
             ...button-filled-tonal text="🔄 刷新" event="url {https://v1.hitokoto.cn/}" width=100dp
@@ -415,10 +415,10 @@ ${serverSection}
 // --- 📦 MC 版本信息 ---
 ...card-start title="📦 Minecraft 版本" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(6) horizontal=Start
-        **最新正式版**: ${mcVersions.latestRelease}
-        **最新快照**: ${mcVersions.latestSnapshot}
+**最新正式版**: ${mcVersions.latestRelease}
+**最新快照**: ${mcVersions.latestSnapshot}
 
-        近期版本：
+近期版本：
         ${versionInfo}
 
         ...row-start horizontal=spacedBy(8)
@@ -508,12 +508,12 @@ ${serverSection}
 // --- ℹ️ 关于 ---
 ...card-start title="ℹ️ 关于" shape=small contentPadding=(12)
     ...column-start vertical=spacedBy(4) horizontal=Center
-        **Zalith Launcher 2** 自动更新主页
+**Zalith Launcher 2** 自动更新主页
 
-        🖼️ 壁纸：${bing.title}
+🖼️ 壁纸：${bing.title}
         ${bing.copyright ? '© ' + bing.copyright : ''}
 
-        ⏰ 更新时间：${new Date().toLocaleString('zh-CN')}
+⏰ 更新时间：${new Date().toLocaleString('zh-CN')}
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url {https://www.runoob.com/markdown/md-tutorial.html}"
