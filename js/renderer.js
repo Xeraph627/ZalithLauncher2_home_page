@@ -1,5 +1,5 @@
 /**
- * 渲染器 - 将 Markdown + 扩展组件转为 HTML
+ * 渲染器 - 支持自定义组件和纯 Markdown
  */
 
 function escapeHtml(str) {
@@ -40,7 +40,6 @@ function parseCustomComponents(mdText) {
         let line = lines[i];
         const trimmed = line.trim();
 
-        // 代码块
         if (trimmed.startsWith('```')) {
             inCode = !inCode;
             result += line + '\n';
@@ -54,13 +53,11 @@ function parseCustomComponents(mdText) {
             continue;
         }
 
-        // 检测扩展组件
         const match = trimmed.match(/^\.\.\.([a-z-]+)(?:\s+(.*))?$/);
         if (match) {
             const tag = match[1];
             const attrs = match[2] || '';
 
-            // 结束标签
             if (tag.endsWith('-end')) {
                 const openTag = tag.replace('-end', '');
                 if (stack.length && stack[stack.length - 1].tag === openTag) {
@@ -73,7 +70,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 卡片
             if (tag === 'card-start') {
                 const title = getAttr(attrs, 'title');
                 let style = '';
@@ -95,7 +91,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 布局
             if (tag === 'row-start') {
                 result += '<div class="custom-row">\n';
                 stack.push({ tag: 'row' });
@@ -110,7 +105,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 按钮
             if (['button', 'button-outlined', 'button-filled-tonal', 'button-text'].includes(tag)) {
                 const text = getAttr(attrs, 'text');
                 const eventVal = getAttr(attrs, 'event');
@@ -138,7 +132,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 图片
             if (tag === 'image') {
                 const url = getAttr(attrs, 'url');
                 const width = getAttr(attrs, 'width');
@@ -162,12 +155,10 @@ function parseCustomComponents(mdText) {
             continue;
         }
 
-        // 普通文本行
         result += line + '\n';
         i++;
     }
 
-    // 关闭未闭合标签
     while (stack.length) {
         const item = stack.pop();
         if (item.tag === 'card') result += '</div></div>\n';
@@ -175,7 +166,6 @@ function parseCustomComponents(mdText) {
         else if (item.tag === 'column') result += '</div>\n';
     }
 
-    // 保护 HTML 标签
     const placeholders = [];
     let processed = result.replace(/<div class="custom-card[^>]*>|<\/div>|<div class="card-title">.*?<\/div>|<div class="card-content">|<div class="custom-row">|<div class="custom-column">|<button[^>]*>.*?<\/button>|<img[^>]*>/gs, (match) => {
         const idx = placeholders.length;
@@ -183,13 +173,8 @@ function parseCustomComponents(mdText) {
         return `%%HTML_${idx}%%`;
     });
 
-    // 使用 marked 解析 Markdown（这会正确处理 --- 分隔符）
     let finalHtml = marked.parse(processed, { async: false });
-    
-    // 恢复被保护的 HTML 标签
     finalHtml = finalHtml.replace(/%%HTML_(\d+)%%/g, (_, idx) => placeholders[parseInt(idx)] || '');
-    
-    // 修复可能的多余分隔符：将连续的 <hr> 合并或清理
     finalHtml = finalHtml.replace(/<hr>\s*<hr>/g, '<hr>');
     
     return finalHtml;
@@ -204,8 +189,6 @@ function renderPreview(content) {
     try {
         const html = parseCustomComponents(content);
         previewDiv.innerHTML = html;
-        
-        // 编辑模式下重新初始化拖拽
         if (window.isEditMode) {
             setTimeout(() => setDragMode(true), 100);
         }
@@ -215,7 +198,6 @@ function renderPreview(content) {
     }
 }
 
-// 事件处理
 window.handleEvent = function(eventStr) {
     const urlMatch = eventStr.match(/url\s*\{\s*(.*?)\s*\}/);
     if (urlMatch) {
