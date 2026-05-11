@@ -1,6 +1,5 @@
 /**
  * 渲染器 - 严格按照 Zalith Launcher2 官方教程
- * 支持所有扩展组件：卡片、按钮、布局、图片
  */
 
 function escapeHtml(str) {
@@ -30,6 +29,17 @@ function getAttr(line, name) {
     return match ? (match[2] || match[3] || '') : '';
 }
 
+// 渲染 Modrinth 模组行（名称 + 图片 + 打开按钮）
+function renderModrinthRow(mod) {
+    return `
+        <div class="modrinth-row">
+            <img class="modrinth-icon" src="${escapeHtml(mod.iconUrl)}" onerror="this.src='https://placehold.co/32x32?text=?'">
+            <span class="modrinth-name">${escapeHtml(mod.name)}</span>
+            <button class="modrinth-btn" onclick="window.open('${escapeHtml(mod.url)}', '_blank')">打开</button>
+        </div>
+    `;
+}
+
 function parseCustomComponents(mdText) {
     const lines = mdText.split(/\r?\n/);
     let result = '';
@@ -41,7 +51,6 @@ function parseCustomComponents(mdText) {
         let line = lines[i];
         const trimmed = line.trim();
 
-        // 代码块内不解析
         if (trimmed.startsWith('```')) {
             inCode = !inCode;
             result += line + '\n';
@@ -49,25 +58,17 @@ function parseCustomComponents(mdText) {
             continue;
         }
         
-        if (inCode) {
+        if (inCode || trimmed.startsWith('//')) {
             result += line + '\n';
             i++;
             continue;
         }
-        
-        // 注释行以 // 开头，忽略
-        if (trimmed.startsWith('//')) {
-            i++;
-            continue;
-        }
 
-        // 检测扩展组件
         const match = trimmed.match(/^\.\.\.([a-z-]+)(?:\s+(.*))?$/);
         if (match) {
             const tag = match[1];
             const attrs = match[2] || '';
 
-            // 结束标签
             if (tag.endsWith('-end')) {
                 const openTag = tag.replace('-end', '');
                 if (stack.length && stack[stack.length - 1].tag === openTag) {
@@ -80,7 +81,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 卡片组件
             if (tag === 'card-start') {
                 const title = getAttr(attrs, 'title');
                 let style = '';
@@ -102,7 +102,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 横向布局
             if (tag === 'row-start') {
                 result += '<div class="custom-row">\n';
                 stack.push({ tag: 'row' });
@@ -110,7 +109,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
             
-            // 纵向布局
             if (tag === 'column-start') {
                 result += '<div class="custom-column">\n';
                 stack.push({ tag: 'column' });
@@ -118,7 +116,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 按钮组件（4种样式）
             if (['button', 'button-outlined', 'button-filled-tonal', 'button-text'].includes(tag)) {
                 const text = getAttr(attrs, 'text');
                 const eventVal = getAttr(attrs, 'event');
@@ -146,7 +143,6 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 图片组件
             if (tag === 'image') {
                 const url = getAttr(attrs, 'url');
                 const width = getAttr(attrs, 'width');
@@ -165,18 +161,23 @@ function parseCustomComponents(mdText) {
                 continue;
             }
 
-            // 未知组件
-            result += `<!-- 组件: ${tag} -->\n`;
+            // Modrinth 模组列表组件
+            if (tag === 'modrinth-list') {
+                // 调用外部获取 Modrinth 数据
+                result += '<div id="modrinthContainer"></div>\n';
+                i++;
+                continue;
+            }
+
+            result += `<!-- ${tag} -->\n`;
             i++;
             continue;
         }
 
-        // 普通文本
         result += line + '\n';
         i++;
     }
 
-    // 关闭未闭合标签
     while (stack.length) {
         const item = stack.pop();
         if (item.tag === 'card') result += '</div></div>\n';
@@ -184,7 +185,6 @@ function parseCustomComponents(mdText) {
         else if (item.tag === 'column') result += '</div>\n';
     }
 
-    // 保护 HTML 标签
     const placeholders = [];
     let processed = result.replace(/<div class="custom-card[^>]*>|<\/div>|<div class="card-title">.*?<\/div>|<div class="card-content">|<div class="custom-row">|<div class="custom-column">|<button[^>]*>.*?<\/button>|<img[^>]*>/gs, (match) => {
         const idx = placeholders.length;
@@ -192,13 +192,8 @@ function parseCustomComponents(mdText) {
         return `%%HTML_${idx}%%`;
     });
 
-    // Markdown 解析
     let finalHtml = marked.parse(processed, { async: false });
-    
-    // 恢复 HTML 标签
     finalHtml = finalHtml.replace(/%%HTML_(\d+)%%/g, (_, idx) => placeholders[parseInt(idx)] || '');
-    
-    // 清理多余分隔符
     finalHtml = finalHtml.replace(/<hr>\s*<hr>/g, '<hr>');
     
     return finalHtml;
@@ -213,9 +208,49 @@ function renderPreview(content) {
     try {
         const html = parseCustomComponents(content);
         previewDiv.innerHTML = html;
+        
+        // 加载 Modrinth 数据
+        loadModrinthData();
     } catch (e) {
         console.error('渲染错误:', e);
         previewDiv.innerHTML = `<div class="error">解析错误: ${e.message}</div>`;
+    }
+}
+
+// 加载 Modrinth 最新模组
+async function loadModrinthData() {
+    const container = document.getElementById('modrinthContainer');
+    if (!container) return;
+    
+    container.innerHTML = '<div class="loading">加载模组中...</div>';
+    
+    try {
+        const url = 'https://api.modrinth.com/v2/search?' + new URLSearchParams({
+            limit: '6',
+            index: 'newest',
+            facets: JSON.stringify([["project_type:mod"]])
+        });
+        
+        const res = await fetch(url, { headers: { 'User-Agent': 'ZalithEditor/1.0' } });
+        const data = await res.json();
+        
+        if (data.hits && data.hits.length) {
+            let html = '';
+            for (const hit of data.hits) {
+                const iconUrl = hit.icon_url || `https://cdn.modrinth.com/data/${hit.project_id}/icon.png`;
+                html += renderModrinthRow({
+                    name: hit.title,
+                    url: `https://modrinth.com/mod/${hit.slug}`,
+                    iconUrl: iconUrl
+                });
+            }
+            container.innerHTML = html;
+        } else {
+            container.innerHTML = '<div class="error">暂无模组数据</div>';
+        }
+    } catch (e) {
+        console.error('Modrinth 加载失败:', e);
+        container.innerHTML = '<div class="error">模组加载失败</div>';
     }
 }
 
@@ -239,3 +274,4 @@ window.handleEvent = function(eventStr) {
 
 window.parseCustomComponents = parseCustomComponents;
 window.renderPreview = renderPreview;
+window.loadModrinthData = loadModrinthData;
