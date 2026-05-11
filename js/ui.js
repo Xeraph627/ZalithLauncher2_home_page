@@ -10,28 +10,93 @@ function showToast(msg) {
     setTimeout(() => toast.classList.remove('show'), 2000);
 }
 
-// 编辑模式切换
+// 预览/编辑模式切换
 let isEditMode = false;
 
-function toggleEditMode() {
+function togglePreviewMode() {
     const editPanel = document.getElementById('editPanel');
-    const editBtn = document.getElementById('editBtn');
+    const previewModeBtn = document.getElementById('previewModeBtn');
+    const editModeBtn = document.getElementById('editModeBtn');
+    const modeIndicator = document.getElementById('modeIndicator');
     
     if (isEditMode) {
-        editPanel.style.display = 'none';
-        editBtn.textContent = '✏️ 编辑';
+        // 切换到预览模式
+        if (editPanel) editPanel.remove();
+        previewModeBtn.classList.add('active');
+        editModeBtn.classList.remove('active');
+        modeIndicator.textContent = '预览模式';
+        setDragMode(false);
         isEditMode = false;
-        showToast('已退出编辑模式');
-    } else {
-        editPanel.style.display = 'flex';
-        document.getElementById('editor').value = window.currentMarkdown || '';
-        editBtn.textContent = '👁️ 预览';
-        isEditMode = true;
-        showToast('进入编辑模式，点击组件按钮快速插入');
+        showToast('已切换到预览模式');
     }
 }
 
-// 渲染组件工具栏（按分类）
+function toggleEditMode() {
+    const mainArea = document.querySelector('.main-editor-area');
+    const previewPanel = document.querySelector('.preview-panel');
+    const previewModeBtn = document.getElementById('previewModeBtn');
+    const editModeBtn = document.getElementById('editModeBtn');
+    const modeIndicator = document.getElementById('modeIndicator');
+    
+    if (!isEditMode) {
+        // 切换到编辑模式 - 添加编辑器面板
+        const editPanel = document.createElement('div');
+        editPanel.id = 'editPanel';
+        editPanel.className = 'edit-panel';
+        editPanel.style.flex = '1';
+        editPanel.style.display = 'flex';
+        editPanel.style.flexDirection = 'column';
+        editPanel.style.background = '#0f1322';
+        editPanel.style.borderRadius = '20px';
+        editPanel.style.border = '1px solid #1e2440';
+        editPanel.style.overflow = 'hidden';
+        
+        editPanel.innerHTML = `
+            <div class="panel-header">
+                <span>✏️ 源码编辑</span>
+                <div class="panel-actions">
+                    <button id="saveBtn" class="btn-small">💾 保存</button>
+                    <button id="cancelBtn" class="btn-small">❌ 取消</button>
+                </div>
+            </div>
+            <div class="component-bar">
+                <div class="bar-title">📦 插入组件</div>
+                <div class="component-list" id="componentList"></div>
+            </div>
+            <textarea id="editor" class="editor" placeholder="在这里编写 Markdown 源码..."></textarea>
+            <div class="editor-hint">
+                💡 提示：点击上方按钮可快速插入组件，也可在预览区拖拽调整
+            </div>
+        `;
+        
+        // 插入到预览面板旁边
+        mainArea.insertBefore(editPanel, previewPanel.nextSibling);
+        
+        // 渲染组件按钮
+        renderComponentBar();
+        bindComponentButtons();
+        
+        // 设置编辑器内容
+        document.getElementById('editor').value = window.currentMarkdown || '';
+        document.getElementById('saveBtn').onclick = saveFromEditor;
+        document.getElementById('cancelBtn').onclick = () => {
+            const editor = document.getElementById('editor');
+            if (editor && window.currentMarkdown) {
+                editor.value = window.currentMarkdown;
+                showToast('已取消修改');
+            }
+        };
+        
+        previewModeBtn.classList.remove('active');
+        editModeBtn.classList.add('active');
+        modeIndicator.textContent = '编辑模式 + 拖拽';
+        setDragMode(true);
+        isEditMode = true;
+        showToast('进入编辑模式，可拖拽调整元素顺序，点击元素修改属性');
+    }
+}
+
+// 渲染组件工具栏
 function renderComponentBar() {
     const container = document.getElementById('componentList');
     if (!container) return;
@@ -39,13 +104,11 @@ function renderComponentBar() {
     container.innerHTML = '';
     
     for (const category of COMPONENT_CATEGORIES) {
-        // 添加分类标题
         const catTitle = document.createElement('div');
         catTitle.className = 'category-title';
         catTitle.textContent = category.name;
         container.appendChild(catTitle);
         
-        // 添加分类下的组件按钮
         for (const type of category.items) {
             if (ComponentTemplates[type]) {
                 const btn = document.createElement('button');
@@ -61,18 +124,10 @@ function renderComponentBar() {
 
 // 绑定组件按钮事件
 function bindComponentButtons() {
-    // 渲染工具栏
-    renderComponentBar();
-    
-    // 绑定事件
     const btns = document.querySelectorAll('.comp-btn');
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
             const type = btn.dataset.type;
-            if (!isEditMode) {
-                showToast('请先点击"编辑"按钮进入编辑模式');
-                return;
-            }
             if (type === 'help') {
                 openHelpModal();
             } else if (ComponentTemplates[type]) {
@@ -144,7 +199,6 @@ function insertComponent() {
         if (input) data[field.name] = input.value;
     }
     
-    // 检查必填
     for (const field of template.fields) {
         if (field.required && !data[field.name]) {
             showToast(`请填写 ${field.label}`);
@@ -161,6 +215,8 @@ function insertComponent() {
 // 在光标位置插入代码
 function insertAtCursor(code) {
     const textarea = document.getElementById('editor');
+    if (!textarea) return;
+    
     const start = textarea.selectionStart;
     const end = textarea.selectionEnd;
     const text = textarea.value;
@@ -173,7 +229,6 @@ function insertAtCursor(code) {
     const newText = text.substring(0, start) + prefix + code + suffix + text.substring(end);
     textarea.value = newText;
     
-    // 更新全局内容并刷新预览
     window.currentMarkdown = newText;
     renderPreview(newText);
 }
@@ -210,37 +265,21 @@ function openAuthorPage() {
     showToast('正在打开作者主页...');
 }
 
-// 绑定工具栏按钮
-function bindToolbarButtons() {
-    document.getElementById('authorBtn').onclick = openAuthorPage;
-    document.getElementById('editBtn').onclick = toggleEditMode;
-    document.getElementById('downloadBtn').onclick = downloadFile;
+// 绑定底部菜单按钮
+function bindMenuButtons() {
+    document.getElementById('previewModeBtn').onclick = togglePreviewMode;
+    document.getElementById('editModeBtn').onclick = toggleEditMode;
+    document.getElementById('newFileBtn').onclick = newFile;
     document.getElementById('uploadBtn').onclick = uploadFile;
-    document.getElementById('newBtn').onclick = newFile;
+    document.getElementById('downloadBtn').onclick = downloadFile;
     document.getElementById('refreshBtn').onclick = () => {
         if (window.currentMarkdown) {
             renderPreview(window.currentMarkdown);
             showToast('已刷新预览');
+        } else {
+            forceRefresh();
         }
     };
-    document.getElementById('saveBtn').onclick = saveFromEditor;
-    document.getElementById('cancelBtn').onclick = () => {
-        const editor = document.getElementById('editor');
-        if (editor && window.currentMarkdown) {
-            editor.value = window.currentMarkdown;
-            showToast('已取消修改');
-        }
-    };
+    document.getElementById('authorBtn').onclick = openAuthorPage;
+    document.getElementById('closePropertyBtn').onclick = closePropertyPanel;
 }
-
-// 导出到全局
-window.showToast = showToast;
-window.toggleEditMode = toggleEditMode;
-window.bindComponentButtons = bindComponentButtons;
-window.bindModalEvents = bindModalEvents;
-window.bindToolbarButtons = bindToolbarButtons;
-window.openComponentModal = openComponentModal;
-window.closeModal = closeModal;
-window.insertComponent = insertComponent;
-window.openHelpModal = openHelpModal;
-window.closeHelpModal = closeHelpModal;
