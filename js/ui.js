@@ -1,3 +1,4 @@
+let isEditMode = false;
 let pendingComponent = null;
 
 function showToast(msg) {
@@ -7,7 +8,55 @@ function showToast(msg) {
     setTimeout(() => toast.classList.remove('show'), 2000);
 }
 
+// 切换预览/代码窗口
+function setPreviewTab() {
+    document.getElementById('previewWindow').classList.add('active');
+    document.getElementById('codeWindow').classList.remove('active');
+    document.getElementById('previewTabBtn').classList.add('active');
+    document.getElementById('codeTabBtn').classList.remove('active');
+}
+
+function setCodeTab() {
+    document.getElementById('codeWindow').classList.add('active');
+    document.getElementById('previewWindow').classList.remove('active');
+    document.getElementById('codeTabBtn').classList.add('active');
+    document.getElementById('previewTabBtn').classList.remove('active');
+}
+
+// 编辑模式
+function toggleEditMode() {
+    const sidebar = document.getElementById('sidebar');
+    const editBtn = document.getElementById('editModeBtn');
+    
+    if (isEditMode) {
+        sidebar.classList.remove('open');
+        setTimeout(() => { sidebar.style.display = 'none'; }, 300);
+        editBtn.textContent = '✏️ 编辑模式';
+        editBtn.classList.remove('primary');
+        isEditMode = false;
+        showToast('已退出编辑模式');
+    } else {
+        sidebar.style.display = 'flex';
+        setTimeout(() => { sidebar.classList.add('open'); }, 10);
+        editBtn.textContent = '✓ 退出编辑';
+        editBtn.classList.add('primary');
+        isEditMode = true;
+        showToast('编辑模式 - 点击组件按钮插入代码');
+    }
+}
+
+function closeSidebar() {
+    if (isEditMode) {
+        toggleEditMode();
+    }
+}
+
 function openComponentModal(type) {
+    if (!isEditMode) {
+        showToast('请先进入编辑模式');
+        return;
+    }
+    
     const tmpl = ComponentTemplates[type];
     if (!tmpl) return;
     
@@ -71,6 +120,9 @@ function insertComponent() {
         renderPreview(editor.value);
         closeModal();
         showToast(`已添加 ${tmpl.name}`);
+        
+        // 切换到代码窗口
+        setCodeTab();
     }
 }
 
@@ -103,48 +155,31 @@ function bindComponentButtons() {
 }
 
 function bindTopButtons() {
+    document.getElementById('previewTabBtn').onclick = setPreviewTab;
+    document.getElementById('codeTabBtn').onclick = setCodeTab;
+    document.getElementById('editModeBtn').onclick = toggleEditMode;
     document.getElementById('newBtn').onclick = newFile;
     document.getElementById('uploadBtn').onclick = uploadFile;
     document.getElementById('downloadBtn').onclick = downloadFile;
-    document.getElementById('refreshBtn').onclick = () => {
-        if (currentMarkdown) renderPreview(currentMarkdown);
-        else forceRefresh();
+    document.getElementById('applyCodeBtn').onclick = () => {
+        const editor = document.getElementById('editor');
+        if (editor) {
+            currentMarkdown = editor.value;
+            renderPreview(editor.value);
+            showToast('已应用');
+        }
     };
     document.getElementById('authorBtn').onclick = openAuthor;
-}
-
-function bindSidebarToggle() {
-    const sidebar = document.getElementById('sidebar');
-    const toggleBtn = document.getElementById('toggleSidebar');
-    if (toggleBtn) {
-        toggleBtn.onclick = () => {
-            sidebar.classList.toggle('collapsed');
-            toggleBtn.textContent = sidebar.classList.contains('collapsed') ? '▶' : '◀';
-        };
-    }
-}
-
-function bindCodeToggle() {
-    const codeBody = document.getElementById('codeBody');
-    const toggleBtn = document.getElementById('toggleCode');
-    if (toggleBtn) {
-        toggleBtn.onclick = () => {
-            codeBody.classList.toggle('collapsed');
-            toggleBtn.textContent = codeBody.classList.contains('collapsed') ? '▼' : '▲';
-        };
-    }
-}
-
-function closePropertyPanel() {
-    const panel = document.getElementById('propertyPanel');
-    panel.classList.remove('open');
-    setTimeout(() => { panel.style.display = 'none'; }, 300);
+    document.getElementById('closeSidebar').onclick = closeSidebar;
 }
 
 window.showToast = showToast;
 window.bindComponentButtons = bindComponentButtons;
 window.bindTopButtons = bindTopButtons;
-window.bindSidebarToggle = bindSidebarToggle;
-window.bindCodeToggle = bindCodeToggle;
 window.bindModalEvents = bindModalEvents;
-window.closePropertyPanel = closePropertyPanel;
+window.toggleEditMode = toggleEditMode;
+window.setPreviewTab = setPreviewTab;
+window.setCodeTab = setCodeTab;
+window.openComponentModal = openComponentModal;
+window.closeModal = closeModal;
+window.insertComponent = insertComponent;
