@@ -2,12 +2,15 @@
  * 主入口 - 初始化应用
  */
 
-// 等待 DOM 加载完成
-document.addEventListener('DOMContentLoaded', () => {
-    // 初始化所有模块
-    bindToolbarButtons();
-    bindComponentButtons();
+document.addEventListener('DOMContentLoaded', async () => {
+    // 初始化拖拽和UI
+    initDragAndDrop();
+    bindMenuButtons();
     bindModalEvents();
+    
+    // 获取网络时间（用于显示）
+    const time = await fetchBeijingTime();
+    console.log('当前时间:', time.full);
     
     // 尝试加载默认文件
     loadFromUrl('home_page.md').catch(() => {
@@ -17,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// 导出全局变量（供其他模块使用）
 window.currentMarkdown = '';
 window.currentFileName = 'home_page.md';
 window.isEditMode = false;
