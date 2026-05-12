@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-12 03:56:01
+// 生成时间：2026-05-12 06:43:19
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"是非在己，毁誉由人，得失不论。"*
+> *"人生于我，一场豪赌而已。"*
 
         ...row-start horizontal=spacedBy(12)
-            ...button-text text="📋 复制" event="copy{是非在己，毁誉由人，得失不论。}"
+            ...button-text text="📋 复制" event="copy{人生于我，一场豪赌而已。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_beta_1.16.0.57}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Launcher_0.8}" weight=(1)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
@@ -67,47 +67,47 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(12) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/xeV7e9OJ/cc21549eff1fc73fb16ee4f6577f3c7d4c2e2924_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/Wk3XEivh/c4b4e68800214deaf3933cdad1c0a72a7a7df287_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Ely4Everyone" event="url{https://modrinth.com/mod/ely4everyone}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Cokeef | 📅 2026-05-12</span>
-                <span style="font-size:12px;">Quality of life ely.by mode🏴‍☠️</span>
+                ...button-text text="FishingFailSave" event="url{https://modrinth.com/mod/fishingfailsave}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 whotakemyusername | 📅 2026-05-12</span>
+                <span style="font-size:12px;">A simple mod that fixes the AutoLiteFishing mod by ynovka</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/c50G8Ta5/55f5be768e31b6f0d26e4ac9de1247f2cc51764a_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/ulYgRePv/3336a8a3de7413b48d793330aa406db8fe4fa4ff_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Durability Minus" event="url{https://modrinth.com/mod/durability-minus}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 SG143s | 📅 2026-05-12</span>
-                <span style="font-size:12px;">A simple mod that adds declining equipment performance based on durability</span>
+                ...button-text text="LifeTime" event="url{https://modrinth.com/mod/life-time}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Mischkah | 📅 2026-05-12</span>
+                <span style="font-size:12px;">A highly customizable Minecraft mod that adds two in-game timers: a World Timer </span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/fbEpSgMk/8fff7c218069b05c7a614e1db110ec1c79f8cdc8.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/uqnhwPGi/7eeee68b3b5940228e2685dfc5f82d16cfcd9e91.png" width=32dp shape=4dp
             ...column-start
-                ...button-text text="McDonalds Meals" event="url{https://modrinth.com/mod/mcdonalds-meals}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 BeaconGames | 📅 2026-05-12</span>
-                <span style="font-size:12px;">This mod adds Mcdonalds! I hope you enjoy!</span>
+                ...button-text text="Easier recipes" event="url{https://modrinth.com/mod/easier-recipes-fabric}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 PawKel | 📅 2026-05-12</span>
+                <span style="font-size:12px;">A simple mod for adding any customizable crafting recipes to your Fabric server.</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/3M4quKQ4/99d51a4fa42734946ae11ea3eeda8690da120e64.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/XtEbzMqr/ee0126286c387e79f84000cfb48889e60d2d0794_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="All aggressive" event="url{https://modrinth.com/mod/all-aggressive}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 shugatel | 📅 2026-05-12</span>
-                <span style="font-size:12px;">This is a survival mod that turns every mob in Minecraft into a deadly threat. E</span>
+                ...button-text text="Safra" event="url{https://modrinth.com/mod/safra}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 DeveloperKubilay | 📅 2026-05-12</span>
+                <span style="font-size:12px;">Don’t mess with the server Play Minecraft with your friends in 2 clicks</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/dNLZ9VjB/bde5699e3b3e477cbce4c806c547866324509e63_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/Hb92fpD3/cd0378c7310e0abe125adb5f7f047756012da1ac_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Xaeros playerposition" event="url{https://modrinth.com/mod/xaeros-playerposition}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 liyueovo | 📅 2026-05-12</span>
-                <span style="font-size:12px;">Xaero 小地图/世界地图附加mod，在地图中显示玩家具体位置，方便寻找 Xaero minimap/World map additional mod, sh</span>
+                ...button-text text="Krave Client" event="url{https://modrinth.com/mod/krave-client}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 iqokcz95 | 📅 2026-05-12</span>
+                <span style="font-size:12px;">Krave Client - is a Minecraft client with a large number of features developed f</span>
             ...column-end
         ...row-end
 
@@ -143,9 +143,9 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Bedrock Edition beta 1.16.0.57](https://minecraft.wiki/Bedrock_Edition_beta_1.16.0.57)
+📖 **Wiki 推荐**：[Launcher 0.8](https://minecraft.wiki/Launcher_0.8)
 
-⏰ 更新时间：2026-05-12 03:56:01
+⏰ 更新时间：2026-05-12 06:43:19
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
