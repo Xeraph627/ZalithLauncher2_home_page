@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-11 21:59:12
+// 生成时间：2026-05-12 03:56:01
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"Per aspera ad astra."*
+> *"是非在己，毁誉由人，得失不论。"*
 
         ...row-start horizontal=spacedBy(12)
-            ...button-text text="📋 复制" event="copy{Per aspera ad astra.}"
+            ...button-text text="📋 复制" event="copy{是非在己，毁誉由人，得失不论。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Debug}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_beta_1.16.0.57}" weight=(1)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
@@ -67,47 +67,47 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(12) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/bh0iBZld/dd5e29208efbed612f74fef6e13e0e0d797b9907_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/xeV7e9OJ/cc21549eff1fc73fb16ee4f6577f3c7d4c2e2924_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Slot Jam" event="url{https://modrinth.com/mod/slot-jam}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Neiliv | 📅 2026-05-11</span>
-                <span style="font-size:12px;">At a configurable interval, some slots become unusable.</span>
+                ...button-text text="Ely4Everyone" event="url{https://modrinth.com/mod/ely4everyone}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Cokeef | 📅 2026-05-12</span>
+                <span style="font-size:12px;">Quality of life ely.by mode🏴‍☠️</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/eGy4o2qu/5b3241cceb584962c118d89bb9c159ebee3aa1db.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/c50G8Ta5/55f5be768e31b6f0d26e4ac9de1247f2cc51764a_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Rotten Flesh into Leather" event="url{https://modrinth.com/mod/rotten-flesh-into-leather}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 badcakee | 📅 2026-05-11</span>
-                <span style="font-size:12px;">This project adds a useful use for Rotten Flesh</span>
+                ...button-text text="Durability Minus" event="url{https://modrinth.com/mod/durability-minus}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 SG143s | 📅 2026-05-12</span>
+                <span style="font-size:12px;">A simple mod that adds declining equipment performance based on durability</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/5ECg8hJg/ae61020f77abe8fdb76b71c7e2996040c411512a_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/fbEpSgMk/8fff7c218069b05c7a614e1db110ec1c79f8cdc8.png" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Polymer Patch for Sooty Chimneys" event="url{https://modrinth.com/mod/sooty-chimneys-polymer}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Sun_Phoen1x | 📅 2026-05-11</span>
-                <span style="font-size:12px;">A Polymer Patch mod for Sooty Chimneys, allowing it to work fully server side!</span>
+                ...button-text text="McDonalds Meals" event="url{https://modrinth.com/mod/mcdonalds-meals}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 BeaconGames | 📅 2026-05-12</span>
+                <span style="font-size:12px;">This mod adds Mcdonalds! I hope you enjoy!</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/etWyo7w3/ca6357c337a91b6ad70d5fc0eb2ce45fb19653dc_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/3M4quKQ4/99d51a4fa42734946ae11ea3eeda8690da120e64.png" width=32dp shape=4dp
             ...column-start
-                ...button-text text="StaticSky" event="url{https://modrinth.com/mod/staticsky}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 ZeeGood | 📅 2026-05-11</span>
-                <span style="font-size:12px;">Changes the default Minecraft sky gradient to a single, solid color for a cleane</span>
+                ...button-text text="All aggressive" event="url{https://modrinth.com/mod/all-aggressive}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 shugatel | 📅 2026-05-12</span>
+                <span style="font-size:12px;">This is a survival mod that turns every mob in Minecraft into a deadly threat. E</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/iqG99Iwy/c5e34d9b22ee7453f78b84aee9f4f7e40934571d.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/dNLZ9VjB/bde5699e3b3e477cbce4c806c547866324509e63_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="CoolGUI" event="url{https://modrinth.com/mod/fifou_coolgui}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 joris.brischetto | 📅 2026-05-11</span>
-                <span style="font-size:12px;">ADD A COOLGUI whit many possibilities like teleport, walkspeed overide and more.</span>
+                ...button-text text="Xaeros playerposition" event="url{https://modrinth.com/mod/xaeros-playerposition}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 liyueovo | 📅 2026-05-12</span>
+                <span style="font-size:12px;">Xaero 小地图/世界地图附加mod，在地图中显示玩家具体位置，方便寻找 Xaero minimap/World map additional mod, sh</span>
             ...column-end
         ...row-end
 
@@ -143,9 +143,9 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Debug](https://minecraft.wiki/Debug)
+📖 **Wiki 推荐**：[Bedrock Edition beta 1.16.0.57](https://minecraft.wiki/Bedrock_Edition_beta_1.16.0.57)
 
-⏰ 更新时间：2026-05-11 21:59:12
+⏰ 更新时间：2026-05-12 03:56:01
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
