@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-12 06:43:19
+// 生成时间：2026-05-12 14:42:26
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"人生于我，一场豪赌而已。"*
+> *"大丈夫立世无所畏惧。"*
 
         ...row-start horizontal=spacedBy(12)
-            ...button-text text="📋 复制" event="copy{人生于我，一场豪赌而已。}"
+            ...button-text text="📋 复制" event="copy{大丈夫立世无所畏惧。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Launcher_0.8}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBamboo_Shoot}" weight=(1)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
@@ -67,47 +67,47 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(12) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/Wk3XEivh/c4b4e68800214deaf3933cdad1c0a72a7a7df287_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/EdYzKX4V/3e5e92f7b861998dbb4ae93d49799dcdea7b0fb3.png" width=32dp shape=4dp
             ...column-start
-                ...button-text text="FishingFailSave" event="url{https://modrinth.com/mod/fishingfailsave}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 whotakemyusername | 📅 2026-05-12</span>
-                <span style="font-size:12px;">A simple mod that fixes the AutoLiteFishing mod by ynovka</span>
+                ...button-text text="Visual Ping" event="url{https://modrinth.com/mod/visualping}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 haiderlovestostudy | 📅 2026-05-12</span>
+                <span style="font-size:12px;">Displays the player's numerical ping in the tablist</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/ulYgRePv/3336a8a3de7413b48d793330aa406db8fe4fa4ff_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/7lhLLKcs/eb45b4c808568c2237193808713e1311236e635d_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="LifeTime" event="url{https://modrinth.com/mod/life-time}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Mischkah | 📅 2026-05-12</span>
-                <span style="font-size:12px;">A highly customizable Minecraft mod that adds two in-game timers: a World Timer </span>
+                ...button-text text="Neo Hammers" event="url{https://modrinth.com/mod/neo-hammers}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 __Comma | 📅 2026-05-12</span>
+                <span style="font-size:12px;">Adds hammers that let you mine large areas in no time!</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/uqnhwPGi/7eeee68b3b5940228e2685dfc5f82d16cfcd9e91.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/WXA03JUt/e068fdfc20e4dbd41cea35df5e40b2dcaa0e4294_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Easier recipes" event="url{https://modrinth.com/mod/easier-recipes-fabric}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 PawKel | 📅 2026-05-12</span>
-                <span style="font-size:12px;">A simple mod for adding any customizable crafting recipes to your Fabric server.</span>
+                ...button-text text="Ecliptic Seasons: Fabricated" event="url{https://modrinth.com/mod/ecliptic-seasons-fabricated}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 joe-vettek | 📅 2026-05-12</span>
+                <span style="font-size:12px;">A native, lightweight rewrite of Ecliptic Seasons for Fabric, delivering a high-</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/XtEbzMqr/ee0126286c387e79f84000cfb48889e60d2d0794_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/842fDzwq/0b1c26166610220d957b443495beedc526d79b8b_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Safra" event="url{https://modrinth.com/mod/safra}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 DeveloperKubilay | 📅 2026-05-12</span>
-                <span style="font-size:12px;">Don’t mess with the server Play Minecraft with your friends in 2 clicks</span>
+                ...button-text text="SmartLootFilter" event="url{https://modrinth.com/mod/smartlootfilter}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Awidex | 📅 2026-05-12</span>
+                <span style="font-size:12px;">Take control of your inventory in Minecraft 1.21.11! Smart Loot Filter lets you </span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/Hb92fpD3/cd0378c7310e0abe125adb5f7f047756012da1ac_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/NkhZnHWj/8060d2dd1d919096212cccc8d45961d145ed98ac_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Krave Client" event="url{https://modrinth.com/mod/krave-client}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 iqokcz95 | 📅 2026-05-12</span>
-                <span style="font-size:12px;">Krave Client - is a Minecraft client with a large number of features developed f</span>
+                ...button-text text="AI Builder - Minecraft AI Assistant" event="url{https://modrinth.com/mod/ai-builder-minecraft-ai-assistant}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 liuzeen1234 | 📅 2026-05-12</span>
+                <span style="font-size:12px;">In-game AI assistant mod with natural language chat, AI-powered building, NBT/bl</span>
             ...column-end
         ...row-end
 
@@ -143,9 +143,9 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Launcher 0.8](https://minecraft.wiki/Launcher_0.8)
+📖 **Wiki 推荐**：[Bedrock Edition block render history/Bamboo Shoot](https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBamboo_Shoot)
 
-⏰ 更新时间：2026-05-12 06:43:19
+⏰ 更新时间：2026-05-12 14:42:26
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
