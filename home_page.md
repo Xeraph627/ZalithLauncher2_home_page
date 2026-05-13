@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-12 14:42:26
+// 生成时间：2026-05-13 04:04:07
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.Fratercula_ZH-CN1239275412_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.AlabamaHills_ZH-CN1387018045_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"大丈夫立世无所畏惧。"*
+> *"奇迹，只不过是努力的另一个名字罢了。"*
 
         ...row-start horizontal=spacedBy(12)
-            ...button-text text="📋 复制" event="copy{大丈夫立世无所畏惧。}"
+            ...button-text text="📋 复制" event="copy{奇迹，只不过是努力的另一个名字罢了。}"
         ...row-end
     ...column-end
 ...card-end
@@ -32,7 +32,7 @@
 ...card-start title="📦 Minecraft 版本" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(6) horizontal=Start
 **最新正式版**: 26.1.2
-**最新快照**: 26.2-snapshot-6
+**最新快照**: 26.2-snapshot-7
 
 近期版本：
         - **26.1.2** (2026-04-09)
@@ -54,7 +54,7 @@
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBamboo_Shoot}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/1.52}" weight=(1)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
@@ -67,47 +67,47 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(12) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/EdYzKX4V/3e5e92f7b861998dbb4ae93d49799dcdea7b0fb3.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/dn6Cj64G/8cc45f1f11548c9649b207fa470e010cb71bd75d_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Visual Ping" event="url{https://modrinth.com/mod/visualping}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 haiderlovestostudy | 📅 2026-05-12</span>
-                <span style="font-size:12px;">Displays the player's numerical ping in the tablist</span>
+                ...button-text text="Infinite Trades" event="url{https://modrinth.com/mod/infinite-trades}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 SatDPhoe | 📅 2026-05-13</span>
+                <span style="font-size:12px;">A  mod that allows specific players (via tags) to have unlimited trades with vil</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/7lhLLKcs/eb45b4c808568c2237193808713e1311236e635d_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/YCZwoYfR/c28d4a4b87e72a100df7e952ebc4cea1cdb928aa_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Neo Hammers" event="url{https://modrinth.com/mod/neo-hammers}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 __Comma | 📅 2026-05-12</span>
-                <span style="font-size:12px;">Adds hammers that let you mine large areas in no time!</span>
+                ...button-text text="MC-TIER" event="url{https://modrinth.com/mod/mc-tier}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 eymengul_ | 📅 2026-05-13</span>
+                <span style="font-size:12px;">Shows MC-TIER ranks in player nametags, tab list, and in-game profile search.</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/WXA03JUt/e068fdfc20e4dbd41cea35df5e40b2dcaa0e4294_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/pPogN6VH/7b07b8b808f0473cdc69f83721805e6b94d32ec9_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Ecliptic Seasons: Fabricated" event="url{https://modrinth.com/mod/ecliptic-seasons-fabricated}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 joe-vettek | 📅 2026-05-12</span>
-                <span style="font-size:12px;">A native, lightweight rewrite of Ecliptic Seasons for Fabric, delivering a high-</span>
+                ...button-text text="More Levitite" event="url{https://modrinth.com/mod/morelevitite}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 UrBoiTom_ | 📅 2026-05-13</span>
+                <span style="font-size:12px;">Simple mod adding more levitite to Create Aeronautics</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/842fDzwq/0b1c26166610220d957b443495beedc526d79b8b_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/HPEWrsxD/1d7f49f4407912ac38acd926ebdcb6d6c61ac578.png" width=32dp shape=4dp
             ...column-start
-                ...button-text text="SmartLootFilter" event="url{https://modrinth.com/mod/smartlootfilter}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Awidex | 📅 2026-05-12</span>
-                <span style="font-size:12px;">Take control of your inventory in Minecraft 1.21.11! Smart Loot Filter lets you </span>
+                ...button-text text="GoodMC: Items" event="url{https://modrinth.com/mod/goodmc-items}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Buvtack | 📅 2026-05-13</span>
+                <span style="font-size:12px;">Adds the items and gear the original GoodMC mod made for Minecraft 1.12.2 did</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/NkhZnHWj/8060d2dd1d919096212cccc8d45961d145ed98ac_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/BQUOOW5H/6e4ba2a569858e568e54afa64c5ce1a9f5d23cb2_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="AI Builder - Minecraft AI Assistant" event="url{https://modrinth.com/mod/ai-builder-minecraft-ai-assistant}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 liuzeen1234 | 📅 2026-05-12</span>
-                <span style="font-size:12px;">In-game AI assistant mod with natural language chat, AI-powered building, NBT/bl</span>
+                ...button-text text="Health Indicator +" event="url{https://modrinth.com/mod/health-indicator+}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 yashvardhantechno | 📅 2026-05-13</span>
+                <span style="font-size:12px;">A beautiful, PvP-ready health display mod for Fabric! Shows player/mob HP via Va</span>
             ...column-end
         ...row-end
 
@@ -138,14 +138,14 @@
     ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：振翅, 潜水, 生存
-        © 北极海鹦, 威尔士 (© FLPA/Alamy)
+🖼️ 壁纸：银河系，摇滚吧！
+        © 拱门与银河, 阿拉巴马山, 内华达山脉, 加利福尼亚州, 美国 (© Tim Fitzharris/Minden Pictures)
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Bedrock Edition block render history/Bamboo Shoot](https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBamboo_Shoot)
+📖 **Wiki 推荐**：[1.52](https://minecraft.wiki/1.52)
 
-⏰ 更新时间：2026-05-12 14:42:26
+⏰ 更新时间：2026-05-13 04:04:07
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
