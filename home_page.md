@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-14 04:03:11
+// 生成时间：2026-05-14 14:32:19
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"冈崎，永远都别迷失自己最珍爱的事物啊。"*
+> *"时代变了，但有些事情可还没变呢，大人。"*
 
         ...row-start horizontal=spacedBy(12)
-            ...button-text text="📋 复制" event="copy{冈崎，永远都别迷失自己最珍爱的事物啊。}"
+            ...button-text text="📋 复制" event="copy{时代变了，但有些事情可还没变呢，大人。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FTulip}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fspawnpoint}" weight=(1)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
@@ -67,47 +67,47 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(12) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/8HLtNhbi/410fc5cc6b292edf2312320b33c405fd5dfa8796_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/IdRaNuor/3d1524793b5bf0b04532cefb4f1fbe0f2371919e_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Reactions" event="url{https://modrinth.com/mod/playereactions}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Tochuuu | 📅 2026-05-14</span>
-                <span style="font-size:12px;">A mod that adds dynamic expressions and facial personality to players.</span>
+                ...button-text text="Create: Neo Blazing Blood" event="url{https://modrinth.com/mod/create-neo-blazing-blood}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 tianer2820 | 📅 2026-05-14</span>
+                <span style="font-size:12px;">Create: Neo Blazing Blood is a modern port of the original Create: Blazing Blood</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/EVgGwbjs/21aae3d735b634bb4c9de9eeb07d0f6f016fed36.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/KIJc2GcZ/f5483b052bc85ddfd067e517baae8d0eb18b8d16_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Polymer Patch For Gensokyo: Reverie of Lost Dreams" event="url{https://modrinth.com/mod/polymer-patch-for-gensokyo-reverie-of-lost-dreams}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 SAGUMEDREAM | 📅 2026-05-14</span>
-                <span style="font-size:12px;">A Polymer Patch mod for Gensokyo: Reverie of Lost Dreams, allowing it to work fu</span>
+                ...button-text text="Kirby Fall Meme Scream" event="url{https://modrinth.com/mod/kirby-fall-scream}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Catomon | 📅 2026-05-14</span>
+                <span style="font-size:12px;">Players make a Kirby fall scream meme sound when falling to death</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/YPww10NZ/44b58dcb993dddd202490d395f0576f182c151d3_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/dI5vtUZ8/c8a40e4231700775893ba8159c0d581c98fe5788_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Bobby ReNeoForged [Unofficial Port]" event="url{https://modrinth.com/mod/bobby-reneoforged}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Nitsha | 📅 2026-05-14</span>
-                <span style="font-size:12px;">Allows for render distances greater than the server's view-distance setting</span>
+                ...button-text text="Deathcaught" event="url{https://modrinth.com/mod/deathcaught}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 MrBlob37 | 📅 2026-05-14</span>
+                <span style="font-size:12px;">Adds the deathcatcher from the game ultrakill to minecraft</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/Qju1jJ58/ef959bd4585cc740d3e6a3f48bb0ad71caebe693.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/gEcL6MRh/0a0570c138c19d087ebc7667240d3a554ffde459_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="LetterMod" event="url{https://modrinth.com/mod/lettermod}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 vektor14691 | 📅 2026-05-14</span>
-                <span style="font-size:12px;">Mod add letters and numbers on blocks</span>
+                ...button-text text="World Remembers Dear Diary" event="url{https://modrinth.com/mod/world-remembers-dear-diary}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 sad_east | 📅 2026-05-14</span>
+                <span style="font-size:12px;">A personal Minecraft diary that turns your discoveries, deaths, victories, rare </span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/AZrTjbpP/258f44f6bd739c3966907f1a1ded2238f713df96.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/Yu89PAez/9e22d9038ee54c5a0689b12299f463335af5ea97_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Somnium API" event="url{https://modrinth.com/mod/somnium-api}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Eclipce77 | 📅 2026-05-14</span>
-                <span style="font-size:12px;">A highly customizable Power and Ability API, for those who can dream it possible</span>
+                ...button-text text="NathMen'Vanilla Additions" event="url{https://modrinth.com/mod/nathmen-vanilla-additions}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 NathMen12 | 📅 2026-05-14</span>
+                <span style="font-size:12px;">Elevate your builds without breaking the vanilla spirit!</span>
             ...column-end
         ...row-end
 
@@ -143,9 +143,9 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Java Edition block render history/Tulip](https://minecraft.wiki/Java_Edition_block_render_history%2FTulip)
+📖 **Wiki 推荐**：[Commands/spawnpoint](https://minecraft.wiki/Commands%2Fspawnpoint)
 
-⏰ 更新时间：2026-05-14 04:03:11
+⏰ 更新时间：2026-05-14 14:32:19
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
