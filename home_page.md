@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-15 04:08:13
+// 生成时间：2026-05-15 14:26:11
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"你总说我不好，可我对你的好，你却从来不记得。"*
+> *"似水流年是一个人所有的一切，只有这个东西，才真正归你所有。"*
 
         ...row-start horizontal=spacedBy(12)
-            ...button-text text="📋 复制" event="copy{你总说我不好，可我对你的好，你却从来不记得。}"
+            ...button-text text="📋 复制" event="copy{似水流年是一个人所有的一切，只有这个东西，才真正归你所有。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_block_render_history%2FSniffer_Egg}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_mob_render_history%2FBee}" weight=(1)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
@@ -67,47 +67,47 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(12) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/4FSfWZJs/ebbdd8e80ef50cb62e6c88f7d137abcba6b581f0_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/4GHC0z12/209dc0140d40e3027507f06dd0668797541a1ee1_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="TNT Logic - Realistic Explosion Physics" event="url{https://modrinth.com/mod/tnt-logic-realistic-explosion-physics}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 EroZeq | 📅 2026-05-15</span>
-                <span style="font-size:12px;">Explosions now trigger realistic, block-by-block structural collapses. Watch ent</span>
+                ...button-text text="Tornado Physics" event="url{https://modrinth.com/mod/tornado-physics}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 killey | 📅 2026-05-15</span>
+                <span style="font-size:12px;">Compatibility bridge between Sable and Weather2</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/pTo5D70F/f609465fadd512d74a52fb81f2f779a2d96c04bf_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/XarJGS0I/aeefa60c3d845a71ac854e7724dba08f08f33419_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Macrorecorder/player" event="url{https://modrinth.com/mod/macrorecorderplayer}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 derkrankesenator | 📅 2026-05-15</span>
-                <span style="font-size:12px;">A simple Macrorecorder for servers/clients</span>
+                ...button-text text="HastyHoppers" event="url{https://modrinth.com/mod/hastyhoppers}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 hk27472 | 📅 2026-05-15</span>
+                <span style="font-size:12px;">Fully Configurable Hopper Speeds</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/XEx3R6OZ/icon.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/AfS6DvdW/310141d3d00246c5519ab21f2510e57e61a03e9d_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="NoGhostHit" event="url{https://modrinth.com/mod/noghosthit}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 TxZed__ | 📅 2026-05-15</span>
-                <span style="font-size:12px;">This is made special for boxpvp players.</span>
+                ...button-text text="Phantomanta" event="url{https://modrinth.com/mod/phantomanta}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 LemmaEOF | 📅 2026-05-15</span>
+                <span style="font-size:12px;">Transforms phantoms into manta rays that attack from the murky depths below.</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/rFmXytEC/49d915043407ad32411e70ffb19212ecec6ebcb3_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/Ov2TBwWk/icon.png" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Helm" event="url{https://modrinth.com/mod/helm}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Noslow | 📅 2026-05-15</span>
-                <span style="font-size:12px;">Reduces world loading time by preloading world data in the background</span>
+                ...button-text text="LD's ServerInfo" event="url{https://modrinth.com/mod/lds-serverinfo}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 LD1InThisWorld | 📅 2026-05-15</span>
+                <span style="font-size:12px;">A lightweight client-side Fabric mod that displays detailed information about th</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/Cfyw5WXC/2b519ed7e681514b4924d92ec88a49af491a8de1_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/54Fyi0sJ/e940d83e5d093fe125f2600965b9e538fb136f6d.png" width=32dp shape=4dp
             ...column-start
-                ...button-text text="FPS Benchmark" event="url{https://modrinth.com/mod/fps-benchmark}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 randomfinder | 📅 2026-05-15</span>
-                <span style="font-size:12px;">Cinematic auto-benchmark for Minecraft. One-click Base run is built for everyone</span>
+                ...button-text text="DuraTrack" event="url{https://modrinth.com/mod/duratrack}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 po4irk | 📅 2026-05-15</span>
+                <span style="font-size:12px;">Durability checker mod with color-coded alerts. Works with all tools. For NeoFor</span>
             ...column-end
         ...row-end
 
@@ -143,9 +143,9 @@
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Bedrock Edition block render history/Sniffer Egg](https://minecraft.wiki/Bedrock_Edition_block_render_history%2FSniffer_Egg)
+📖 **Wiki 推荐**：[Bedrock Edition mob render history/Bee](https://minecraft.wiki/Bedrock_Edition_mob_render_history%2FBee)
 
-⏰ 更新时间：2026-05-15 04:08:13
+⏰ 更新时间：2026-05-15 14:26:11
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
