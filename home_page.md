@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-14 14:32:19
+// 生成时间：2026-05-15 04:08:13
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.Pitigliano_ZH-CN1509921892_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.EndangeredWhales_ZH-CN4053106967_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"时代变了，但有些事情可还没变呢，大人。"*
+> *"你总说我不好，可我对你的好，你却从来不记得。"*
 
         ...row-start horizontal=spacedBy(12)
-            ...button-text text="📋 复制" event="copy{时代变了，但有些事情可还没变呢，大人。}"
+            ...button-text text="📋 复制" event="copy{你总说我不好，可我对你的好，你却从来不记得。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fspawnpoint}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_block_render_history%2FSniffer_Egg}" weight=(1)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
@@ -67,47 +67,47 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(12) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/IdRaNuor/3d1524793b5bf0b04532cefb4f1fbe0f2371919e_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/4FSfWZJs/ebbdd8e80ef50cb62e6c88f7d137abcba6b581f0_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Create: Neo Blazing Blood" event="url{https://modrinth.com/mod/create-neo-blazing-blood}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 tianer2820 | 📅 2026-05-14</span>
-                <span style="font-size:12px;">Create: Neo Blazing Blood is a modern port of the original Create: Blazing Blood</span>
+                ...button-text text="TNT Logic - Realistic Explosion Physics" event="url{https://modrinth.com/mod/tnt-logic-realistic-explosion-physics}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 EroZeq | 📅 2026-05-15</span>
+                <span style="font-size:12px;">Explosions now trigger realistic, block-by-block structural collapses. Watch ent</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/KIJc2GcZ/f5483b052bc85ddfd067e517baae8d0eb18b8d16_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/pTo5D70F/f609465fadd512d74a52fb81f2f779a2d96c04bf_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Kirby Fall Meme Scream" event="url{https://modrinth.com/mod/kirby-fall-scream}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Catomon | 📅 2026-05-14</span>
-                <span style="font-size:12px;">Players make a Kirby fall scream meme sound when falling to death</span>
+                ...button-text text="Macrorecorder/player" event="url{https://modrinth.com/mod/macrorecorderplayer}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 derkrankesenator | 📅 2026-05-15</span>
+                <span style="font-size:12px;">A simple Macrorecorder for servers/clients</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/dI5vtUZ8/c8a40e4231700775893ba8159c0d581c98fe5788_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/XEx3R6OZ/icon.png" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Deathcaught" event="url{https://modrinth.com/mod/deathcaught}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 MrBlob37 | 📅 2026-05-14</span>
-                <span style="font-size:12px;">Adds the deathcatcher from the game ultrakill to minecraft</span>
+                ...button-text text="NoGhostHit" event="url{https://modrinth.com/mod/noghosthit}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 TxZed__ | 📅 2026-05-15</span>
+                <span style="font-size:12px;">This is made special for boxpvp players.</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/gEcL6MRh/0a0570c138c19d087ebc7667240d3a554ffde459_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/rFmXytEC/49d915043407ad32411e70ffb19212ecec6ebcb3_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="World Remembers Dear Diary" event="url{https://modrinth.com/mod/world-remembers-dear-diary}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 sad_east | 📅 2026-05-14</span>
-                <span style="font-size:12px;">A personal Minecraft diary that turns your discoveries, deaths, victories, rare </span>
+                ...button-text text="Helm" event="url{https://modrinth.com/mod/helm}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Noslow | 📅 2026-05-15</span>
+                <span style="font-size:12px;">Reduces world loading time by preloading world data in the background</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/Yu89PAez/9e22d9038ee54c5a0689b12299f463335af5ea97_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/Cfyw5WXC/2b519ed7e681514b4924d92ec88a49af491a8de1_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="NathMen'Vanilla Additions" event="url{https://modrinth.com/mod/nathmen-vanilla-additions}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 NathMen12 | 📅 2026-05-14</span>
-                <span style="font-size:12px;">Elevate your builds without breaking the vanilla spirit!</span>
+                ...button-text text="FPS Benchmark" event="url{https://modrinth.com/mod/fps-benchmark}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 randomfinder | 📅 2026-05-15</span>
+                <span style="font-size:12px;">Cinematic auto-benchmark for Minecraft. One-click Base run is built for everyone</span>
             ...column-end
         ...row-end
 
@@ -138,14 +138,14 @@
     ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：一场穿越时空的旅程
-        © 中世纪古镇皮蒂利亚诺, 托斯卡纳, 意大利 (© bluejayphoto/Getty Images Plus)
+🖼️ 壁纸：鲸鱼，你会救我吗？
+        © 一群抹香鲸, 印度洋 (© Tony Wu/Nature Picture Library)
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Commands/spawnpoint](https://minecraft.wiki/Commands%2Fspawnpoint)
+📖 **Wiki 推荐**：[Bedrock Edition block render history/Sniffer Egg](https://minecraft.wiki/Bedrock_Edition_block_render_history%2FSniffer_Egg)
 
-⏰ 更新时间：2026-05-14 14:32:19
+⏰ 更新时间：2026-05-15 04:08:13
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
