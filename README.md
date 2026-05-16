@@ -1,9 +1,4 @@
 
----
-
-📄 README.md
-
-```markdown
 # 🎮 Zalith Launcher 2 自定义主页
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线编辑器-blue?logo=github)](https://ssbtt114514.github.io/zalith-homepage/)
