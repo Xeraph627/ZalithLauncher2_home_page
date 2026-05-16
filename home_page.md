@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-16 07:31:05
+// 生成时间：2026-05-16 07:44:16
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"我又不是因为你们的评价才去当的英雄，是因为我想当才去当的。"*
+> *"末将于禁，愿为曹家世代赴汤蹈火。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{我又不是因为你们的评价才去当的英雄，是因为我想当才去当的。}"
+...button-text text="📋 复制" event="copy{末将于禁，愿为曹家世代赴汤蹈火。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Ore%2F1.18_distribution}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Redstone_circuits%2FPiston%2FEdge_Detector_A}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,57 +67,82 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/J9YVRzt5/70b7db1bc39d85a246462aa50e66102fbf666ce4.png" width=32dp shape=4dp
-...column-start vertical=spacedBy(2)
+...image url="https://cdn.modrinth.com/data/J9YVRzt5/70b7db1bc39d85a246462aa50e66102fbf666ce4.png" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
 ...button-text text="Orbital Wither Skull Cannon" event="url{https://modrinth.com/mod/orbital-wither-skull-cannon}"
 
-📥 0.0M | 👤 Shanahan_7 | 📅 2026-05-16
+👤 Shanahan_7 | 📅 2026-05-16
 
-A Datapack/Mod of Blue Wither Skull Nuke Cannon which is able to penetrate obsid
+A Datapack/Mod of Blue Wither Skull Nuke Cannon which is able to penetrate obsidian, water and lava.
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/orbital-wither-skull-cannon/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/orbital-wither-skull-cannon}" weight=(1)
+...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/gNfpRuzv/c6cd4190b651fb6b22e1dc92b9e89fcc8a0a899e.png" width=32dp shape=4dp
-...column-start vertical=spacedBy(2)
+...image url="https://cdn.modrinth.com/data/gNfpRuzv/c6cd4190b651fb6b22e1dc92b9e89fcc8a0a899e.png" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
 ...button-text text="Alphabet Blocks" event="url{https://modrinth.com/mod/alphabet-blocks-mod}"
 
-📥 0.0M | 👤 AlOraill3 | 📅 2026-05-16
+👤 AlOraill3 | 📅 2026-05-16
 
-A mod that adds 78 alphabet blocks (A to Z) in 3 colors: black, yellow and green
+A mod that adds 78 alphabet blocks (A to Z) in 3 colors: black, yellow and green. Two brushes allow 
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/alphabet-blocks-mod/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/alphabet-blocks-mod}" weight=(1)
+...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/do9cwmT5/aca28ce053f54adc349a5bfbbaf12dac3bca40df.jpeg" width=32dp shape=4dp
-...column-start vertical=spacedBy(2)
+...image url="https://cdn.modrinth.com/data/do9cwmT5/aca28ce053f54adc349a5bfbbaf12dac3bca40df.jpeg" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
 ...button-text text="PrivatBank Mod" event="url{https://modrinth.com/mod/privatbank-mod}"
 
-📥 0.0M | 👤 Danya_MetroKyiv | 📅 2026-05-16
+👤 Danya_MetroKyiv | 📅 2026-05-16
 
 Mod adds money and a Ukrainian card
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/privatbank-mod/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/privatbank-mod}" weight=(1)
+...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/mBczJISa/276737723f5e20784a1a36e4bb9593248135f980_96.webp" width=32dp shape=4dp
-...column-start vertical=spacedBy(2)
+...image url="https://cdn.modrinth.com/data/mBczJISa/276737723f5e20784a1a36e4bb9593248135f980_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
 ...button-text text="Fennec" event="url{https://modrinth.com/mod/fennec-fox}"
 
-📥 0.0M | 👤 SmarterCob | 📅 2026-05-16
+👤 SmarterCob | 📅 2026-05-16
 
 This project adds a new unique mob for the badlands.
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/fennec-fox/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/fennec-fox}" weight=(1)
+...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/rjbPgqie/42faad06a8a8b95703acb4364f3e87be0fdac37d_96.webp" width=32dp shape=4dp
-...column-start vertical=spacedBy(2)
+...image url="https://cdn.modrinth.com/data/rjbPgqie/42faad06a8a8b95703acb4364f3e87be0fdac37d_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
 ...button-text text="BL World Icon Editor" event="url{https://modrinth.com/mod/bl-world-icon-editor}"
 
-📥 0.0M | 👤 BattryLeaf | 📅 2026-05-16
+👤 BattryLeaf | 📅 2026-05-16
 
 Customize your Minecraft world icons with in-game screenshots!
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bl-world-icon-editor/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bl-world-icon-editor}" weight=(1)
+...row-end
 ...column-end
 ...row-end
 
@@ -151,11 +176,11 @@ Customize your Minecraft world icons with in-game screenshots!
 🖼️ 壁纸：跌到谷底？这里可不是。
 © 史密斯岩州立公园, 俄勒冈州, 美国 (© Alex Ratson/Getty Images)
 
-👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
+👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Ore/1.18 distribution](https://minecraft.wiki/Ore%2F1.18_distribution)
+📖 **Wiki 推荐**：[Redstone circuits/Piston/Edge Detector A](https://minecraft.wiki/Redstone_circuits%2FPiston%2FEdge_Detector_A)
 
-⏰ 更新时间：2026-05-16 07:31:05
+⏰ 更新时间：2026-05-16 07:44:16
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
