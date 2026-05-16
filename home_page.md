@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-15 14:26:11
+// 生成时间：2026-05-16 03:50:22
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.EndangeredWhales_ZH-CN4053106967_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.SmithRockPark_ZH-CN4210144402_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
     ...column-start vertical=spacedBy(8) horizontal=Center
-> *"似水流年是一个人所有的一切，只有这个东西，才真正归你所有。"*
+> *"当城中亮起灯火，空中的繁星便黯然失色。"*
 
         ...row-start horizontal=spacedBy(12)
-            ...button-text text="📋 复制" event="copy{似水流年是一个人所有的一切，只有这个东西，才真正归你所有。}"
+            ...button-text text="📋 复制" event="copy{当城中亮起灯火，空中的繁星便黯然失色。}"
         ...row-end
     ...column-end
 ...card-end
@@ -54,7 +54,7 @@
             ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
-            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_mob_render_history%2FBee}" weight=(1)
+            ...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FBrick_Stairs}" weight=(1)
             ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
         ...row-end
         ...row-start horizontal=spacedBy(8)
@@ -67,47 +67,47 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
     ...column-start vertical=spacedBy(12) horizontal=Start
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/4GHC0z12/209dc0140d40e3027507f06dd0668797541a1ee1_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/wNhxYz2v/4923a04245101d5a56dbc9070c0a43d1e65a9a5d_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Tornado Physics" event="url{https://modrinth.com/mod/tornado-physics}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 killey | 📅 2026-05-15</span>
-                <span style="font-size:12px;">Compatibility bridge between Sable and Weather2</span>
+                ...button-text text="Smart Copper Golems" event="url{https://modrinth.com/mod/smart-copper-golems}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 GameMech007 | 📅 2026-05-16</span>
+                <span style="font-size:12px;">Dumb Copper Golems open chests randomly — Smart Copper Golems scan item frames a</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/XarJGS0I/aeefa60c3d845a71ac854e7724dba08f08f33419_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/Lp6SMiR2/29b1bbb3d757d15be40896935cf39c8997f4727e_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="HastyHoppers" event="url{https://modrinth.com/mod/hastyhoppers}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 hk27472 | 📅 2026-05-15</span>
-                <span style="font-size:12px;">Fully Configurable Hopper Speeds</span>
+                ...button-text text="Modernpvptweaks" event="url{https://modrinth.com/mod/modernpvptweaks}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 uthishsd | 📅 2026-05-16</span>
+                <span style="font-size:12px;">This is a pvp mod that enhances your gameplay when pvping.</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/AfS6DvdW/310141d3d00246c5519ab21f2510e57e61a03e9d_96.webp" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/30RgCRl5/5922d2df44f96b0302018ec22399aa88572957d8_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="Phantomanta" event="url{https://modrinth.com/mod/phantomanta}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 LemmaEOF | 📅 2026-05-15</span>
-                <span style="font-size:12px;">Transforms phantoms into manta rays that attack from the murky depths below.</span>
+                ...button-text text="Scared's Faction Mod" event="url{https://modrinth.com/mod/scaredsfactionmod}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 scaredrabbitnl_ | 📅 2026-05-16</span>
+                <span style="font-size:12px;">A simple mod for creating factions on a multiplayer server</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/Ov2TBwWk/icon.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/HiPMHSof/745e3cc687ba5db0379aa0b2cf7b8614ca980fea_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="LD's ServerInfo" event="url{https://modrinth.com/mod/lds-serverinfo}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 LD1InThisWorld | 📅 2026-05-15</span>
-                <span style="font-size:12px;">A lightweight client-side Fabric mod that displays detailed information about th</span>
+                ...button-text text="Hopeful: Enchanting" event="url{https://modrinth.com/mod/hopeful-enchanting}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Double_Pi | 📅 2026-05-16</span>
+                <span style="font-size:12px;">Enchanting overhaul focusin on customizability, determinism, and choice!</span>
             ...column-end
         ...row-end
 
         ...row-start horizontal=spacedBy(8) vertical=Center
-            ...image url="https://cdn.modrinth.com/data/54Fyi0sJ/e940d83e5d093fe125f2600965b9e538fb136f6d.png" width=32dp shape=4dp
+            ...image url="https://cdn.modrinth.com/data/DcNPMBeU/d9807b951b105d5796bb17c08d526f7c88ecb420_96.webp" width=32dp shape=4dp
             ...column-start
-                ...button-text text="DuraTrack" event="url{https://modrinth.com/mod/duratrack}"
-                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 po4irk | 📅 2026-05-15</span>
-                <span style="font-size:12px;">Durability checker mod with color-coded alerts. Works with all tools. For NeoFor</span>
+                ...button-text text="ORM - OverrideResourceManager" event="url{https://modrinth.com/mod/orm-overrideresourcemanager}"
+                <span style="font-size:12px; color:#94a3b8;">📥 0.0M | 👤 Lauma | 📅 2026-05-16</span>
+                <span style="font-size:12px;">Minecraft Fabric 1.21.4 mod that adds runtime overriding of item textures and 3D</span>
             ...column-end
         ...row-end
 
@@ -138,14 +138,14 @@
     ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：鲸鱼，你会救我吗？
-        © 一群抹香鲸, 印度洋 (© Tony Wu/Nature Picture Library)
+🖼️ 壁纸：跌到谷底？这里可不是。
+        © 史密斯岩州立公园, 俄勒冈州, 美国 (© Alex Ratson/Getty Images)
 
 👤 **作者**：[ssbtt114514](https://ssbtt114514.github.io/)
 
-📖 **Wiki 推荐**：[Bedrock Edition mob render history/Bee](https://minecraft.wiki/Bedrock_Edition_mob_render_history%2FBee)
+📖 **Wiki 推荐**：[Java Edition block render history/Brick Stairs](https://minecraft.wiki/Java_Edition_block_render_history%2FBrick_Stairs)
 
-⏰ 更新时间：2026-05-15 14:26:11
+⏰ 更新时间：2026-05-16 03:50:22
 
         ...row-start horizontal=spacedBy(12)
             ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
