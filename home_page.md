@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-16 13:48:56
+// 生成时间：2026-05-17 04:08:30
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.SmithRockPark_ZH-CN4210144402_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.ShenandoahSunset_ZH-CN4399136794_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"没有偶然的必然，只有必然的偶然"*
+> *"只顾眼前的利益而任人摆布……我已经……受够了……"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{没有偶然的必然，只有必然的偶然}"
+...button-text text="📋 复制" event="copy{只顾眼前的利益而任人摆布……我已经……受够了……}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_1.20.10%2FDevelopment_versions}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Chunk_format%2FEntity%2FRotation_(yaw)}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,83 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/J9YVRzt5/70b7db1bc39d85a246462aa50e66102fbf666ce4.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/8igy43Ms/3bbaf891b6e3b3045176a2e2257abd8e82f4e660_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Orbital Wither Skull Cannon" event="url{https://modrinth.com/mod/orbital-wither-skull-cannon}"
+...button-text text="Silence Mob!" event="url{https://modrinth.com/mod/silence-mob}"
 
-👤 Shanahan_7 | 📅 2026-05-16
+👤 Mrbysco | 📅 2026-05-17
 
-A Datapack/Mod of Blue Wither Skull Nuke Cannon which is able to penetrate obsidian, water and lava.
+Adds the ability to feed Poisonous Potato to mobs to silence them
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/orbital-wither-skull-cannon/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/orbital-wither-skull-cannon}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/silence-mob/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/silence-mob}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/gNfpRuzv/c6cd4190b651fb6b22e1dc92b9e89fcc8a0a899e.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/7ebsSXxh/7f9e1959cef839ab89f208e3479bab812e844f6b_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Alphabet Blocks" event="url{https://modrinth.com/mod/alphabet-blocks-mod}"
+...button-text text="HotProperties" event="url{https://modrinth.com/mod/hotproperties}"
 
-👤 AlOraill3 | 📅 2026-05-16
+👤 Fayber | 📅 2026-05-17
 
-A mod that adds 78 alphabet blocks (A to Z) in 3 colors: black, yellow and green. Two brushes allow 
+Hot reload your server.properties on the fly. Instantly change view distance, MOTD, and more without
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/alphabet-blocks-mod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/alphabet-blocks-mod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/hotproperties/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/hotproperties}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/do9cwmT5/aca28ce053f54adc349a5bfbbaf12dac3bca40df.jpeg" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/dfrdhOy5/a837699814dccd93c2c3af236435726942a3fe22_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="PrivatBank Mod" event="url{https://modrinth.com/mod/privatbank-mod}"
+...button-text text="Dyeable Ropes for Create Aeronautics" event="url{https://modrinth.com/mod/create-aeronautics-dyeable-ropes}"
 
-👤 Danya_MetroKyiv | 📅 2026-05-16
+👤 saunhardy | 📅 2026-05-17
 
-Mod adds money and a Ukrainian card
+Adds 16 dye-colored ropes to Create: Aeronautics. Craft any rope with a dye, or right-click a placed
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/privatbank-mod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/privatbank-mod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-aeronautics-dyeable-ropes/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-aeronautics-dyeable-ropes}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/mBczJISa/276737723f5e20784a1a36e4bb9593248135f980_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/A7HXX2ol/001583a1e01cb2f0ce1645d32f6156ba92571adf.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Fennec" event="url{https://modrinth.com/mod/fennec-fox}"
+...button-text text="Random Cozy Musics" event="url{https://modrinth.com/mod/random-cozy-musics}"
 
-👤 SmarterCob | 📅 2026-05-16
+👤 CozyGuy | 📅 2026-05-17
 
-This project adds a new unique mob for the badlands.
+This addon adds custom music discs to the game.
+
+It adds so many (32, but in future may reach up to 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/fennec-fox/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/fennec-fox}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/random-cozy-musics/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/random-cozy-musics}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/rjbPgqie/42faad06a8a8b95703acb4364f3e87be0fdac37d_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/J5EB5Qw6/08fcaaf33b551da8b1d781e867420df56652247e_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="BL World Icon Editor" event="url{https://modrinth.com/mod/bl-world-icon-editor}"
+...button-text text="Resourcepack Manager" event="url{https://modrinth.com/mod/resourcepack-manager}"
 
-👤 BattryLeaf | 📅 2026-05-16
+👤 1_st_Cat | 📅 2026-05-17
 
-Customize your Minecraft world icons with in-game screenshots!
+Instant Modrinth resource‑pack downloads, faster resource‑pack loading, and a dedicated menu accessi
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bl-world-icon-editor/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bl-world-icon-editor}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/resourcepack-manager/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/resourcepack-manager}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +175,14 @@ Customize your Minecraft world icons with in-game screenshots!
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：跌到谷底？这里可不是。
-© 史密斯岩州立公园, 俄勒冈州, 美国 (© Alex Ratson/Getty Images)
+🖼️ 壁纸：静谧之巅，喧嚣之景
+© 仙纳度国家公园的玳瑁峰, 弗吉尼亚州, 美国 (© John Baggaley/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition 1.20.10/Development versions](https://minecraft.wiki/Bedrock_Edition_1.20.10%2FDevelopment_versions)
+📖 **Wiki 推荐**：[Chunk format/Entity/Rotation (yaw)](https://minecraft.wiki/Chunk_format%2FEntity%2FRotation_(yaw))
 
-⏰ 更新时间：2026-05-16 13:48:56
+⏰ 更新时间：2026-05-17 04:08:30
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
