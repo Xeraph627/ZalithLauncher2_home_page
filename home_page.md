@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-17 04:08:30
+// 生成时间：2026-05-17 13:49:06
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"只顾眼前的利益而任人摆布……我已经……受够了……"*
+> *"飞上枝头的都风趣，占了巢的都在窃喜。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{只顾眼前的利益而任人摆布……我已经……受够了……}"
+...button-text text="📋 复制" event="copy{飞上枝头的都风趣，占了巢的都在窃喜。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Chunk_format%2FEntity%2FRotation_(yaw)}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fexecute_(old)}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,83 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/8igy43Ms/3bbaf891b6e3b3045176a2e2257abd8e82f4e660_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/cASL70Tc/3d403846e0914744f170e11ce1ce22f4935ce853.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Silence Mob!" event="url{https://modrinth.com/mod/silence-mob}"
+...button-text text="Stupid Things: Even Stupider" event="url{https://modrinth.com/mod/stupid-things-even-stupider}"
 
-👤 Mrbysco | 📅 2026-05-17
+👤 phwee | 📅 2026-05-17
 
-Adds the ability to feed Poisonous Potato to mobs to silence them
+A faithful port of the Stupid Things mod for modern versions!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/silence-mob/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/silence-mob}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/stupid-things-even-stupider/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/stupid-things-even-stupider}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/7ebsSXxh/7f9e1959cef839ab89f208e3479bab812e844f6b_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/UmayvNNA/e1ed2276b900de994bfbd334b320816f87d40a59_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="HotProperties" event="url{https://modrinth.com/mod/hotproperties}"
+...button-text text="Forgotten Chunks" event="url{https://modrinth.com/mod/forgotten-chunks}"
 
-👤 Fayber | 📅 2026-05-17
+👤 Gustavo2032 | 📅 2026-05-17
 
-Hot reload your server.properties on the fly. Instantly change view distance, MOTD, and more without
+The chunks you interact with remain permanently protected, while the rest of the world regenerates a
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/hotproperties/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/hotproperties}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/forgotten-chunks/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/forgotten-chunks}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/dfrdhOy5/a837699814dccd93c2c3af236435726942a3fe22_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/gFNOFF0t/7d1733014fa698bf26148f8ebe39493dc1ea7354_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Dyeable Ropes for Create Aeronautics" event="url{https://modrinth.com/mod/create-aeronautics-dyeable-ropes}"
+...button-text text="LunAuth" event="url{https://modrinth.com/mod/lunauth}"
 
-👤 saunhardy | 📅 2026-05-17
+👤 zxr_darkness1 | 📅 2026-05-17
 
-Adds 16 dye-colored ropes to Create: Aeronautics. Craft any rope with a dye, or right-click a placed
+Transparent and open-source authentication solution by O.S. TEAM. Simple, secure, and built for mode
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-aeronautics-dyeable-ropes/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-aeronautics-dyeable-ropes}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/lunauth/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/lunauth}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/A7HXX2ol/001583a1e01cb2f0ce1645d32f6156ba92571adf.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/sa0W5Ri0/81bcf1339c5629163bf7e6e82050ff6d9d444d10_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Random Cozy Musics" event="url{https://modrinth.com/mod/random-cozy-musics}"
+...button-text text="Beheaded" event="url{https://modrinth.com/mod/beheaded}"
 
-👤 CozyGuy | 📅 2026-05-17
+👤 okipiak | 📅 2026-05-17
 
-This addon adds custom music discs to the game.
-
-It adds so many (32, but in future may reach up to 
+Craft player heads and rename them in an anvil to choose any skin you want.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/random-cozy-musics/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/random-cozy-musics}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/beheaded/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/beheaded}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/J5EB5Qw6/08fcaaf33b551da8b1d781e867420df56652247e_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/56oj2AM3/8a1afdadabd36af3edc898ec586e63c74a80b883.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Resourcepack Manager" event="url{https://modrinth.com/mod/resourcepack-manager}"
+...button-text text="AntiUtils" event="url{https://modrinth.com/mod/antiutils}"
 
-👤 1_st_Cat | 📅 2026-05-17
+👤 Jystus | 📅 2026-05-17
 
-Instant Modrinth resource‑pack downloads, faster resource‑pack loading, and a dedicated menu accessi
+Adds a few features to improve SMP Gameplay
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/resourcepack-manager/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/resourcepack-manager}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/antiutils/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/antiutils}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -180,9 +178,9 @@ Instant Modrinth resource‑pack downloads, faster resource‑pack loading, and 
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Chunk format/Entity/Rotation (yaw)](https://minecraft.wiki/Chunk_format%2FEntity%2FRotation_(yaw))
+📖 **Wiki 推荐**：[Commands/execute (old)](https://minecraft.wiki/Commands%2Fexecute_(old))
 
-⏰ 更新时间：2026-05-17 04:08:30
+⏰ 更新时间：2026-05-17 13:49:06
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
