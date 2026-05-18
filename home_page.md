@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-17 13:49:06
+// 生成时间：2026-05-18 04:20:32
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.ShenandoahSunset_ZH-CN4399136794_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.MuseumLondon_ZH-CN5602977820_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"飞上枝头的都风趣，占了巢的都在窃喜。"*
+> *"终一生渡世人和终一世渡一人，为师觉得是一样的。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{飞上枝头的都风趣，占了巢的都在窃喜。}"
+...button-text text="📋 复制" event="copy{终一生渡世人和终一世渡一人，为师觉得是一样的。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fexecute_(old)}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FSquid_Spawn_Egg}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/cASL70Tc/3d403846e0914744f170e11ce1ce22f4935ce853.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/SxbuYthV/afc26de975afa12ba1ff0fda57fc9f50db6ff123.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Stupid Things: Even Stupider" event="url{https://modrinth.com/mod/stupid-things-even-stupider}"
+...button-text text="Lsn Cases" event="url{https://modrinth.com/mod/lsn-cases}"
 
-👤 phwee | 📅 2026-05-17
+👤 7Guga | 📅 2026-05-18
 
-A faithful port of the Stupid Things mod for modern versions!
+Tired of the old boring way of opening scrolls ? This mod will add a cool csgo animation to enchant 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/stupid-things-even-stupider/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/stupid-things-even-stupider}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/lsn-cases/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/lsn-cases}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/UmayvNNA/e1ed2276b900de994bfbd334b320816f87d40a59_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/w51aXf75/1613786ebc87ab2117aaffb57256ff3f4cb9b50c_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Forgotten Chunks" event="url{https://modrinth.com/mod/forgotten-chunks}"
+...button-text text="Exploration Reloaded" event="url{https://modrinth.com/mod/exploration-reloaded}"
 
-👤 Gustavo2032 | 📅 2026-05-17
+👤 akitain | 📅 2026-05-18
 
-The chunks you interact with remain permanently protected, while the rest of the world regenerates a
+Maps, loot, mobs, and travel reloaded.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/forgotten-chunks/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/forgotten-chunks}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/exploration-reloaded/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/exploration-reloaded}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/gFNOFF0t/7d1733014fa698bf26148f8ebe39493dc1ea7354_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/GcNbMEwm/a8941e12140349f7939a5df5843b6a54d4ad3a9f_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="LunAuth" event="url{https://modrinth.com/mod/lunauth}"
+...button-text text="Elytra_Tweaks" event="url{https://modrinth.com/mod/elytra_tweaks}"
 
-👤 zxr_darkness1 | 📅 2026-05-17
+👤 FROSTYTRIX | 📅 2026-05-18
 
-Transparent and open-source authentication solution by O.S. TEAM. Simple, secure, and built for mode
+A mod that allows to change the keybind that serves to open (and close) the elytras. Idea from : @Va
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/lunauth/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/lunauth}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/elytra_tweaks/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/elytra_tweaks}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/sa0W5Ri0/81bcf1339c5629163bf7e6e82050ff6d9d444d10_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/iMFvPhVJ/27a3c1dac6cce03c7ee8615bd24b22f45749dde1_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Beheaded" event="url{https://modrinth.com/mod/beheaded}"
+...button-text text="Effortless Crafting" event="url{https://modrinth.com/mod/effortless-crafting}"
 
-👤 okipiak | 📅 2026-05-17
+👤 Ekra8154 | 📅 2026-05-18
 
-Craft player heads and rename them in an anvil to choose any skin you want.
+Effortless Crafting is a client-side Fabric mod that streamlines crafting by allowing pulling items 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/beheaded/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/beheaded}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/effortless-crafting/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/effortless-crafting}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/56oj2AM3/8a1afdadabd36af3edc898ec586e63c74a80b883.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/U4F3bdPQ/651bd55b594285ef04bda093dd441517dab5bc30_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="AntiUtils" event="url{https://modrinth.com/mod/antiutils}"
+...button-text text="Tonten" event="url{https://modrinth.com/mod/tonten}"
 
-👤 Jystus | 📅 2026-05-17
+👤 ghlim | 📅 2026-05-18
 
-Adds a few features to improve SMP Gameplay
+This mod adds simple building assistance tools that can be used in survival mode.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/antiutils/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/antiutils}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/tonten/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/tonten}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ Adds a few features to improve SMP Gameplay
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：静谧之巅，喧嚣之景
-© 仙纳度国家公园的玳瑁峰, 弗吉尼亚州, 美国 (© John Baggaley/Getty Images)
+🖼️ 壁纸：大厅里的希望
+© 伦敦自然历史博物馆, 英格兰 (© Colm Keating/Tandem Stills + Motion)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Commands/execute (old)](https://minecraft.wiki/Commands%2Fexecute_(old))
+📖 **Wiki 推荐**：[Bedrock Edition item texture history/Squid Spawn Egg](https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FSquid_Spawn_Egg)
 
-⏰ 更新时间：2026-05-17 13:49:06
+⏰ 更新时间：2026-05-18 04:20:32
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
