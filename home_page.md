@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-18 15:51:15
+// 生成时间：2026-05-19 04:16:19
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.MuseumLondon_ZH-CN5602977820_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.SpainLighthouse_ZH-CN6024263415_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"人能够能动地认识世界；人能够能动地改造世界。"*
+> *"如果不能忠于自己的心，胜负又有什么价值呢？"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{人能够能动地认识世界；人能够能动地改造世界。}"
+...button-text text="📋 复制" event="copy{如果不能忠于自己的心，胜负又有什么价值呢？}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/PlayStation_3_Edition_1.18}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Village%2FStructure_(old)%2FBlueprints%2FWell}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/GsjJlCah/8cfae13429893d574fc0470080904e1c90fbae1b_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/s1I9GeSl/c2a6b30ec4a3de9cf27893a0f92510db24e8ff8b_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="OptionalFurnaceSmelting" event="url{https://modrinth.com/mod/optionalfurnacesmelting}"
+...button-text text="Colorful Depot" event="url{https://modrinth.com/mod/colorful-depot}"
 
-👤 KXXJWAN | 📅 2026-05-18
+👤 Rarin97 | 📅 2026-05-19
 
-This mod adds multiple furnace recipe compatibility, allowing you to selectively smelt an item into 
+Compatibility for Create: Colorful Pipes & Dye Depot
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/optionalfurnacesmelting/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/optionalfurnacesmelting}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/colorful-depot/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/colorful-depot}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/DDECTrHw/5b30ebc79b60fdf1ec621be34db727170eab0b4c_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/UWIo1Ry1/f18df1b165eec1ccee626a99ec9327a9b6010e6f_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Better Combat Reach Fix" event="url{https://modrinth.com/mod/better-combat-reach-fix}"
+...button-text text="Kill Block" event="url{https://modrinth.com/mod/kill-block}"
 
-👤 xianziyu | 📅 2026-05-18
+👤 KrupicovaKase | 📅 2026-05-19
 
-Fixes the incompatibility between the Better Combat mod and the vanilla forge:entity_reach attribute
+A block that kills you
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/better-combat-reach-fix/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/better-combat-reach-fix}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/kill-block/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/kill-block}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/PFeSWIUn/c39be428da456585d987ec353bb4f57456a6c970.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/vbF8vp1s/b47993a7b5d23e075d1e728e07707105cc32ffb8.gif" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="BloodyParticlesMod" event="url{https://modrinth.com/mod/bloodyparticlesmod}"
+...button-text text="Create: Dyed Experience Blocks" event="url{https://modrinth.com/mod/create-dyed-experience-blocks}"
 
-👤 HappyPito | 📅 2026-05-18
+👤 AkacioBahno | 📅 2026-05-19
 
-Make every hit feel meaningful. Mobs splash thematic blood and impact particles when damaged differe
+A Create addon that adds colored variants of the Block of Experience
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bloodyparticlesmod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bloodyparticlesmod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-dyed-experience-blocks/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-dyed-experience-blocks}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/SXZKjImi/8e51eb44968cb0416e6a0b5ae9f0740079aea010_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/z7QUfFgg/4669d9ee6649a2ccb438387f55ccffdcaaca8ebe.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Amethyst tools and more" event="url{https://modrinth.com/mod/amethysttoolsandmore}"
+...button-text text="CarrotSkin" event="url{https://modrinth.com/mod/carrotskin}"
 
-👤 OldManPlaysGames | 📅 2026-05-18
+👤 OFFLlNE_PLAYER | 📅 2026-05-19
 
-This project adds a full set of, Amethyst tools, weapons, and armor to Minecraft.
+Updates the game hud with custom exhaustion bar n fancy carrots.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/amethysttoolsandmore/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/amethysttoolsandmore}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/carrotskin/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/carrotskin}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/eDMGl8ES/663e218eab8d9ef8df3280d83ebba330d4c4d040_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/upWs5ldJ/09cd52377a3fcae1bdbde76471f530aae23fa215_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Chefmakes' Custom Peaceful" event="url{https://modrinth.com/mod/chefmakes-custom-peaceful}"
+...button-text text="Come and Go" event="url{https://modrinth.com/mod/cag}"
 
-👤 Chefmakes | 📅 2026-05-18
+👤 Swiyss | 📅 2026-05-19
 
-This is a peaceful mod for people who might want more out of peaceful, not less
+Adds 3 new Maces, each with their own crafting recipe. Collect a Heavy Core to gain the recipes in t
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/chefmakes-custom-peaceful/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/chefmakes-custom-peaceful}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/cag/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/cag}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ This is a peaceful mod for people who might want more out of peaceful, not less
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：大厅里的希望
-© 伦敦自然历史博物馆, 英格兰 (© Colm Keating/Tandem Stills + Motion)
+🖼️ 壁纸：马略卡岛的边缘
+© 福门托尔灯塔, 马略卡, 巴利阿里群岛, 西班牙 (© Allard Schager/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[PlayStation 3 Edition 1.18](https://minecraft.wiki/PlayStation_3_Edition_1.18)
+📖 **Wiki 推荐**：[Village/Structure (old)/Blueprints/Well](https://minecraft.wiki/Village%2FStructure_(old)%2FBlueprints%2FWell)
 
-⏰ 更新时间：2026-05-18 15:51:15
+⏰ 更新时间：2026-05-19 04:16:19
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
