@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-21 04:25:06
+// 生成时间：2026-05-21 15:45:42
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"偶尔的停顿和修整，对于人生是非常必要的。"*
+> *"却话往昔，不觉泪落，但看燕天飞，晚霞粉片天！"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{偶尔的停顿和修整，对于人生是非常必要的。}"
+...button-text text="📋 复制" event="copy{却话往昔，不觉泪落，但看燕天飞，晚霞粉片天！}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_1.21.21}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Ffly}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/jWCyojAJ/51dcaee5adf3479487d9dadcbbaaba49e1dc816b_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Csrs3KwU/acb934b762df893872374ce88ce6c972b1befa80_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Additional Netherite Armors" event="url{https://modrinth.com/mod/additionalnetheritearmors}"
-
-👤 Thunderchuck77 | 📅 2026-05-21
-
-Adds the warped, crimson and soul netherite tier.
-
-...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/additionalnetheritearmors/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/additionalnetheritearmors}" weight=(1)
-...row-end
-...column-end
-...row-end
-
-...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/x9i4tLyb/c770adc3025a0fe2a7c8db26f1a2811ddc2c4956_96.webp" width=40dp shape=8dp
-...column-start vertical=spacedBy(4)
-...button-text text="ScytheMod" event="url{https://modrinth.com/mod/scythemod}"
+...button-text text="Combat Extended" event="url{https://modrinth.com/mod/combat-extended}"
 
 👤 shipovskijkorp | 📅 2026-05-21
 
-Adds three end scythes for pvp and surviving
+Server-side combat rebalance and anti-abuse layer for Minecraft combat.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/scythemod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/scythemod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/combat-extended/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/combat-extended}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/tcTGiWx3/8625bb7cc3103cfac3832e1aa90d4647da04cc5e.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/TaJOfqZg/icon.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Friendlist & P2P Play Backport" event="url{https://modrinth.com/mod/friendlist-p2p-play-backport}"
+...button-text text="BluemapCreateEntityAddon" event="url{https://modrinth.com/mod/bluemapcreateentityaddon}"
 
-👤 juanmuscaria | 📅 2026-05-21
+👤 BeneHenke | 📅 2026-05-21
 
-Client mod that backports the "play with friends" feature Mojang shipped in the 26.2-snapshot-7
+This bluemap addon displays create entities like windmills or trains and adds support for copycat bl
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/friendlist-p2p-play-backport/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/friendlist-p2p-play-backport}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bluemapcreateentityaddon/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bluemapcreateentityaddon}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/VKvEkTtj/529b776b09880c59b6b9c96986221c60cf96bd78.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/pW9RMC1x/288328646492aba871d66cce4f00048b3337f080_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Dynamo" event="url{https://modrinth.com/mod/dynamo}"
+...button-text text="no particle" event="url{https://modrinth.com/mod/no-particle}"
 
-👤 Ramixin | 📅 2026-05-21
+👤 f19882350305 | 📅 2026-05-21
 
-A library that enables the creation of multi-loader mods
+NoParticle blocks all particles by default, only shows whitelisted ones, supports /again hot-reload,
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/dynamo/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/dynamo}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/no-particle/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/no-particle}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Nd3gIq5h/28f4237eedc42f99c854f8adc47c448ca04b69e1.jpeg" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/OjdQVuiP/b3f0f3b57fae69913d97c65ef0d5b74b4606d4a5.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Advancement Multiplier Mod" event="url{https://modrinth.com/mod/advancement-multiplier-mod}"
+...button-text text="Heartless Mod" event="url{https://modrinth.com/mod/heartless-mod}"
 
-👤 HarryTheeWizard | 📅 2026-05-21
+👤 Oopsallbeans215 | 📅 2026-05-21
 
-Every advancement doubles your drop multiplier. 120 advancements = 4.6 quintillion drops per block.
+A challenge mod, that adds hearts to the game
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/advancement-multiplier-mod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/advancement-multiplier-mod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/heartless-mod/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/heartless-mod}" weight=(1)
+...row-end
+...column-end
+...row-end
+
+...row-start horizontal=spacedBy(8) vertical=Center
+...image url="https://cdn.modrinth.com/data/3XcR7qvx/f7fc8e34a433fc2d8cea52fda25adbe1db8e4ace_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
+...button-text text="KrupicovaKase's Map Utils" event="url{https://modrinth.com/mod/krupicovakases-map-utils}"
+
+👤 KrupicovaKase | 📅 2026-05-21
+
+Collection of utilities to help map makers
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/krupicovakases-map-utils/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/krupicovakases-map-utils}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ Every advancement doubles your drop multiplier. 120 advancements = 4.6 quintilli
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition 1.21.21](https://minecraft.wiki/Bedrock_Edition_1.21.21)
+📖 **Wiki 推荐**：[Commands/fly](https://minecraft.wiki/Commands%2Ffly)
 
-⏰ 更新时间：2026-05-21 04:25:06
+⏰ 更新时间：2026-05-21 15:45:42
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
