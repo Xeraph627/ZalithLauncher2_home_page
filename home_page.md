@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-22 04:19:57
+// 生成时间：2026-05-22 14:55:27
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"今后无论发生什么事也好，这个左手上的⋯⋯都是同伴的记号！"*
+> *"耳机是唯一不用扎针的输液管，发呆是唯一不用付费的宇宙遨游。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{今后无论发生什么事也好，这个左手上的⋯⋯都是同伴的记号！}"
+...button-text text="📋 复制" event="copy{耳机是唯一不用扎针的输液管，发呆是唯一不用付费的宇宙遨游。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fclassroommode}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Golden_Leggings}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Qa8R4Uk0/c4d35c235e2faca84521da5eec2e90b5f65cd5b1.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Dn7vYzj3/b0d01fde45fe7e0a208ad45629faf221faef100d.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="soupstacking" event="url{https://modrinth.com/mod/soupstacking}"
+...button-text text="Figura Pack Reorder" event="url{https://modrinth.com/mod/figura-pack-reorder}"
 
-👤 TickiDevelop | 📅 2026-05-22
+👤 Zoid | 📅 2026-05-22
 
-A mod that allows stacking any food item with the word 'Soup' in its name up to 16 pieces.
+Reorders Figura's runtime resource pack so its higher priority than the mod. Mainly for use with cus
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/soupstacking/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/soupstacking}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/figura-pack-reorder/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/figura-pack-reorder}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/4PiN16Tw/c10a4e214d238c76991f7ab67de88f0088e9052a.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/zkCXhAUC/b6a21c0d526fc22c012b5bdbf1893ab9eb29bd8b.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Compostable Poison" event="url{https://modrinth.com/mod/compostable-poison}"
+...button-text text="vending machine" event="url{https://modrinth.com/mod/vending-machine}"
 
-👤 MisterXYCB | 📅 2026-05-22
+👤 potionofconf | 📅 2026-05-22
 
-Makes poisonous compostable with a chance of 30% to increase the level
+A small mod to add a simple vending machine to Minecraft 1.21.1.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/compostable-poison/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/compostable-poison}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/vending-machine/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/vending-machine}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/O7hhGoWf/76f383d3767ed87af4046e1798a64a5636065b5b_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Feip4LDZ/f27be3262b827259278c9d8de19f0d3987e26e17_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="CustomEyesLib" event="url{https://modrinth.com/mod/customeyeslib}"
+...button-text text="Hudifine" event="url{https://modrinth.com/mod/hudifine}"
 
-👤 zacharylikesnoodles | 📅 2026-05-22
+👤 Pacsy | 📅 2026-05-22
 
-Add eyes that point to any structure in the game, just like how ender eyes point to strongholds. Sup
+Build custom HUD overlays with a simple scripting language. No mod coding knowledge needed.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/customeyeslib/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/customeyeslib}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/hudifine/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/hudifine}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/jc8p2y8v/44bac4f85cad407df54560c704e1d1039070a58a_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/nDoOGZ1b/54219178374b47e3b1bd6b80d16363aecb62f2ec_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Tankful" event="url{https://modrinth.com/mod/tankful}"
+...button-text text="AE2 Sort Selector" event="url{https://modrinth.com/mod/ae2-sort-selector}"
 
-👤 IggyMods | 📅 2026-05-22
+👤 celeryyyyyyy | 📅 2026-05-22
 
-Build aquariums, fill them with fish, watch them swim.
+Very simple mod that lets you choose AE2 terminal sort options directly.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/tankful/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/tankful}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ae2-sort-selector/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ae2-sort-selector}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/WLmieMvi/254e4fc9dce70e3eb86041d60e23bf9055ef22a5.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/9v90aG1X/0b67db188682ca7689fac6b33d11801725f4d20c_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="f3-sides" event="url{https://modrinth.com/mod/f3-sides}"
+...button-text text="Aures - Dragon Survival" event="url{https://modrinth.com/mod/aures-dragon-survival}"
 
-👤 droc101 | 📅 2026-05-22
+👤 BlackAures | 📅 2026-05-22
 
-This mod allows choosing which side of the F3 screen debug entries are shown
+Global modification for Java Minecraft centered around playable dragons.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/f3-sides/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/f3-sides}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/aures-dragon-survival/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/aures-dragon-survival}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ This mod allows choosing which side of the F3 screen debug entries are shown
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Commands/classroommode](https://minecraft.wiki/Commands%2Fclassroommode)
+📖 **Wiki 推荐**：[Golden Leggings](https://minecraft.wiki/Golden_Leggings)
 
-⏰ 更新时间：2026-05-22 04:19:57
+⏰ 更新时间：2026-05-22 14:55:27
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
