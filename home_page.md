@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-21 15:45:42
+// 生成时间：2026-05-22 04:19:57
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.SichuanTea_ZH-CN6703437873_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.KauehiAtollLagoon_ZH-CN9552036080_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"却话往昔，不觉泪落，但看燕天飞，晚霞粉片天！"*
+> *"今后无论发生什么事也好，这个左手上的⋯⋯都是同伴的记号！"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{却话往昔，不觉泪落，但看燕天飞，晚霞粉片天！}"
+...button-text text="📋 复制" event="copy{今后无论发生什么事也好，这个左手上的⋯⋯都是同伴的记号！}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Ffly}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fclassroommode}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Csrs3KwU/acb934b762df893872374ce88ce6c972b1befa80_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Qa8R4Uk0/c4d35c235e2faca84521da5eec2e90b5f65cd5b1.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Combat Extended" event="url{https://modrinth.com/mod/combat-extended}"
+...button-text text="soupstacking" event="url{https://modrinth.com/mod/soupstacking}"
 
-👤 shipovskijkorp | 📅 2026-05-21
+👤 TickiDevelop | 📅 2026-05-22
 
-Server-side combat rebalance and anti-abuse layer for Minecraft combat.
+A mod that allows stacking any food item with the word 'Soup' in its name up to 16 pieces.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/combat-extended/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/combat-extended}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/soupstacking/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/soupstacking}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/TaJOfqZg/icon.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/4PiN16Tw/c10a4e214d238c76991f7ab67de88f0088e9052a.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="BluemapCreateEntityAddon" event="url{https://modrinth.com/mod/bluemapcreateentityaddon}"
+...button-text text="Compostable Poison" event="url{https://modrinth.com/mod/compostable-poison}"
 
-👤 BeneHenke | 📅 2026-05-21
+👤 MisterXYCB | 📅 2026-05-22
 
-This bluemap addon displays create entities like windmills or trains and adds support for copycat bl
+Makes poisonous compostable with a chance of 30% to increase the level
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bluemapcreateentityaddon/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bluemapcreateentityaddon}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/compostable-poison/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/compostable-poison}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/pW9RMC1x/288328646492aba871d66cce4f00048b3337f080_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/O7hhGoWf/76f383d3767ed87af4046e1798a64a5636065b5b_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="no particle" event="url{https://modrinth.com/mod/no-particle}"
+...button-text text="CustomEyesLib" event="url{https://modrinth.com/mod/customeyeslib}"
 
-👤 f19882350305 | 📅 2026-05-21
+👤 zacharylikesnoodles | 📅 2026-05-22
 
-NoParticle blocks all particles by default, only shows whitelisted ones, supports /again hot-reload,
+Add eyes that point to any structure in the game, just like how ender eyes point to strongholds. Sup
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/no-particle/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/no-particle}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/customeyeslib/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/customeyeslib}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/OjdQVuiP/b3f0f3b57fae69913d97c65ef0d5b74b4606d4a5.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/jc8p2y8v/44bac4f85cad407df54560c704e1d1039070a58a_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Heartless Mod" event="url{https://modrinth.com/mod/heartless-mod}"
+...button-text text="Tankful" event="url{https://modrinth.com/mod/tankful}"
 
-👤 Oopsallbeans215 | 📅 2026-05-21
+👤 IggyMods | 📅 2026-05-22
 
-A challenge mod, that adds hearts to the game
+Build aquariums, fill them with fish, watch them swim.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/heartless-mod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/heartless-mod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/tankful/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/tankful}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/3XcR7qvx/f7fc8e34a433fc2d8cea52fda25adbe1db8e4ace_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/WLmieMvi/254e4fc9dce70e3eb86041d60e23bf9055ef22a5.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="KrupicovaKase's Map Utils" event="url{https://modrinth.com/mod/krupicovakases-map-utils}"
+...button-text text="f3-sides" event="url{https://modrinth.com/mod/f3-sides}"
 
-👤 KrupicovaKase | 📅 2026-05-21
+👤 droc101 | 📅 2026-05-22
 
-Collection of utilities to help map makers
+This mod allows choosing which side of the F3 screen debug entries are shown
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/krupicovakases-map-utils/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/krupicovakases-map-utils}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/f3-sides/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/f3-sides}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ Collection of utilities to help map makers
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：酿造传承
-© 四川省的茶梯田, 中国 (© lzf/Shutterstock)
+🖼️ 壁纸：海洋生命的律动
+© 埃希环礁，土阿莫土群岛，法属波利尼西亚 (© WaterFrame_dpr/Alamy)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Commands/fly](https://minecraft.wiki/Commands%2Ffly)
+📖 **Wiki 推荐**：[Commands/classroommode](https://minecraft.wiki/Commands%2Fclassroommode)
 
-⏰ 更新时间：2026-05-21 15:45:42
+⏰ 更新时间：2026-05-22 04:19:57
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
