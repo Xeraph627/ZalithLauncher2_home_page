@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-23 06:41:15
+// 生成时间：2026-05-23 13:54:40
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"春空千鹤若幻梦，夕波千鸟若长鸣。"*
+> *"你为了你的正义，我为了我的正义。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{春空千鹤若幻梦，夕波千鸟若长鸣。}"
+...button-text text="📋 复制" event="copy{你为了你的正义，我为了我的正义。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_1.14.4_Pre-Release_3}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Armadillo_(disambiguation)}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -180,9 +180,9 @@ DeathCore Music Disc Mod is a minecraft mod that adds a Lot of music Disc To you
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition 1.14.4 Pre-Release 3](https://minecraft.wiki/Java_Edition_1.14.4_Pre-Release_3)
+📖 **Wiki 推荐**：[Armadillo (disambiguation)](https://minecraft.wiki/Armadillo_(disambiguation))
 
-⏰ 更新时间：2026-05-23 06:41:15
+⏰ 更新时间：2026-05-23 13:54:40
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
