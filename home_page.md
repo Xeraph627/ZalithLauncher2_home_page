@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-22 14:55:27
+// 生成时间：2026-05-23 03:58:30
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.KauehiAtollLagoon_ZH-CN9552036080_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.ThreeTurtlesButterflies_ZH-CN7043849571_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"耳机是唯一不用扎针的输液管，发呆是唯一不用付费的宇宙遨游。"*
+> *"坍塌的不只有波函数，还有观测者。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{耳机是唯一不用扎针的输液管，发呆是唯一不用付费的宇宙遨游。}"
+...button-text text="📋 复制" event="copy{坍塌的不只有波函数，还有观测者。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Golden_Leggings}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Xbox_One_Edition_CU58}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,83 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Dn7vYzj3/b0d01fde45fe7e0a208ad45629faf221faef100d.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/ymZOvvqd/8130c5b59381912e9d0e0f7dfad9285ac8aebf95_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Figura Pack Reorder" event="url{https://modrinth.com/mod/figura-pack-reorder}"
+...button-text text="Mythic Thor" event="url{https://modrinth.com/mod/mythic-thor}"
 
-👤 Zoid | 📅 2026-05-22
+👤 aradillamarinadrian | 📅 2026-05-22
 
-Reorders Figura's runtime resource pack so its higher priority than the mod. Mainly for use with cus
+Summon the god of thunder during storms! Wielding Mjölnir and dropping legendary rewards, this light
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/figura-pack-reorder/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/figura-pack-reorder}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mythic-thor/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mythic-thor}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/zkCXhAUC/b6a21c0d526fc22c012b5bdbf1893ab9eb29bd8b.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/jlCJASGI/6ce4f74a7d62e325c6dfe01dc55bff61eaa1bdda_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="vending machine" event="url{https://modrinth.com/mod/vending-machine}"
+...button-text text="ricoshot" event="url{https://modrinth.com/mod/ricoshot}"
 
-👤 potionofconf | 📅 2026-05-22
+👤 zigqora | 📅 2026-05-22
 
-A small mod to add a simple vending machine to Minecraft 1.21.1.
+A Minecraft mod that lets you throw gold nugget in the air and shoot them with a bow. 
+
+You can also
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/vending-machine/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/vending-machine}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ricoshot/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ricoshot}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Feip4LDZ/f27be3262b827259278c9d8de19f0d3987e26e17_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/fW660xjR/42a1a8649ab54874b28866a3b84c2d479503e9b3_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Hudifine" event="url{https://modrinth.com/mod/hudifine}"
+...button-text text="/back Command" event="url{https://modrinth.com/mod/corndawgcoco-back-command}"
 
-👤 Pacsy | 📅 2026-05-22
+👤 CornDawgCoco | 📅 2026-05-22
 
-Build custom HUD overlays with a simple scripting language. No mod coding knowledge needed.
+This mod adds a /back command that teleports you to your last death location in/from ANY dimension. 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/hudifine/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/hudifine}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/corndawgcoco-back-command/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/corndawgcoco-back-command}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/nDoOGZ1b/54219178374b47e3b1bd6b80d16363aecb62f2ec_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/2hGXRnGs/90e60d6c5fec38fcffe52e18da7c09ec925ced4e.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="AE2 Sort Selector" event="url{https://modrinth.com/mod/ae2-sort-selector}"
+...button-text text="Totem Reminder" event="url{https://modrinth.com/mod/manlys-totem-reminder}"
 
-👤 celeryyyyyyy | 📅 2026-05-22
+👤 manlydev0 | 📅 2026-05-22
 
-Very simple mod that lets you choose AE2 terminal sort options directly.
+Totem Reminder helps you avoid one of the scariest mistakes in Minecraft: forgetting to keep a Totem
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ae2-sort-selector/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ae2-sort-selector}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/manlys-totem-reminder/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/manlys-totem-reminder}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/9v90aG1X/0b67db188682ca7689fac6b33d11801725f4d20c_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/k2nEht8R/78c2e8faf1040140f0aa384752917c383125e9a7_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Aures - Dragon Survival" event="url{https://modrinth.com/mod/aures-dragon-survival}"
+...button-text text="Deathcord Music Disc" event="url{https://modrinth.com/mod/deathcord-music-disc}"
 
-👤 BlackAures | 📅 2026-05-22
+👤 VtMystic | 📅 2026-05-22
 
-Global modification for Java Minecraft centered around playable dragons.
+DeathCore Music Disc Mod is a minecraft mod that adds a Lot of music Disc To your world.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/aures-dragon-survival/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/aures-dragon-survival}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/deathcord-music-disc/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/deathcord-music-disc}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +175,14 @@ Global modification for Java Minecraft centered around playable dragons.
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：海洋生命的律动
-© 埃希环礁，土阿莫土群岛，法属波利尼西亚 (© WaterFrame_dpr/Alamy)
+🖼️ 壁纸：为龟类喝彩！
+© 与蝴蝶在一起的乌龟 (© Patrick Gallet/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Golden Leggings](https://minecraft.wiki/Golden_Leggings)
+📖 **Wiki 推荐**：[Xbox One Edition CU58](https://minecraft.wiki/Xbox_One_Edition_CU58)
 
-⏰ 更新时间：2026-05-22 14:55:27
+⏰ 更新时间：2026-05-23 03:58:30
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
