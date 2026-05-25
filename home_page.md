@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-25 04:41:15
+// 生成时间：2026-05-25 15:23:54
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"天下有道，以道殉身；天下无道，以身殉道。"*
+> *"记忆是痛苦的根源。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{天下有道，以道殉身；天下无道，以身殉道。}"
+...button-text text="📋 复制" event="copy{记忆是痛苦的根源。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_item_texture_history%2FMelon_Seeds}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Pocket_Edition_v0.2.1_alpha}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -66,6 +66,22 @@
 // --- 🧩 Modrinth 最新模组 ---
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
+...row-start horizontal=spacedBy(8) vertical=Center
+...image url="https://cdn.modrinth.com/data/1KYglcZv/7e866abe40c63ce3c04d24e063ee57cc7ad865cd_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
+...button-text text="Veritasium" event="url{https://modrinth.com/mod/veritasium}"
+
+👤 CreateEnthusiast | 📅 2026-05-25
+
+This mod adds elements from the Veritasium Youtube channel into Minecraft. Including a music disk wi
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/veritasium/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/veritasium}" weight=(1)
+...row-end
+...column-end
+...row-end
+
 ...row-start horizontal=spacedBy(8) vertical=Center
 ...image url="https://cdn.modrinth.com/data/RsDIjV1N/6433d10d67571780f48cd6b70f93336e07dd6880_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
@@ -130,22 +146,6 @@ A mod which aims to add an unnecessary amount of vanilla feature variants.
 ...column-end
 ...row-end
 
-...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/aznwOQTM/da52bc7e270c2402a4949bc39432d5988c784e8f.png" width=40dp shape=8dp
-...column-start vertical=spacedBy(4)
-...button-text text="Simple Waterloggable Redstone" event="url{https://modrinth.com/mod/simple-waterloggable-redstone}"
-
-👤 KanieOutis | 📅 2026-05-25
-
-Adds the waterlogged property to redstone components
-
-...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/simple-waterloggable-redstone/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/simple-waterloggable-redstone}" weight=(1)
-...row-end
-...column-end
-...row-end
-
 ...row-start horizontal=spacedBy(8)
 ...button text="📥 访问 Modrinth" event="url{https://modrinth.com/mods}" weight=(1)
 ...row-end
@@ -178,9 +178,9 @@ Adds the waterlogged property to redstone components
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition item texture history/Melon Seeds](https://minecraft.wiki/Java_Edition_item_texture_history%2FMelon_Seeds)
+📖 **Wiki 推荐**：[Pocket Edition v0.2.1 alpha](https://minecraft.wiki/Pocket_Edition_v0.2.1_alpha)
 
-⏰ 更新时间：2026-05-25 04:41:15
+⏰ 更新时间：2026-05-25 15:23:54
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
