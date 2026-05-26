@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-25 15:23:54
+// 生成时间：2026-05-26 04:16:25
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.HawaMahal2026_ZH-CN7233246545_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.LupineBloom_ZH-CN7639721663_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"记忆是痛苦的根源。"*
+> *"生命中，再无聊的时光，也都是限量版。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{记忆是痛苦的根源。}"
+...button-text text="📋 复制" event="copy{生命中，再无聊的时光，也都是限量版。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Pocket_Edition_v0.2.1_alpha}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Sheep%2FOld_colors}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/1KYglcZv/7e866abe40c63ce3c04d24e063ee57cc7ad865cd_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/V7BPfphg/0ea954f7ff20c15a9d059d392207886d5e21b310_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Veritasium" event="url{https://modrinth.com/mod/veritasium}"
+...button-text text="Compass to Map: Xaero's" event="url{https://modrinth.com/mod/compass-to-map-xaeros}"
 
-👤 CreateEnthusiast | 📅 2026-05-25
+👤 KURONAMI | 📅 2026-05-26
 
-This mod adds elements from the Veritasium Youtube channel into Minecraft. Including a music disk wi
+Auto-register found structures (Explorer's Compass) and biomes (Nature's Compass) as permanent Xaero
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/veritasium/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/veritasium}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/compass-to-map-xaeros/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/compass-to-map-xaeros}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/RsDIjV1N/6433d10d67571780f48cd6b70f93336e07dd6880_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/8YgFuv6f/ad55c6fb5035460d7cfedf9d8412324e17f163ea_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Turbo Happy Ghast" event="url{https://modrinth.com/mod/turbo-happy-ghast}"
+...button-text text="Ping to Map: Xaero's" event="url{https://modrinth.com/mod/ping-to-map-xaeros}"
 
-👤 TheLokin | 📅 2026-05-25
+👤 KURONAMI | 📅 2026-05-26
 
-Increases the Happy Ghast's flying speed whenever a player is mounted on it.
+Drop a temporary Xaero's Minimap waypoint the instant a teammate (or you) pings a spot with Ping-Whe
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/turbo-happy-ghast/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/turbo-happy-ghast}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ping-to-map-xaeros/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ping-to-map-xaeros}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/G8h6VEMz/9f033d9a175a1252f78f1d81a89c6eabcd756c1d_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/LjvxbrLl/c0302a54306a53c0e5e9800225d95402cc54cb7d.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Cheaper Shulker Boxes" event="url{https://modrinth.com/mod/cheaper-shulker-boxes}"
+...button-text text="Calc2MC" event="url{https://modrinth.com/mod/calc2mc}"
 
-👤 TheLokin | 📅 2026-05-25
+👤 BouncingElf10 | 📅 2026-05-26
 
-Craft Shulker Boxes with just 1 Shulker Shell and 1 Chest. No crafting table required, no extra grin
+For if you ever don't have a controller nearby...
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/cheaper-shulker-boxes/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/cheaper-shulker-boxes}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/calc2mc/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/calc2mc}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/YFzv6mJh/7e75c9cde54dca5e8a36981a334b64777d8866c0_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/6buDm2T6/96f4bb4ae26428b5c49b55689ca8f4f7eb2271c5_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Rotten Player" event="url{https://modrinth.com/mod/rotten-player}"
+...button-text text="Faithful Companions: Ravens" event="url{https://modrinth.com/mod/companions-ravens}"
 
-👤 Terrarich-2004 | 📅 2026-05-25
+👤 MythicGooseStudios | 📅 2026-05-26
 
-Now the player is like a zombie!
+The simplicity of bundle delivering ravens
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/rotten-player/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/rotten-player}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/companions-ravens/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/companions-ravens}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/196e916Z/7dd3da69b34ed2baae6c1053fc881de688618cea.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/m6ThQUjA/8a34c599f3d7a9916209dd16f3b549b23441f778_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Infernal Infinity" event="url{https://modrinth.com/mod/infernal-infinity}"
+...button-text text="Fairlands" event="url{https://modrinth.com/mod/fairlands}"
 
-👤 ElectricDragon | 📅 2026-05-25
+👤 akitain | 📅 2026-05-26
 
-A mod which aims to add an unnecessary amount of vanilla feature variants.
+Fair survival rules for multiplayer worlds
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/infernal-infinity/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/infernal-infinity}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/fairlands/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/fairlands}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ A mod which aims to add an unnecessary amount of vanilla feature variants.
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：石间的清风
-© 从风之宫殿俯瞰斋浦尔市景，拉贾斯坦邦，印度 (© byheaven/Getty Images)
+🖼️ 壁纸：羽扇豆书写的季节
+© 盛开的羽扇豆，北加利福尼亚州，美国 (© Jeffrey Lewis/Tandem Stills + Motion)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Pocket Edition v0.2.1 alpha](https://minecraft.wiki/Pocket_Edition_v0.2.1_alpha)
+📖 **Wiki 推荐**：[Sheep/Old colors](https://minecraft.wiki/Sheep%2FOld_colors)
 
-⏰ 更新时间：2026-05-25 15:23:54
+⏰ 更新时间：2026-05-26 04:16:25
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
