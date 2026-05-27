@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-26 16:00:20
+// 生成时间：2026-05-27 04:39:13
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,12 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"“你失去了”
-“我从未拥有”"*
+> *"如此生活30年，直到大厦崩塌。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{“你失去了”
-“我从未拥有”}"
+...button-text text="📋 复制" event="copy{如此生活30年，直到大厦崩塌。}"
 ...row-end
 ...column-end
 ...card-end
@@ -56,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/David_Nisshagen}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Double_Compressed_Poisonous_Potato_Block}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -69,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/qOVyvwph/a10cba0cece2ab1c6b4649f6b9e7e1400251f346_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/ZMLc5JnS/a04d19682d3798f6f363cadb8e96ff209e560af5_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="LlpswLib" event="url{https://modrinth.com/mod/llpswlib}"
+...button-text text="Create: Pretty Structures" event="url{https://modrinth.com/mod/create-pretty-structures}"
 
-👤 1241373309 | 📅 2026-05-26
+👤 Art_Zippie | 📅 2026-05-27
 
-LLPSW’s mod library, including the original animation modules and octree modules
+Structures for vanilla create mod (can be used server side only)
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/llpswlib/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/llpswlib}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-pretty-structures/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-pretty-structures}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/XGRSTKJX/a2e16d7818df9c7b1deaa3aedae04d5d20c18a6d_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/8JcmBR7w/d28cb9c4108ffa82d674fe70310bf68d853851e0_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="player's Backpack" event="url{https://modrinth.com/mod/players-backpack}"
+...button-text text="BilingualSearch" event="url{https://modrinth.com/mod/bilingualsearch}"
 
-👤 J-ko | 📅 2026-05-26
+👤 kazut0 | 📅 2026-05-27
 
-Wear and place a detailed adventurer’s backpack with 54 storage slots, animated water and lava tanks
+Search the creative inventory in both your game language and English.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/players-backpack/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/players-backpack}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bilingualsearch/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bilingualsearch}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/5c63usQC/ec28dd352d4e51e5c8882c235457acb3447dead3.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/E9FELrX5/9b09f606cae25138fb0fec7e70cc6895f702a3ec_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Idiocy's Craftable Discs!" event="url{https://modrinth.com/mod/idiocys-craftable-discs!}"
+...button-text text="Totem Offhand Warning" event="url{https://modrinth.com/mod/totem-offhand-warning}"
 
-👤 Idiocy | 📅 2026-05-26
+👤 uuirco | 📅 2026-05-27
 
-This Mod adds the ability to make an Empty disc, which you can then use wool to make into any non st
+Shows a subtle red vignette when you have a totem but forget to hold it in your offhand.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/idiocys-craftable-discs!/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/idiocys-craftable-discs!}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/totem-offhand-warning/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/totem-offhand-warning}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/sRZmQUGe/dd3dba203ccef5f42dac2f1d9663d92c41d102a8_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/ZDd8e63m/5832a62d59176dd79e0f300b350c4a091e8a2845_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Older Blocks" event="url{https://modrinth.com/mod/older-blocks}"
+...button-text text="Create: Netherite Portable Engine" event="url{https://modrinth.com/mod/create-netherite-portable-engine}"
 
-👤 Winesmoker | 📅 2026-05-26
+👤 Vladislav117 | 📅 2026-05-27
 
-Mix and match modern vanilla with classic pre-1.13.2 textures! Adds nostalgic art style blocks as se
+A small Create Simulated (Create Aeronautics) addon that adds a netherite portable engine
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/older-blocks/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/older-blocks}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-netherite-portable-engine/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-netherite-portable-engine}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/f3PrkThU/e784e2b6482bb7a9a08e39c11e42866944c82df6_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/5a5L3Ld7/a7701166e582da193567c0c0349c8df2ee81003e_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Goecia: Forgotten Rites" event="url{https://modrinth.com/mod/goecia-forgotten-rites}"
+...button-text text="The Boys Mod" event="url{https://modrinth.com/mod/the-boys-1.20.1}"
 
-👤 suryamael | 📅 2026-05-26
+👤 StelleMB | 📅 2026-05-27
 
-GoeciaMod is a dark fantasy Minecraft mod focused on new biomes, decorative blocks, and ancient-look
+A superhero-inspired Minecraft mod featuring Homelander, Starlight, Soldier Boy, and A-Train, each w
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/goecia-forgotten-rites/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/goecia-forgotten-rites}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/the-boys-1.20.1/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/the-boys-1.20.1}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -180,9 +178,9 @@ GoeciaMod is a dark fantasy Minecraft mod focused on new biomes, decorative bloc
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[David Nisshagen](https://minecraft.wiki/David_Nisshagen)
+📖 **Wiki 推荐**：[Double Compressed Poisonous Potato Block](https://minecraft.wiki/Double_Compressed_Poisonous_Potato_Block)
 
-⏰ 更新时间：2026-05-26 16:00:20
+⏰ 更新时间：2026-05-27 04:39:13
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
