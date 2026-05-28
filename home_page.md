@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-27 16:03:33
+// 生成时间：2026-05-28 04:19:06
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"只有分离后才能懂的事，却没有了感慨的时间。"*
+> *"忘掉生日，忘掉青涩的诗，忘掉他不厌其烦夜夜追逐他影子。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{只有分离后才能懂的事，却没有了感慨的时间。}"
+...button-text text="📋 复制" event="copy{忘掉生日，忘掉青涩的诗，忘掉他不厌其烦夜夜追逐他影子。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Dryad}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Nuke_the_Dinosaurs}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/NbN1WVzr/8935ed897688c8f665cb924a6428bd5a9a8d820b_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/hR4zIfXY/fb200d46a3cdae9bb8db1587db3cbced113970b1.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="/sethome and /home Commands" event="url{https://modrinth.com/mod/sethome-and-home-commands}"
+...button-text text="Focus Audio" event="url{https://modrinth.com/mod/focusaudio}"
 
-👤 CornDawgCoco | 📅 2026-05-27
+👤 Sov3liy | 📅 2026-05-28
 
-This mod adds 2 commands: /home, and /sethome. /sethome sets your home to your current coordinates. 
+Dynamically changes sound volume based on where the player is looking for deeper immersion.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sethome-and-home-commands/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sethome-and-home-commands}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/focusaudio/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/focusaudio}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/xtIfI7el/a8394820a5643787c7ee481c1f534166b1204239_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/uHx7nwyn/1f271d4b9e338184c80e7f7026a06d90eb079e33_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Path Undo" event="url{https://modrinth.com/mod/path-undo}"
+...button-text text="Better Death Screen" event="url{https://modrinth.com/mod/better-death-screen}"
 
-👤 Mqx | 📅 2026-05-27
+👤 Phiro | 📅 2026-05-28
 
-Use a shovel to turn a path block back into a gras block
+This Mod improves your Deathscreen! When dying you can copy coordinates and see in which dimension y
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/path-undo/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/path-undo}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/better-death-screen/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/better-death-screen}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/QAGvycZL/2211d587096ebb1f9c2e1f0ad5b6c369a09f3347_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/qkBYexfL/54172f760e7736ad908ca8e9ab801e3b73f33104_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Vulkan Border Fix" event="url{https://modrinth.com/mod/vulkan-border-fix}"
+...button-text text="TotemSound" event="url{https://modrinth.com/mod/totemsound}"
 
-👤 LoopholeMC | 📅 2026-05-27
+👤 PrIyme | 📅 2026-05-28
 
-Fixes a bug where the world border is invisible when using Vulkan Mod!
+This Minecraft mod lets you replace the default totem sound with a custom audio file up to ten secon
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/vulkan-border-fix/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/vulkan-border-fix}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/totemsound/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/totemsound}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/vHZpoCbE/a535f38d3eddb7731cdafb790cb6ad6fa4cc0b32_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Ys7HpuZF/317935eb200df3677413b4fe07f3fd5cc0bfb391_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Ascendant Arcana" event="url{https://modrinth.com/mod/ascendant-arcana}"
+...button-text text="Ascended Arts" event="url{https://modrinth.com/mod/ascended-arts}"
 
-👤 anticode | 📅 2026-05-27
+👤 Arcanekiros | 📅 2026-05-28
 
-A complete enchantment overhaul with dozens of new enchantments and enhanced progression.
+Addon for Epic Fight with slight wuxia/xianxia theme.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ascendant-arcana/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ascendant-arcana}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ascended-arts/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ascended-arts}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/wnsOjcv5/0dd10965570bae04956f99b97c8f5ac2eaab792d_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/lzbIAHE3/b9958d2881a435f9845cd9ae6bf1f70ec61249f7_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="[SBW]HaloVehicles" event="url{https://modrinth.com/mod/sbwhalovehicles}"
+...button-text text="Prettier Flower Pots" event="url{https://modrinth.com/mod/prettier-flower-pots}"
 
-👤 Chaoji_Mouse | 📅 2026-05-27
+👤 ItsRaphaelakosYT | 📅 2026-05-28
 
-This expansion pack for SBW adds Halo vehicles.
+Adds colorful terracotta, glazed terracotta, hanging, and pottery sherd flower pots with support for
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sbwhalovehicles/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sbwhalovehicles}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/prettier-flower-pots/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/prettier-flower-pots}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ This expansion pack for SBW adds Halo vehicles.
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Dryad](https://minecraft.wiki/Dryad)
+📖 **Wiki 推荐**：[Nuke the Dinosaurs](https://minecraft.wiki/Nuke_the_Dinosaurs)
 
-⏰ 更新时间：2026-05-27 16:03:33
+⏰ 更新时间：2026-05-28 04:19:06
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
