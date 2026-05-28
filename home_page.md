@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-28 04:19:06
+// 生成时间：2026-05-28 16:18:20
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.HwaesongFortress_ZH-CN8225341972_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.SummitEverest_ZH-CN9252833251_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"忘掉生日，忘掉青涩的诗，忘掉他不厌其烦夜夜追逐他影子。"*
+> *"上古有大椿者，以八千岁为春，八千岁为秋。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{忘掉生日，忘掉青涩的诗，忘掉他不厌其烦夜夜追逐他影子。}"
+...button-text text="📋 复制" event="copy{上古有大椿者，以八千岁为春，八千岁为秋。}"
 ...row-end
 ...column-end
 ...card-end
@@ -32,7 +32,7 @@
 ...card-start title="📦 Minecraft 版本" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(6) horizontal=Start
 **最新正式版**: 26.1.2
-**最新快照**: 26.2-pre-1
+**最新快照**: 26.2-pre-2
 
 近期版本：
 - **26.1.2** (2026-04-09)
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Nuke_the_Dinosaurs}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bell%2FAsset_history}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/hR4zIfXY/fb200d46a3cdae9bb8db1587db3cbced113970b1.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/h8aPfL5Q/400928a760c514eca594ce90057f029994adcf26_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Focus Audio" event="url{https://modrinth.com/mod/focusaudio}"
+...button-text text="Shields" event="url{https://modrinth.com/mod/shields4betterplay}"
 
-👤 Sov3liy | 📅 2026-05-28
+👤 OldManPlaysGames | 📅 2026-05-28
 
-Dynamically changes sound volume based on where the player is looking for deeper immersion.
+Enhance your combat with six unique new shield tiers
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/focusaudio/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/focusaudio}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/shields4betterplay/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/shields4betterplay}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/uHx7nwyn/1f271d4b9e338184c80e7f7026a06d90eb079e33_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/JQKLPQgv/92cd64c36b54225fd38bb41e43efa67828508888.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Better Death Screen" event="url{https://modrinth.com/mod/better-death-screen}"
+...button-text text="Creeper Overhaul data models for Hostile Neural Networks" event="url{https://modrinth.com/mod/creeper-overhaul-data-models-for-hostile-neural-networks}"
 
-👤 Phiro | 📅 2026-05-28
+👤 Voxtricity | 📅 2026-05-28
 
-This Mod improves your Deathscreen! When dying you can copy coordinates and see in which dimension y
+Adds unique data models for the Creeper variants added by Creeper Overhaul which have unique drops, 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/better-death-screen/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/better-death-screen}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/creeper-overhaul-data-models-for-hostile-neural-networks/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/creeper-overhaul-data-models-for-hostile-neural-networks}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/qkBYexfL/54172f760e7736ad908ca8e9ab801e3b73f33104_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/So0csPRn/511cba6a70e392760fe5219c1e85a3b21ad09b84_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="TotemSound" event="url{https://modrinth.com/mod/totemsound}"
+...button-text text="WhereIsMyStuff?" event="url{https://modrinth.com/mod/whereismystuff}"
 
-👤 PrIyme | 📅 2026-05-28
+👤 lynchest | 📅 2026-05-28
 
-This Minecraft mod lets you replace the default totem sound with a custom audio file up to ten secon
+A client-side QoL mod that remembers your inventory layout upon death, rendering faded ghost icons i
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/totemsound/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/totemsound}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/whereismystuff/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/whereismystuff}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Ys7HpuZF/317935eb200df3677413b4fe07f3fd5cc0bfb391_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/5mvQ4jtw/c500a48df539eae33ba9ea1fd7feb5ee190db069_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Ascended Arts" event="url{https://modrinth.com/mod/ascended-arts}"
+...button-text text="Salotls" event="url{https://modrinth.com/mod/salotls}"
 
-👤 Arcanekiros | 📅 2026-05-28
+👤 gavmods | 📅 2026-05-28
 
-Addon for Epic Fight with slight wuxia/xianxia theme.
+Adds in a new species of ancient axolotls!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ascended-arts/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ascended-arts}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/salotls/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/salotls}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/lzbIAHE3/b9958d2881a435f9845cd9ae6bf1f70ec61249f7_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/n47bkxt3/b6108966061b665b5592d288b7055421f188717d_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Prettier Flower Pots" event="url{https://modrinth.com/mod/prettier-flower-pots}"
+...button-text text="AlexisLib" event="url{https://modrinth.com/mod/alexislib}"
 
-👤 ItsRaphaelakosYT | 📅 2026-05-28
+👤 lowkeyalexiss | 📅 2026-05-28
 
-Adds colorful terracotta, glazed terracotta, hanging, and pottery sherd flower pots with support for
+Libary mod which has important code for projects and a plushie
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/prettier-flower-pots/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/prettier-flower-pots}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/alexislib/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/alexislib}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ Adds colorful terracotta, glazed terracotta, hanging, and pottery sherd flower p
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：设计与秩序相结合
-© 华城堡的古城墙，水原，韩国 (© aomam/Getty Images)
+🖼️ 壁纸：巅峰历史时刻
+© 珠穆朗玛峰峰顶，萨加玛塔国家公园，尼泊尔 (© fotoVoyager/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Nuke the Dinosaurs](https://minecraft.wiki/Nuke_the_Dinosaurs)
+📖 **Wiki 推荐**：[Bell/Asset history](https://minecraft.wiki/Bell%2FAsset_history)
 
-⏰ 更新时间：2026-05-28 04:19:06
+⏰ 更新时间：2026-05-28 16:18:20
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
