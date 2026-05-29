@@ -5,17 +5,30 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v4
+      
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install axios
-      - run: node scripts/updateFromWiki.js
+      
+      - name: 安装依赖
+        run: npm install axios --no-save  # 不生成 package-lock.json
+      
+      - name: 运行更新脚本
+        run: node scripts/updateFromWiki.js
+      
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'chore: 从 Wiki 更新主页'
+          commit_message: 'chore: 从 Wiki 更新主页 📝'
           branch: main
+          file_pattern: 'home.md'
+          commit_user_name: 'ssbtt114514'
+          commit_user_email: '259993758+ssbtt114514@users.noreply.github.com'
