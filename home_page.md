@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-28 16:18:20
+// 生成时间：2026-05-29 04:21:40
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"上古有大椿者，以八千岁为春，八千岁为秋。"*
+> *"Why so serious?"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{上古有大椿者，以八千岁为春，八千岁为秋。}"
+...button-text text="📋 复制" event="copy{Why so serious?}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bell%2FAsset_history}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Biome}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,82 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/h8aPfL5Q/400928a760c514eca594ce90057f029994adcf26_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/tdH1rdik/ba856d2f96e46949647d4f80ed97f2d6cd0ee93f_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Shields" event="url{https://modrinth.com/mod/shields4betterplay}"
+...button-text text="Detiers Tier Tagger" event="url{https://modrinth.com/mod/detiers-tier-tagger}"
 
-👤 OldManPlaysGames | 📅 2026-05-28
+👤 xvppture | 📅 2026-05-29
 
-Enhance your combat with six unique new shield tiers
+This is an tiertagger for the tierlist Detiers
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/shields4betterplay/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/shields4betterplay}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/detiers-tier-tagger/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/detiers-tier-tagger}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/JQKLPQgv/92cd64c36b54225fd38bb41e43efa67828508888.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/q6jYuxnc/18191d8b633390a2b87c428199f5bf7eb3571744_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Creeper Overhaul data models for Hostile Neural Networks" event="url{https://modrinth.com/mod/creeper-overhaul-data-models-for-hostile-neural-networks}"
+...button-text text="Standable Cubes" event="url{https://modrinth.com/mod/standable-cubes}"
 
-👤 Voxtricity | 📅 2026-05-28
+👤 marbrueck | 📅 2026-05-29
 
-Adds unique data models for the Creeper variants added by Creeper Overhaul which have unique drops, 
+Standable Cubes allows you to stand on the new Sulfur Cubes if they contain a block inside.
+Stand on
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/creeper-overhaul-data-models-for-hostile-neural-networks/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/creeper-overhaul-data-models-for-hostile-neural-networks}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/standable-cubes/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/standable-cubes}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/So0csPRn/511cba6a70e392760fe5219c1e85a3b21ad09b84_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/qxCvbUIG/2ccc4b299aebdb8dfdb566ede66a566ec30cd186.gif" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="WhereIsMyStuff?" event="url{https://modrinth.com/mod/whereismystuff}"
+...button-text text="Better Sniffers" event="url{https://modrinth.com/mod/bettersniffers}"
 
-👤 lynchest | 📅 2026-05-28
+👤 bushman59 | 📅 2026-05-29
 
-A client-side QoL mod that remembers your inventory layout upon death, rendering faded ghost icons i
+Makes the sniffers more interesting by having them dig up a whole bunch of different items
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/whereismystuff/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/whereismystuff}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bettersniffers/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bettersniffers}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/5mvQ4jtw/c500a48df539eae33ba9ea1fd7feb5ee190db069_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/8t8zmFok/f9147222de1b02bd0bc55dcacb4c8c649cbdf588.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Salotls" event="url{https://modrinth.com/mod/salotls}"
+...button-text text="Better Beacon" event="url{https://modrinth.com/mod/betterbeacon}"
 
-👤 gavmods | 📅 2026-05-28
+👤 bushman59 | 📅 2026-05-29
 
-Adds in a new species of ancient axolotls!
+Makes the beacon kill all hostile mobs within its radius, just like the conduit!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/salotls/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/salotls}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/betterbeacon/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/betterbeacon}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/n47bkxt3/b6108966061b665b5592d288b7055421f188717d_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/hhesnqPt/0ad7e10af202903eea357ce61062e7076c352a81_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="AlexisLib" event="url{https://modrinth.com/mod/alexislib}"
+...button-text text="Chaotic World" event="url{https://modrinth.com/mod/chaotic-world}"
 
-👤 lowkeyalexiss | 📅 2026-05-28
+👤 NobieNotSCARED | 📅 2026-05-29
 
-Libary mod which has important code for projects and a plushie
+Enjoy the Final moments of your World with this Data pack.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/alexislib/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/alexislib}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/chaotic-world/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/chaotic-world}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +179,9 @@ Libary mod which has important code for projects and a plushie
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bell/Asset history](https://minecraft.wiki/Bell%2FAsset_history)
+📖 **Wiki 推荐**：[Biome](https://minecraft.wiki/Biome)
 
-⏰ 更新时间：2026-05-28 16:18:20
+⏰ 更新时间：2026-05-29 04:21:40
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
