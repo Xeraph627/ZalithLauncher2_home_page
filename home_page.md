@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-05-31 14:02:50
+// 生成时间：2026-06-01 05:03:29
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.EvergladesWetlands_ZH-CN9515366484_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.OlivaPalermo_ZH-CN9639920195_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"我想要握紧的并不是匕首或是什么，只不过是他的掌心而已。"*
+> *"无论怎么坚持，我都可能失败。无论怎么失败，我都始终坚持。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{我想要握紧的并不是匕首或是什么，只不过是他的掌心而已。}"
+...button-text text="📋 复制" event="copy{无论怎么坚持，我都可能失败。无论怎么失败，我都始终坚持。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_Indev_20100211-2340}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Legacy_Console_Edition_data_values%2FEffects}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Iv7znCSW/3778fea36a11e47433045b9ffdec6d49b41c10e9.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/nyvwo0yT/dc3f2032ae69f51a66095d629232e338db47cf38_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="TDSMP Bits and Bobs" event="url{https://modrinth.com/mod/tdsmp-bits-and-bobs}"
+...button-text text="Consumable Berries" event="url{https://modrinth.com/mod/consumable-berries}"
 
-👤 SpheralTomato78 | 📅 2026-05-31
+👤 nicejs | 📅 2026-06-01
 
-TDSMP Bits and Bobs adds a bunch of signs and other blocks/items for the Time Dimension SMP.
+Allows players to eat Cobblemon berries, with special effects!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/tdsmp-bits-and-bobs/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/tdsmp-bits-and-bobs}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/consumable-berries/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/consumable-berries}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/vqygMnuo/781f3d4cd14d929fba57aada67fc9ca33a49caf9_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/sZlcltaJ/50be62ecf7bec63314d2442bffcaa8058bacf828.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Tensura: EP Regen Scaling Reborn" event="url{https://modrinth.com/mod/tensura-ep-regen-scaling-reborn}"
+...button-text text="RandomDrops" event="url{https://modrinth.com/mod/randomdropsbystuwionic}"
 
-👤 DaAnya29 | 📅 2026-05-31
+👤 Stuwionic | 📅 2026-06-01
 
-Makes your EP (Magicule & Aura) regeneration, percentage based. (Configurable)
+Makes blocks broken drop a random item/block
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/tensura-ep-regen-scaling-reborn/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/tensura-ep-regen-scaling-reborn}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/randomdropsbystuwionic/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/randomdropsbystuwionic}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/OVu6OwFg/89d722224c5cd9e9bceecf566b6b0c80bb427d8d_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/GpP2KNRf/ccc371103ce217f80cb7e6cf2380395afe0991ad_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="SB+ | Hypixel Skyblock" event="url{https://modrinth.com/mod/sb+}"
+...button-text text="Voidcantation" event="url{https://modrinth.com/mod/voidcantation}"
 
-👤 JustinDevs | 📅 2026-05-31
+👤 TGH75972 | 📅 2026-06-01
 
-Skyblock+ is a mod for Hypixel SkyBlock, adding quality-of-life features, dungeon and boss helpers, 
+This mod  is made using fabric api and tested for minecraft version 1.21. It adds three unique items
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sb+/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sb+}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/voidcantation/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/voidcantation}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/UI2y9G9e/91072668936960b1cd7f181716b0dc29c5cc3291_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/P2AvfTDB/9bac147b09223524418123b4f8029bb56e263385_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Wasted Screen GTA" event="url{https://modrinth.com/mod/wasted-screen-gta}"
+...button-text text="Rusty Arsenal" event="url{https://modrinth.com/mod/rusty-arsenal}"
 
-👤 gatosmias | 📅 2026-05-31
+👤 Nikodyaysky | 📅 2026-06-01
 
-Transform the Minecraft death screen into the classic "WASTED" transition from GTA, complete with gr
+Rusty Arsenal is a small addon for Forge 1.20.1 that adds a collection of rough but effective weapon
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/wasted-screen-gta/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/wasted-screen-gta}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/rusty-arsenal/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/rusty-arsenal}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/X0Lnj8M8/dd453c08c90e5095534430b4d1cf39861427efdc_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/I4WFLyZu/icon.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Chat Wheel" event="url{https://modrinth.com/mod/chat-wheel}"
+...button-text text="ToolBelt Unlimited" event="url{https://modrinth.com/mod/toolbelt-unlimited}"
 
-👤 rd5ey24d1ae | 📅 2026-05-31
+👤 TeutonStudio | 📅 2026-06-01
 
-Chat Wheel adds a radial menu to Minecraft that lets you quickly send chat messages with a simple mo
+Increases the slot limit of ToolBelt according to Config
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/chat-wheel/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/chat-wheel}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/toolbelt-unlimited/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/toolbelt-unlimited}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ Chat Wheel adds a radial menu to Minecraft that lets you quickly send chat messa
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：顺流而行
-© 大沼泽地国家公园航拍景观，佛罗里达州，美国 (© Tetra Images/Getty Images)
+🖼️ 壁纸：历史的况味
+© 巴勒莫暮色下的天际线，西西里岛，意大利 (© Sean Pavone/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition Indev 20100211-2340](https://minecraft.wiki/Java_Edition_Indev_20100211-2340)
+📖 **Wiki 推荐**：[Legacy Console Edition data values/Effects](https://minecraft.wiki/Legacy_Console_Edition_data_values%2FEffects)
 
-⏰ 更新时间：2026-05-31 14:02:50
+⏰ 更新时间：2026-06-01 05:03:29
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
