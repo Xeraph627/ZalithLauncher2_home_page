@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-01 17:56:58
+// 生成时间：2026-06-02 04:50:04
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.Qinghai_ZH-CN9899656327_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.Qinghai_ZH-CN7745288142_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"纵然身朽去，心美亦永恒。"*
+> *"好红，每当想起你，枫叶就会被染红。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{纵然身朽去，心美亦永恒。}"
+...button-text text="📋 复制" event="copy{好红，每当想起你，枫叶就会被染红。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fsetfixedinvslot}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_1.17.34}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/8Bik850L/icon.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/2TpgSSVU/94a1b2ff75b7d2becfb93f493a9c74d39cf55302.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="PotionsButStackable" event="url{https://modrinth.com/mod/potionsbutstackable}"
+...button-text text="Glyphbound: Hanzi Magic" event="url{https://modrinth.com/mod/glyphbound-hanzi-magic}"
 
-👤 ThatOneCyberPunk | 📅 2026-06-01
+👤 Aozaidev | 📅 2026-06-02
 
-It allows any potion to stack up to 16
+Draw handwritten Chinese characters to cast spells, survive combat, and reshape the world.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/potionsbutstackable/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/potionsbutstackable}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/glyphbound-hanzi-magic/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/glyphbound-hanzi-magic}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/nyvwo0yT/dc3f2032ae69f51a66095d629232e338db47cf38_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/LJLu53Fk/213e55fdafbda98400c8277b8ea357830856de6b_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Consumable Berries" event="url{https://modrinth.com/mod/consumable-berries}"
+...button-text text="Simple Combos" event="url{https://modrinth.com/mod/simple-combos}"
 
-👤 nicejs | 📅 2026-06-01
+👤 eicv_ | 📅 2026-06-02
 
-Allows players to eat Cobblemon berries, with special effects!
+A simple way to add combos to your game.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/consumable-berries/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/consumable-berries}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/simple-combos/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/simple-combos}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/sZlcltaJ/50be62ecf7bec63314d2442bffcaa8058bacf828.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/b3uEbf6Q/491c9db0f4bdc75d52b677533ad8281ff52c4bf7_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="RandomDrops" event="url{https://modrinth.com/mod/randomdropsbystuwionic}"
+...button-text text="NoSnooper" event="url{https://modrinth.com/mod/nosnooper}"
 
-👤 Stuwionic | 📅 2026-06-01
+👤 gain | 📅 2026-06-02
 
-Makes blocks broken drop a random item/block
+Removes "Snooper Settings..." from the settings as well as breaks snooper from working.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/randomdropsbystuwionic/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/randomdropsbystuwionic}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/nosnooper/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/nosnooper}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/GpP2KNRf/ccc371103ce217f80cb7e6cf2380395afe0991ad_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/wjsGWBKQ/7fb82584ebfe5342643af496c046e3c4977dece9_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Voidcantation" event="url{https://modrinth.com/mod/voidcantation}"
+...button-text text="hxwi1structures" event="url{https://modrinth.com/mod/hxwi1structures}"
 
-👤 TGH75972 | 📅 2026-06-01
+👤 hxwi1 | 📅 2026-06-02
 
-This mod  is made using fabric api and tested for minecraft version 1.21. It adds three unique items
+Data-driven structure generation – define rules in JSON, use your own .nbt files. Zero dependencies,
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/voidcantation/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/voidcantation}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/hxwi1structures/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/hxwi1structures}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/P2AvfTDB/9bac147b09223524418123b4f8029bb56e263385_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/pct7jL3J/9d487438ae2af97a123dacf21c49c476a2e52eb6_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Rusty Arsenal" event="url{https://modrinth.com/mod/rusty-arsenal}"
+...button-text text="FluxerCraft" event="url{https://modrinth.com/mod/fluxercraft}"
 
-👤 Nikodyaysky | 📅 2026-06-01
+👤 Arxari | 📅 2026-06-02
 
-Rusty Arsenal is a small addon for Forge 1.20.1 that adds a collection of rough but effective weapon
+A Fluxer client in the Minecraft Chat window
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/rusty-arsenal/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/rusty-arsenal}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/fluxercraft/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/fluxercraft}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ Rusty Arsenal is a small addon for Forge 1.20.1 that adds a collection of rough 
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Commands/setfixedinvslot](https://minecraft.wiki/Commands%2Fsetfixedinvslot)
+📖 **Wiki 推荐**：[Bedrock Edition 1.17.34](https://minecraft.wiki/Bedrock_Edition_1.17.34)
 
-⏰ 更新时间：2026-06-01 17:56:58
+⏰ 更新时间：2026-06-02 04:50:04
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
