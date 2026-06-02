@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-02 04:50:04
+// 生成时间：2026-06-02 16:48:36
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.Qinghai_ZH-CN7745288142_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.BardenasReales_ZH-CN0480548935_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"好红，每当想起你，枫叶就会被染红。"*
+> *"我们是学生，学生就要有学生的样子。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{好红，每当想起你，枫叶就会被染红。}"
+...button-text text="📋 复制" event="copy{我们是学生，学生就要有学生的样子。}"
 ...row-end
 ...column-end
 ...card-end
@@ -32,7 +32,7 @@
 ...card-start title="📦 Minecraft 版本" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(6) horizontal=Start
 **最新正式版**: 26.1.2
-**最新快照**: 26.2-pre-2
+**最新快照**: 26.2-pre-3
 
 近期版本：
 - **26.1.2** (2026-04-09)
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_1.17.34}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_item_texture_history%2FMusic_Disc_Tears}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -121,7 +121,7 @@ Removes "Snooper Settings..." from the settings as well as breaks snooper from w
 
 👤 hxwi1 | 📅 2026-06-02
 
-Data-driven structure generation – define rules in JSON, use your own .nbt files. Zero dependencies,
+An NBT structure generator for modpack makers. Visual GUI config, four placement modes, biome tags, 
 
 ...row-start horizontal=spacedBy(8)
 ...button text="⬇️ 下载" event="url{https://modrinth.com/mod/hxwi1structures/versions}" weight=(1)
@@ -173,14 +173,14 @@ A Fluxer client in the Minecraft Chat window
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：穿行于蓝色之间
-© 穿越西台吉乃尔湖的公路，青海省，中国 (© Kaicheng Xu/Getty Images)
+🖼️ 壁纸：路之所止，行之所启
+© 骑行者，巴德纳斯雷亚莱斯自然公园与生物圈保护区，纳瓦拉，西班牙 (© Artur Debat/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition 1.17.34](https://minecraft.wiki/Bedrock_Edition_1.17.34)
+📖 **Wiki 推荐**：[Java Edition item texture history/Music Disc Tears](https://minecraft.wiki/Java_Edition_item_texture_history%2FMusic_Disc_Tears)
 
-⏰ 更新时间：2026-06-02 04:50:04
+⏰ 更新时间：2026-06-02 16:48:36
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
