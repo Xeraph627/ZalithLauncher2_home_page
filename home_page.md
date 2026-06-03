@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-03 05:00:37
+// 生成时间：2026-06-03 17:05:26
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.BardenasReales_ZH-CN0480548935_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.PreeningEgret_ZH-CN2216012708_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"闪烁的灯光是我在异世界大声地呼唤你。"*
+> *"我无处不在"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{闪烁的灯光是我在异世界大声地呼唤你。}"
+...button-text text="📋 复制" event="copy{我无处不在}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fdedicatedwsserver}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FStripped_Oak_Wood}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/DKkdLu6q/e53c2fee90f34411a8ecae34b99399f45a66500e_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/fOgtkSYN/7eed4d128e4b1735c89523a1d7227a8a82277f26_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Grass on Leaves" event="url{https://modrinth.com/mod/grass-on-leaves}"
+...button-text text="Wearable Copper Golems" event="url{https://modrinth.com/mod/wearable-copper-golems}"
 
-👤 otto-BigO | 📅 2026-06-03
+👤 KiwiFish | 📅 2026-06-03
 
-A very simple mod that allows you to place grass on leaves!
+Makes copper golem blocks equippable on player heads.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/grass-on-leaves/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/grass-on-leaves}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/wearable-copper-golems/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/wearable-copper-golems}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/eRfD9CpO/b36f5dc0fc22e93036151ef4314742a7c68e90c4_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/EU3FMMq6/b95c3207ad9ca7c43502c6bc170b70b44d4da7c3.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Simple XP multiplier" event="url{https://modrinth.com/mod/simple-xp-multiplier}"
+...button-text text="Trip On String" event="url{https://modrinth.com/mod/trip-on-string}"
 
-👤 eduloqui | 📅 2026-06-03
+👤 TheKingOfNerds | 📅 2026-06-03
 
-Function: multiplies the experience points dropped by slain mobs by 10.
+Gives a chance of tripping when stepping onto a tripwire block.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/simple-xp-multiplier/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/simple-xp-multiplier}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/trip-on-string/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/trip-on-string}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/oJypqMto/1de91d8efda9bdfeaf436a620648ace0c92c6ed7_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/1mhZFJ40/ddb0a2690288b7033f77dfee686eb40cd7542cda.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="LegacyZoom" event="url{https://modrinth.com/mod/legacyzoomduck}"
+...button-text text="Hot Redstone Wires" event="url{https://modrinth.com/mod/hot-redstone-wires}"
 
-👤 Duckyy_ | 📅 2026-06-03
+👤 TheKingOfNerds | 📅 2026-06-03
 
-Мод-зум для Minecraft! / Mod-zoom for Minecraft!
+Wires get hot! Makes redstone dust and blocks painful to step on.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/legacyzoomduck/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/legacyzoomduck}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/hot-redstone-wires/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/hot-redstone-wires}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/KD2QrWTM/316c743ae412270e127cb225e2edd9d3016652a8_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/65BMeMn7/959f097d069a9b70a2293b5ca4a8aa5add437207.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Aeronautics Replay" event="url{https://modrinth.com/mod/aeronautics-replay}"
+...button-text text="Spell Lib" event="url{https://modrinth.com/mod/spell-lib}"
 
-👤 Milasand | 📅 2026-06-03
+👤 TheKingOfNerds | 📅 2026-06-03
 
-Adds ReForgedPlay support for Aeronautics ships and contraption
+Adds a bunch of spells for other projects to use, with customization. Makes projects that want to ad
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/aeronautics-replay/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/aeronautics-replay}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/spell-lib/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/spell-lib}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/q9NYEgIJ/8b050aac9f06fe27665112c64db3d7a23854b290.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/1BUxbVGV/33d1b1a3d1463f6df16185dfd687c34bd89913ab_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Promising shovel efficiency hud" event="url{https://modrinth.com/mod/prom-shovel-effi-hud}"
+...button-text text="Magically Engraved" event="url{https://modrinth.com/mod/magically-engraved}"
 
-👤 Enksuu | 📅 2026-06-03
+👤 NightMareLore | 📅 2026-06-03
 
-makes a green number that tells the efficiency enchant level to the hotbar slot where the shovel is 
+Bridges the gap between modern Minecraft tech and ancient magic. Use your life-force to change reali
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/prom-shovel-effi-hud/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/prom-shovel-effi-hud}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/magically-engraved/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/magically-engraved}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ makes a green number that tells the efficiency enchant level to the hotbar slot 
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：路之所止，行之所启
-© 骑行者，巴德纳斯雷亚莱斯自然公园与生物圈保护区，纳瓦拉，西班牙 (© Artur Debat/Getty Images)
+🖼️ 壁纸：优雅羽饰
+© 梳理羽毛的雪鹭，佛罗里达州中部，美国 (© Donald M. Jones/Minden Pictures)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Commands/dedicatedwsserver](https://minecraft.wiki/Commands%2Fdedicatedwsserver)
+📖 **Wiki 推荐**：[Java Edition block render history/Stripped Oak Wood](https://minecraft.wiki/Java_Edition_block_render_history%2FStripped_Oak_Wood)
 
-⏰ 更新时间：2026-06-03 05:00:37
+⏰ 更新时间：2026-06-03 17:05:26
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
