@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-04 04:52:52
+// 生成时间：2026-06-04 15:33:35
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"幸福破灭之时，总是伴随着血腥味。"*
+> *"我们各自努力，最高处见！"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{幸福破灭之时，总是伴随着血腥味。}"
+...button-text text="📋 复制" event="copy{我们各自努力，最高处见！}"
 ...row-end
 ...column-end
 ...card-end
@@ -32,7 +32,7 @@
 ...card-start title="📦 Minecraft 版本" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(6) horizontal=Start
 **最新正式版**: 26.1.2
-**最新快照**: 26.2-pre-3
+**最新快照**: 26.2-pre-4
 
 近期版本：
 - **26.1.2** (2026-04-09)
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_1.14.2}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Ffilldrive}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Simple borders/zones addon for the Xaero's World Map
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition 1.14.2](https://minecraft.wiki/Java_Edition_1.14.2)
+📖 **Wiki 推荐**：[Commands/filldrive](https://minecraft.wiki/Commands%2Ffilldrive)
 
-⏰ 更新时间：2026-06-04 04:52:52
+⏰ 更新时间：2026-06-04 15:33:35
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
