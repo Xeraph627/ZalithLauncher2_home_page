@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-05 04:37:24
+// 生成时间：2026-06-05 15:21:41
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"满目山河空念远，落花风雨更伤春。"*
+> *"放下遗憾的人得以安居天堂。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{满目山河空念远，落花风雨更伤春。}"
+...button-text text="📋 复制" event="copy{放下遗憾的人得以安居天堂。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Stampy}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_guides%2FThe_Copper_Age}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/ceUvEMAi/83e8134959d619a0fce642cb104c6cf5037c82a9_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/vMgFCMSO/601c7839d194ee01c251b1e1ea3a4198c29db157_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="More Sponge" event="url{https://modrinth.com/mod/more-sponge}"
+...button-text text="Shear Assist" event="url{https://modrinth.com/mod/shear-assist}"
 
-👤 CoolerProYT | 📅 2026-06-05
+👤 nekodon | 📅 2026-06-05
 
-Adds compressed sponges and new lava, snow, and fire sponge variants — each with 5 compression tiers
+Shear nearby sheep together with a single right-click.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/more-sponge/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/more-sponge}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/shear-assist/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/shear-assist}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/4FpnMD8d/icon.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/PNcxLj95/6d2a0f89259df95d3caa1213ddf5d342c66e5477_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="EarthMC Recruitment Addon" event="url{https://modrinth.com/mod/earthmc-recruitment}"
+...button-text text="Dappled Forest Mod" event="url{https://modrinth.com/mod/dappled-forest-mod}"
 
-👤 JR1258- | 📅 2026-06-05
+👤 Hitsomni | 📅 2026-06-05
 
-EarthMC Recruitment Addon - Provides some recruitment assistance features. (May add other features t
+Recreates The new "Dappled Forest" biome shown in the bonus minecraft live of 2026.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/earthmc-recruitment/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/earthmc-recruitment}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/dappled-forest-mod/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/dappled-forest-mod}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/aWmX8OeH/2258a633f8cbfee04ee2a9ab33d6a2d40ef186a7_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/WoT4wT9N/67f0b283ef09b850c1b134c00659909a82ed0f1d_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Mob Blacklist" event="url{https://modrinth.com/mod/mob-blacklist}"
+...button-text text="Minemoticon" event="url{https://modrinth.com/mod/minemoticon}"
 
-👤 Drypted | 📅 2026-06-05
+👤 le_jack | 📅 2026-06-05
 
-A simple mod that allows you to blacklist/disable mobs from spawning inside your world, directly fro
+Emoji and custom font support for Minecraft 1.7.10 using FreeType.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mob-blacklist/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mob-blacklist}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/minemoticon/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/minemoticon}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/FytP0FJD/c42387d236debb6ad5f36ff4f86a86b575bf6de6_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/QM4NBBim/85d0970cdba72df4aa7f0020cc33aa5bfcbd1e5e_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Lore Keeper" event="url{https://modrinth.com/mod/lore-keeper}"
+...button-text text="The Draupnir" event="url{https://modrinth.com/mod/the-draupnir}"
 
-👤 LegendaryPorpoise | 📅 2026-06-05
+👤 saifmods | 📅 2026-06-05
 
-This project adds an easy and intuitive way to add lore to your world!
+A highly detailed, mythical spear mod bringing epic remote explosive detonations and satisfying comb
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/lore-keeper/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/lore-keeper}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/the-draupnir/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/the-draupnir}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/AkDFRRWI/82714c121aaea6a56bcb1c481f2d8472893554b1.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/tD9V4CqO/bc7f0d828a638803d29768ac063c8091256fc7f1.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Cursed Fate: Maxed" event="url{https://modrinth.com/mod/cursed-fate-maxed}"
+...button-text text="Burnt Dynamic Trees" event="url{https://modrinth.com/mod/burnt-dynamic-trees}"
 
-👤 Tetras | 📅 2026-06-05
+👤 pxlbnk | 📅 2026-06-05
 
-Adds a new command that maxes out your Cursed Fate progress
+Adds compat between Burnt and Dynamic Trees
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/cursed-fate-maxed/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/cursed-fate-maxed}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/burnt-dynamic-trees/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/burnt-dynamic-trees}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ Adds a new command that maxes out your Cursed Fate progress
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Stampy](https://minecraft.wiki/Stampy)
+📖 **Wiki 推荐**：[Bedrock Edition guides/The Copper Age](https://minecraft.wiki/Bedrock_Edition_guides%2FThe_Copper_Age)
 
-⏰ 更新时间：2026-06-05 04:37:24
+⏰ 更新时间：2026-06-05 15:21:41
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
