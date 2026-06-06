@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-06 04:10:29
+// 生成时间：2026-06-06 14:00:52
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"军人天生就舍弃了战斗的意义！"*
+> *"为了理想，我宁愿忍受寂寞，饮尽那份孤独。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{军人天生就舍弃了战斗的意义！}"
+...button-text text="📋 复制" event="copy{为了理想，我宁愿忍受寂寞，饮尽那份孤独。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FBlue_Dye}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Drops}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/WPzbX0Eu/0dc777f4360a86b1ce28328de28acaf78e7bf2fa_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/v7Oqunbz/f3274d1886a53d80ab11a8cbc08142f57dfba9ce_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Castles And Outposts" event="url{https://modrinth.com/mod/castles-and-outposts}"
+...button-text text="Viking sword" event="url{https://modrinth.com/mod/viking-sword}"
 
-👤 kilkavakilka | 📅 2026-06-06
+👤 walidlahloub00 | 📅 2026-06-06
 
-Castles And Outposts is a Fabric mod that enhances world generation with majestic medieval castles a
+A fun summer expansion bringing new items, mobs, and a bright seasonal vibe to Minecraft.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/castles-and-outposts/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/castles-and-outposts}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/viking-sword/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/viking-sword}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/uwJu7Fi8/80e8de7443dc52f77aeaa494747d9defb20b9f5e_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/TvMewFxS/cb44847eef865976fc29cd1a86ab68731a459a6f_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Simply Quests" event="url{https://modrinth.com/mod/simply-quests}"
+...button-text text="Erie" event="url{https://modrinth.com/mod/erie}"
 
-👤 liberatedgamer | 📅 2026-06-06
+👤 Zcoper | 📅 2026-06-06
 
-A Progression Quest Mod for Minecraft 26.1.X
+The underground is no longer safe… something is lurking in the dark!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/simply-quests/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/simply-quests}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/erie/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/erie}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Ix8xhhkr/872566bcb4ae18528c665a4f2321aa449a555bdf.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/CXfwn9y9/0e41f631809c070cf9b3c0525769caa68dddbb29_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Mek AE2 Infusion" event="url{https://modrinth.com/mod/mekae2infusion}"
+...button-text text="Extermination" event="url{https://modrinth.com/mod/wotw-extermination}"
 
-👤 moyanj | 📅 2026-06-06
+👤 Zcoper | 📅 2026-06-06
 
-Mekanism 10.4.x + AE2 infusion automation bridge
+The Tripods from War of the Worlds (2005) have arrived. Your World is doomed!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mekae2infusion/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mekae2infusion}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/wotw-extermination/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/wotw-extermination}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Hw8y6Q91/095febcfc29b8231bbd05d7cb0b9cdbbe9328f31_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/vuZ8tQ2P/fcdff504c5647f74a365b1bc07f335677e3d96d3_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Biome Effects" event="url{https://modrinth.com/mod/biome-effects}"
+...button-text text="Digga's Nextbots" event="url{https://modrinth.com/mod/diggas-nextbots}"
 
-👤 Nightrider_Gm7 | 📅 2026-06-06
+👤 Zcoper | 📅 2026-06-06
 
-Gain different status effects depending on the biome you are in.
+This mods adds Nextbots to your world! Be careful
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/biome-effects/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/biome-effects}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/diggas-nextbots/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/diggas-nextbots}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/HEHMoJOJ/ab68a66cdd441d7570afec14bfe9b07ecf4dbb65.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Lh4oGQMM/dd0358ae2ab9cf13b104d032ddc1a0eb294e7af2_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Add Craftable Totems" event="url{https://modrinth.com/mod/add-craftable-totems}"
+...button-text text="Country Road Creature" event="url{https://modrinth.com/mod/country-road-creature}"
 
-👤 Ash-Luigi | 📅 2026-06-06
+👤 Zcoper | 📅 2026-06-06
 
-This will allow you to craft totems of undying using some ore materials
+A tall skinny creature roams through the nights surface... be careful
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/add-craftable-totems/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/add-craftable-totems}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/country-road-creature/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/country-road-creature}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ This will allow you to craft totems of undying using some ore materials
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition item texture history/Blue Dye](https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FBlue_Dye)
+📖 **Wiki 推荐**：[Drops](https://minecraft.wiki/Drops)
 
-⏰ 更新时间：2026-06-06 04:10:29
+⏰ 更新时间：2026-06-06 14:00:52
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
