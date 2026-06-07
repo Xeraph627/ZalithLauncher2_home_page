@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-06 14:00:52
+// 生成时间：2026-06-07 04:46:39
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.HikingNatchez_ZH-CN2495512699_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.DunseverickCastle2026_ZH-CN3036266326_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"为了理想，我宁愿忍受寂寞，饮尽那份孤独。"*
+> *"不敢打开信封啊。因为，打开了就结束了啊。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{为了理想，我宁愿忍受寂寞，饮尽那份孤独。}"
+...button-text text="📋 复制" event="copy{不敢打开信封啊。因为，打开了就结束了啊。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Drops}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_guides%2FBountiful_Update}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/v7Oqunbz/f3274d1886a53d80ab11a8cbc08142f57dfba9ce_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/oqirYRbR/2f1776a62fca0a1895ef55546fe1accc2e22fc6a.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Viking sword" event="url{https://modrinth.com/mod/viking-sword}"
+...button-text text="Smaller Slimes" event="url{https://modrinth.com/mod/smaller-slimes}"
 
-👤 walidlahloub00 | 📅 2026-06-06
+👤 TheKingOfNerds | 📅 2026-06-07
 
-A fun summer expansion bringing new items, mobs, and a bright seasonal vibe to Minecraft.
+Makes slimes and magma cubes less threatening
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/viking-sword/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/viking-sword}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/smaller-slimes/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/smaller-slimes}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/TvMewFxS/cb44847eef865976fc29cd1a86ab68731a459a6f_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/cWKgLdl8/b4ac49950ead458f9a0a0b6d2b6d26bcc1696e1c.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Erie" event="url{https://modrinth.com/mod/erie}"
+...button-text text="AuraLite Realistic Crafting" event="url{https://modrinth.com/mod/auralite-realistic-crafting}"
 
-👤 Zcoper | 📅 2026-06-06
+👤 AlexanderNyr | 📅 2026-06-07
 
-The underground is no longer safe… something is lurking in the dark!
+Minecraft mod for realistic craftings
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/erie/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/erie}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/auralite-realistic-crafting/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/auralite-realistic-crafting}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/CXfwn9y9/0e41f631809c070cf9b3c0525769caa68dddbb29_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/GwhkafOP/4d88f1d86f6e0fcc01e51b91be68aacf9213c6c3_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Extermination" event="url{https://modrinth.com/mod/wotw-extermination}"
+...button-text text="Curse & Enchantment Extension" event="url{https://modrinth.com/mod/enchantment-extension}"
 
-👤 Zcoper | 📅 2026-06-06
+👤 Vaerph | 📅 2026-06-07
 
-The Tripods from War of the Worlds (2005) have arrived. Your World is doomed!
+Adds more vanilla-like enchantments to the game: shulker boxes, buckets, and elytra.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/wotw-extermination/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/wotw-extermination}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/enchantment-extension/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/enchantment-extension}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/vuZ8tQ2P/fcdff504c5647f74a365b1bc07f335677e3d96d3_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/ABjqRout/5e8cd8988f0585f1814dabd8537532446094ecad.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Digga's Nextbots" event="url{https://modrinth.com/mod/diggas-nextbots}"
+...button-text text="Elytra Enchantments" event="url{https://modrinth.com/mod/elytra-enchantments}"
 
-👤 Zcoper | 📅 2026-06-06
+👤 Vaerph | 📅 2026-06-07
 
-This mods adds Nextbots to your world! Be careful
+Adds the enchantments Ethereal and Photosynthesis to elytra. A part of Curse and Enchantment Extensi
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/diggas-nextbots/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/diggas-nextbots}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/elytra-enchantments/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/elytra-enchantments}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Lh4oGQMM/dd0358ae2ab9cf13b104d032ddc1a0eb294e7af2_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/6HYkRQas/cea622799581caf9a633395a7ae51229b6beb927.gif" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Country Road Creature" event="url{https://modrinth.com/mod/country-road-creature}"
+...button-text text="Shulker Enchantments" event="url{https://modrinth.com/mod/shulker-box-enchantments}"
 
-👤 Zcoper | 📅 2026-06-06
+👤 Vaerph | 📅 2026-06-07
 
-A tall skinny creature roams through the nights surface... be careful
+Adds the enchantments Eternal and Void to Shulker Boxes and bundles. A part of Curse and Enchantment
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/country-road-creature/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/country-road-creature}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/shulker-box-enchantments/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/shulker-box-enchantments}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ A tall skinny creature roams through the nights surface... be careful
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：多走走，多思考
-© 纳奇兹小径公园大道, 图珀洛, 密西西比州, 美国 (© The best photo is earned/Getty Images Plus)
+🖼️ 壁纸：最后一堵墙矗立着
+© 邓塞弗里克城堡遗址, 安特里姆郡, 北爱尔兰 (© Krzysztof Rogalski/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Drops](https://minecraft.wiki/Drops)
+📖 **Wiki 推荐**：[Java Edition guides/Bountiful Update](https://minecraft.wiki/Java_Edition_guides%2FBountiful_Update)
 
-⏰ 更新时间：2026-06-06 14:00:52
+⏰ 更新时间：2026-06-07 04:46:39
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
