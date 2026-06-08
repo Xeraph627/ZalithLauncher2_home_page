@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-07 14:10:50
+// 生成时间：2026-06-08 04:51:35
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.DunseverickCastle2026_ZH-CN3036266326_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.Cyanea_ZH-CN3858079050_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"恰沐春风共同游，终只叹，木已舟。"*
+> *"为什么要担心？如果努力了，担心不会让结果变得更好。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{恰沐春风共同游，终只叹，木已舟。}"
+...button-text text="📋 复制" event="copy{为什么要担心？如果努力了，担心不会让结果变得更好。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/1.45}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_item_texture_history%2FRaw_Iron}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/4pktn6X5/fb7888f43917cc90b2f26d0d42fd27ee53def37f_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/qMoubcij/2b83f8fc573079868a91eeb8742858033517b2f8.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="infused books" event="url{https://modrinth.com/mod/infused-books}"
+...button-text text="Enigmatica" event="url{https://modrinth.com/mod/enigmatica}"
 
-👤 phluxjr | 📅 2026-06-07
+👤 BoxyPlayz | 📅 2026-06-08
 
-infused books adds crafting recipes to enchantment books, such as a diamond + book + ender pearl + b
+A few slightly overpowered items to make your world interesting.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/infused-books/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/infused-books}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/enigmatica/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/enigmatica}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/h9VIbKvX/ee4495331379703e698b9d3d4671dd42a5228caf_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/OC8i1kRN/44b53ba1e44cad90f751080d92eb01aad650d97f_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="RetroRig: Oil" event="url{https://modrinth.com/mod/retrorig-oil}"
+...button-text text="Multifolder" event="url{https://modrinth.com/mod/multifolder}"
 
-👤 kyden_ | 📅 2026-06-07
+👤 ItsDurrDurr | 📅 2026-06-08
 
-RetroRig: Oil reimagines classic BuildCraft-style oil for modern Minecraft with pumpjacks, refining,
+MultiFolder allows you to group multiplayer servers into folders, reorder them, and customize their 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/retrorig-oil/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/retrorig-oil}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/multifolder/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/multifolder}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Nyk2VjUX/6d4446c7063288cad14af3d8b2b8436456813eaf_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/XqZhUI07/db869a083abe079d5f82868edc34ba6fcef3fc24_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Eelytra Slot" event="url{https://modrinth.com/mod/eelytra-slot}"
+...button-text text="Shrugger" event="url{https://modrinth.com/mod/shrugger}"
 
-👤 6to7 | 📅 2026-06-07
+👤 Fleny | 📅 2026-06-08
 
-Adds a standalone Elytra slot with chestplate support and working Mending repair.
+This mod adds the /shrug command to send a shrug face in the chat.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/eelytra-slot/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/eelytra-slot}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/shrugger/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/shrugger}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/XISdHjIb/8a88648ae164f289f5ddf9596aba41540dd1c75f_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/371acMJ8/eee5709a6c4a3a29a698160a7caad6bc07e974b0.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="BarSwap" event="url{https://modrinth.com/mod/barswap}"
+...button-text text="Clock and day indicator" event="url{https://modrinth.com/mod/clock-and-day-indicator}"
 
-👤 KesslerCascade | 📅 2026-06-07
+👤 ryantimg5 | 📅 2026-06-08
 
-Just swaps the hotbar with the bottom inventory row. That's it.
+Simple clock and day indicator.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/barswap/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/barswap}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/clock-and-day-indicator/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/clock-and-day-indicator}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/LoYEEHGJ/1efc1afde795f8476507f4e2dce55df35eeff0e2_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/jvABMn1f/7a197d4b1d07f59c39b86f0396e92d75d5bd5cce_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Cobblemon PC Info" event="url{https://modrinth.com/mod/cobblemon-pc-info}"
+...button-text text="CNPC Curios API" event="url{https://modrinth.com/mod/cnpccurios}"
 
-👤 72_65_64 | 📅 2026-06-07
+👤 xiaobiniaox | 📅 2026-06-08
 
-Add info about spawn locations, evolution requirements and breeding groups to the PC.
+Adds a Curios GUI to CustomNPCs entities, allowing NPCs to visually wear and render Curios accessori
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/cobblemon-pc-info/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/cobblemon-pc-info}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/cnpccurios/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/cnpccurios}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ Add info about spawn locations, evolution requirements and breeding groups to th
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：最后一堵墙矗立着
-© 邓塞弗里克城堡遗址, 安特里姆郡, 北爱尔兰 (© Krzysztof Rogalski/Getty Images)
+🖼️ 壁纸：随波逐流
+© 在海洋中游动的狮鬃水母 (© Alexander Semenov Images/Shutterstock)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[1.45](https://minecraft.wiki/1.45)
+📖 **Wiki 推荐**：[Java Edition item texture history/Raw Iron](https://minecraft.wiki/Java_Edition_item_texture_history%2FRaw_Iron)
 
-⏰ 更新时间：2026-06-07 14:10:50
+⏰ 更新时间：2026-06-08 04:51:35
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
