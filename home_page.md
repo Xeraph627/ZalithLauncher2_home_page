@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-08 16:10:13
+// 生成时间：2026-06-09 04:14:26
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"道生之，德蓄之，物形之，势成之。"*
+> *"爱的承诺，失去的苦楚，赎罪的欢愉。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{道生之，德蓄之，物形之，势成之。}"
+...button-text text="📋 复制" event="copy{爱的承诺，失去的苦楚，赎罪的欢愉。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/MinecraftEdu_mod_0.9833%2FDevelopment}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FPolished_Granite_Stairs}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/mRBMgFpa/82f1ada7e5b7c8c971c9be0a6b9ab63e40f0c8e5_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/niXb9I5P/ff84febbf410e500aeba64f53974cc700b46c823_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Fake Death Messages" event="url{https://modrinth.com/mod/fake-death-messages}"
+...button-text text="MegaBeaconBeams" event="url{https://modrinth.com/mod/megabeaconbeams}"
 
-👤 kamussy | 📅 2026-06-08
+👤 Ukengout | 📅 2026-06-08
 
-Every 10-20 minutes, a fake death message will be sent to chat
+The mod unites a lot of beams from adjacent beacons into a MEGABEAM. Oh, if you have really many bea
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/fake-death-messages/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/fake-death-messages}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/megabeaconbeams/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/megabeaconbeams}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/z3IelKQ3/1a9ab9be85e932db8354fc2a19a1548d5ee5633b.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/XbnFvbf8/20c87f06fe7798281a4178cc43b58880768e1d99_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Destiny Constellations" event="url{https://modrinth.com/mod/destiny-constellations}"
+...button-text text="Homelantor" event="url{https://modrinth.com/mod/homelantor}"
 
-👤 mystia | 📅 2026-06-08
+👤 Foxepvp | 📅 2026-06-08
 
-A highly configurable Forge 1.20.1 mod that adds a Genshin-style constellation progression system, c
+A Homelander boss addon for TerminatorStar featuring advanced AI, hunting behavior, and powerful com
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/destiny-constellations/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/destiny-constellations}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/homelantor/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/homelantor}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/jYoKk2YT/bb00ed9f55610cb6d441bb9ac41c18d5c54b64e1_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/sx6tb3KA/47bb2f42395398ecfe92977e837902320d78fca1_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Embers of Rest" event="url{https://modrinth.com/mod/eor}"
+...button-text text="Sweetmilk" event="url{https://modrinth.com/mod/sweetmilk}"
 
-👤 copen | 📅 2026-06-08
+👤 Mirreichts | 📅 2026-06-08
 
-A simple and immersive mod that allows players to rest by the campfire. Warm yourself, recover healt
+A mod that adds Honeymilk, a drink that clears negative effects and restores hunger.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/eor/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/eor}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sweetmilk/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sweetmilk}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/vkGpLME3/c01ca2efa7222c0b46ed2fa7107bba03b4cfe2eb_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/ZKKDrnGq/ee794e2eb3d822ae06b609dd9b2d50ef607c1eaf_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="StylizedDamage" event="url{https://modrinth.com/mod/stylizeddamage}"
+...button-text text="ZombifiedPiglinXp" event="url{https://modrinth.com/mod/zombifiedpiglinxp}"
 
-👤 Yanbwe | 📅 2026-06-08
+👤 MajinGuil | 📅 2026-06-08
 
-A damage number display mod, offering a highly customizable and buttery-smooth experience.
+Restores XP drops from Zombified Piglins — even when they're not killed by a player.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/stylizeddamage/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/stylizeddamage}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/zombifiedpiglinxp/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/zombifiedpiglinxp}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/bcEk6DLa/918507af6cc443d8878a500652608eadfe2066de_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/68DQqE0k/bfce831884b2a35034f39658fee8659ffc295036_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="ShunFeiDelight" event="url{https://modrinth.com/mod/shunfeidelight}"
+...button-text text="Block Farming" event="url{https://modrinth.com/mod/block-farming}"
 
-👤 2134180693 | 📅 2026-06-08
+👤 Hdi | 📅 2026-06-08
 
-A Minecraft Forge mod based on the internet streamer Zhang Shunfei, featuring new creatures, weapons
+A useful mod for minecraft server to create illimitate farming blocks
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/shunfeidelight/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/shunfeidelight}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/block-farming/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/block-farming}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ A Minecraft Forge mod based on the internet streamer Zhang Shunfei, featuring ne
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[MinecraftEdu mod 0.9833/Development](https://minecraft.wiki/MinecraftEdu_mod_0.9833%2FDevelopment)
+📖 **Wiki 推荐**：[Java Edition block render history/Polished Granite Stairs](https://minecraft.wiki/Java_Edition_block_render_history%2FPolished_Granite_Stairs)
 
-⏰ 更新时间：2026-06-08 16:10:13
+⏰ 更新时间：2026-06-09 04:14:26
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
