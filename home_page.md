@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-09 04:14:26
+// 生成时间：2026-06-09 15:21:49
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"爱的承诺，失去的苦楚，赎罪的欢愉。"*
+> *"永远相信，美好的事情即将发生。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{爱的承诺，失去的苦楚，赎罪的欢愉。}"
+...button-text text="📋 复制" event="copy{永远相信，美好的事情即将发生。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FPolished_Granite_Stairs}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_guides%2F1.9.0}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,82 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/niXb9I5P/ff84febbf410e500aeba64f53974cc700b46c823_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/MFsMGxMD/e12bab19b78682506930b3d3ef895cea322f2173_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="MegaBeaconBeams" event="url{https://modrinth.com/mod/megabeaconbeams}"
+...button-text text="Regens Hitbox Settings" event="url{https://modrinth.com/mod/regens-hitbox-settings}"
 
-👤 Ukengout | 📅 2026-06-08
+👤 uokik | 📅 2026-06-09
 
-The mod unites a lot of beams from adjacent beacons into a MEGABEAM. Oh, if you have really many bea
+The mod allows you to toggle the hitbox for each entity
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/megabeaconbeams/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/megabeaconbeams}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/regens-hitbox-settings/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/regens-hitbox-settings}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/XbnFvbf8/20c87f06fe7798281a4178cc43b58880768e1d99_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/jtpadrzi/fb137475d098a1fc05b10b8b56b2e1d3d20daad1_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Homelantor" event="url{https://modrinth.com/mod/homelantor}"
+...button-text text="kalan's chips" event="url{https://modrinth.com/mod/kalans-chips}"
 
-👤 Foxepvp | 📅 2026-06-08
+👤 _Kalan_ | 📅 2026-06-09
 
-A Homelander boss addon for TerminatorStar featuring advanced AI, hunting behavior, and powerful com
+this mod adds chips.
+THEY ARE AN INFINITE SOURCE OF FOOD!!!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/homelantor/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/homelantor}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/kalans-chips/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/kalans-chips}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/sx6tb3KA/47bb2f42395398ecfe92977e837902320d78fca1_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/GebXTgBD/936ed589edd5076aaf3b785f7ba559c19a5311bc_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Sweetmilk" event="url{https://modrinth.com/mod/sweetmilk}"
+...button-text text="Permadeath" event="url{https://modrinth.com/mod/permanentdeath}"
 
-👤 Mirreichts | 📅 2026-06-08
+👤 Catomon | 📅 2026-06-09
 
-A mod that adds Honeymilk, a drink that clears negative effects and restores hunger.
+Adds permadeath option that deletes the world if you die
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sweetmilk/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sweetmilk}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/permanentdeath/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/permanentdeath}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/ZKKDrnGq/ee794e2eb3d822ae06b609dd9b2d50ef607c1eaf_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/lTDr8jUT/33935e876429b80bb3769344e9dbd4f3ccfa82f2.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="ZombifiedPiglinXp" event="url{https://modrinth.com/mod/zombifiedpiglinxp}"
+...button-text text="Backrooms blocks and stuff" event="url{https://modrinth.com/mod/backrooms-blocks-and-stuff}"
 
-👤 MajinGuil | 📅 2026-06-08
+👤 akak | 📅 2026-06-09
 
-Restores XP drops from Zombified Piglins — even when they're not killed by a player.
+this mod adds new building blocks, which look like they're from the backrooms
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/zombifiedpiglinxp/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/zombifiedpiglinxp}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/backrooms-blocks-and-stuff/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/backrooms-blocks-and-stuff}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/68DQqE0k/bfce831884b2a35034f39658fee8659ffc295036_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/zzcff48T/1971e6678e515c8a50b24a4dc3ef0d1bb7e4242e_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Block Farming" event="url{https://modrinth.com/mod/block-farming}"
+...button-text text="Misia's Simple ToolTips" event="url{https://modrinth.com/mod/misias-simple-tooltips}"
 
-👤 Hdi | 📅 2026-06-08
+👤 Misia0721 | 📅 2026-06-09
 
-A useful mod for minecraft server to create illimitate farming blocks
+Modify item tooltips via JSON files.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/block-farming/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/block-farming}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/misias-simple-tooltips/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/misias-simple-tooltips}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +179,9 @@ A useful mod for minecraft server to create illimitate farming blocks
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition block render history/Polished Granite Stairs](https://minecraft.wiki/Java_Edition_block_render_history%2FPolished_Granite_Stairs)
+📖 **Wiki 推荐**：[Bedrock Edition guides/1.9.0](https://minecraft.wiki/Bedrock_Edition_guides%2F1.9.0)
 
-⏰ 更新时间：2026-06-09 04:14:26
+⏰ 更新时间：2026-06-09 15:21:49
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
