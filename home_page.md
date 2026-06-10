@@ -1,19 +1,21 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-09 15:21:49
+// 生成时间：2026-06-10 04:25:08
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.CTNPVernazza_ZH-CN3971102271_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.Hnausapollur_ZH-CN4075343976_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"永远相信，美好的事情即将发生。"*
+> *"“你失去了”
+“我从未拥有”"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{永远相信，美好的事情即将发生。}"
+...button-text text="📋 复制" event="copy{“你失去了”
+“我从未拥有”}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +56,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_guides%2F1.9.0}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_protocol%2FServer_List_Ping}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,82 +69,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/MFsMGxMD/e12bab19b78682506930b3d3ef895cea322f2173_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/1qMrluiH/f02ebed1fbd4fe51310faf1916153f6a04e705f5_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Regens Hitbox Settings" event="url{https://modrinth.com/mod/regens-hitbox-settings}"
+...button-text text="Kenny" event="url{https://modrinth.com/mod/kenny}"
 
-👤 uokik | 📅 2026-06-09
+👤 Zynwro | 📅 2026-06-10
 
-The mod allows you to toggle the hitbox for each entity
+Kenny is here. A Minecraft horror mod where a silent stalker grows more aggressive each day, turning
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/regens-hitbox-settings/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/regens-hitbox-settings}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/kenny/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/kenny}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/jtpadrzi/fb137475d098a1fc05b10b8b56b2e1d3d20daad1_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/5N0STcIq/a3d53ec0671fd5b3f84e4bef0cc0b0aa44d9263b_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="kalan's chips" event="url{https://modrinth.com/mod/kalans-chips}"
+...button-text text="rpg magic" event="url{https://modrinth.com/mod/rpg-magic}"
 
-👤 _Kalan_ | 📅 2026-06-09
+👤 RenRose | 📅 2026-06-10
 
-this mod adds chips.
-THEY ARE AN INFINITE SOURCE OF FOOD!!!
+adds rpg like magic using vanilla resources
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/kalans-chips/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/kalans-chips}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/rpg-magic/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/rpg-magic}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/GebXTgBD/936ed589edd5076aaf3b785f7ba559c19a5311bc_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/PaKd093D/a2d295aa781950b04d1254843a1143690dfff6c5_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Permadeath" event="url{https://modrinth.com/mod/permanentdeath}"
+...button-text text="Synced Double Doors" event="url{https://modrinth.com/mod/synced-double-doors}"
 
-👤 Catomon | 📅 2026-06-09
+👤 Jden7 | 📅 2026-06-10
 
-Adds permadeath option that deletes the world if you die
+This mod syncs double-doors to open simultaneously!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/permanentdeath/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/permanentdeath}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/synced-double-doors/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/synced-double-doors}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/lTDr8jUT/33935e876429b80bb3769344e9dbd4f3ccfa82f2.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/2QbasiLp/3f142ae56c71dd109a77cfcb449823b722702a92_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Backrooms blocks and stuff" event="url{https://modrinth.com/mod/backrooms-blocks-and-stuff}"
+...button-text text="Continuance" event="url{https://modrinth.com/mod/continuance}"
 
-👤 akak | 📅 2026-06-09
+👤 bagglebrain | 📅 2026-06-10
 
-this mod adds new building blocks, which look like they're from the backrooms
+Continuance is an alternate vision of Minecraft's future.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/backrooms-blocks-and-stuff/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/backrooms-blocks-and-stuff}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/continuance/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/continuance}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/zzcff48T/1971e6678e515c8a50b24a4dc3ef0d1bb7e4242e_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/dMV6OgNj/e6e5fedc3a63eeb178dfcc926bff428479cece09_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Misia's Simple ToolTips" event="url{https://modrinth.com/mod/misias-simple-tooltips}"
+...button-text text="Riposte" event="url{https://modrinth.com/mod/riposte}"
 
-👤 Misia0721 | 📅 2026-06-09
+👤 NelA470 | 📅 2026-06-10
 
-Modify item tooltips via JSON files.
+Yet another "Parry" over-visualized parry mod.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/misias-simple-tooltips/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/misias-simple-tooltips}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/riposte/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/riposte}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -174,14 +175,14 @@ Modify item tooltips via JSON files.
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：品尝日落
-© 韦尔纳扎, 五渔村, 利古里亚, 意大利 (© Kelly Cheng/Getty Images)
+🖼️ 壁纸：一抹蓝色
+© 赫瑙萨波鲁尔火山口, 菲亚拉巴克自然保护区, 兰德曼纳劳加尔, 冰岛 (© Juan Maria Coy Vergara/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition guides/1.9.0](https://minecraft.wiki/Bedrock_Edition_guides%2F1.9.0)
+📖 **Wiki 推荐**：[Java Edition protocol/Server List Ping](https://minecraft.wiki/Java_Edition_protocol%2FServer_List_Ping)
 
-⏰ 更新时间：2026-06-09 15:21:49
+⏰ 更新时间：2026-06-10 04:25:08
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
