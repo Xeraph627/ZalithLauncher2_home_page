@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-12 04:50:22
+// 生成时间：2026-06-12 15:32:42
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"天作孽，犹可违，自作孽，不可活。"*
+> *"没人喜欢血淋淋的现实，于是便给自己他人画了个大饼。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{天作孽，犹可违，自作孽，不可活。}"
+...button-text text="📋 复制" event="copy{没人喜欢血淋淋的现实，于是便给自己他人画了个大饼。}"
 ...row-end
 ...column-end
 ...card-end
@@ -32,7 +32,7 @@
 ...card-start title="📦 Minecraft 版本" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(6) horizontal=Start
 **最新正式版**: 26.1.2
-**最新快照**: 26.2-rc-1
+**最新快照**: 26.2-rc-2
 
 近期版本：
 - **26.1.2** (2026-04-09)
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/GoodTimesWithScar}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Polished_Sulfur_Slab}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/sSeKcDrC/f34903674672f0b5534673939563c26ed87062c9.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/QJTjuly5/35def40781286c4b142f6b67ac84caaabfdb320b_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="World Preview NH" event="url{https://modrinth.com/mod/world-preview-nh}"
+...button-text text="Share cursor" event="url{https://modrinth.com/mod/share-cursor}"
 
-👤 ABKQPO | 📅 2026-06-12
+👤 Booie888 | 📅 2026-06-12
 
-A Minecraft 1.7.10 mod for previewing world biomes before creation. This is a backport of World Prev
+Addon to Share Everything Mod, when you're in an inventory menu such as a chest, barrel or inventory
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/world-preview-nh/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/world-preview-nh}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/share-cursor/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/share-cursor}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/tQG2KWRe/3eab5f8be65e0dd0652665bb8432f57d72027e94_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/HEjRv42g/6aa3daf741c88d0430976dd16b32ab6641ade333_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Redden's Stone Lantern Reconstructed" event="url{https://modrinth.com/mod/reddens-stone-lantern-reconstructed}"
+...button-text text="One Way Invisible Block" event="url{https://modrinth.com/mod/one-way-invisible-block}"
 
-👤 King_Thenuja | 📅 2026-06-12
+👤 El__PanaFresco | 📅 2026-06-12
 
-An Updated version of Redden's Stone Lanterns but for more versions and loaders
+A fully invisible block that can be walked through from one side, but not the other.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/reddens-stone-lantern-reconstructed/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/reddens-stone-lantern-reconstructed}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/one-way-invisible-block/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/one-way-invisible-block}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/OY2I72c4/9be8ec670e56aed7394bc2e5998b9001bf370d33_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/xuxNY5uI/afc4e1c32a35dc7a8382d4b0080a3e5a947d7ec6_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Better With Bigshrooms (Huge Mushroom Backport)" event="url{https://modrinth.com/mod/better-with-bigshrooms}"
+...button-text text="Mekanism: Mekalights" event="url{https://modrinth.com/mod/mekanism-mekalights}"
 
-👤 mama_balloon | 📅 2026-06-12
+👤 MrPochy | 📅 2026-06-12
 
-This mod adds huge mushrooms to Minecraft BTA! 8.0.
+Energy-powered smart lighting for Mekanism. One configurable block floods entire areas, surfaces, or
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/better-with-bigshrooms/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/better-with-bigshrooms}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mekanism-mekalights/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mekanism-mekalights}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/m2HPONcc/d416b8caae4924edc4f61d496e07cccd2b68b7fe_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/aV2qHmi9/7b10f18c1fed6a8e2a62f149eac6f8276f1dd086_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Orbital Railgun: Renewed" event="url{https://modrinth.com/mod/orbital-railgun-renewed}"
+...button-text text="RealPlace" event="url{https://modrinth.com/mod/realplace}"
 
-👤 RaynessSilver | 📅 2026-06-12
+👤 yinfires | 📅 2026-06-12
 
-Craft the Orbital Railgun, hold right-click to aim through a full-screen targeting interface, and le
+这个模组允许你随意摆放任何物品！This mod allows you to place any item freely!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/orbital-railgun-renewed/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/orbital-railgun-renewed}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/realplace/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/realplace}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/zau765PF/c93be6ceec33d0f4eb75caa1d7f2542ce4ede65e_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/uNqqR9i7/2a486edce949857e8c9aa8bf3f7a71491b74714d_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Plan" event="url{https://modrinth.com/mod/planned}"
+...button-text text="MysticRealm - Pinokio" event="url{https://modrinth.com/mod/mysticrealm-pinokio}"
 
-👤 CyeBeem | 📅 2026-06-12
+👤 AnooshMods | 📅 2026-06-12
 
-Simple server sided mod that allows players to teleport to a creative dimension where they can desig
+🎭 Meet Pinocchio in the forests! Befriend him with music, or face his pack if provoked. Harvest his
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/planned/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/planned}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mysticrealm-pinokio/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mysticrealm-pinokio}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ Simple server sided mod that allows players to teleport to a creative dimension 
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[GoodTimesWithScar](https://minecraft.wiki/GoodTimesWithScar)
+📖 **Wiki 推荐**：[Polished Sulfur Slab](https://minecraft.wiki/Polished_Sulfur_Slab)
 
-⏰ 更新时间：2026-06-12 04:50:22
+⏰ 更新时间：2026-06-12 15:32:42
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
