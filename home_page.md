@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-14 04:56:48
+// 生成时间：2026-06-14 14:20:40
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"死亡是所有人的共同幸福。"*
+> *"金霞錯日遲雲暮，回首摸空茶已涼。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{死亡是所有人的共同幸福。}"
+...button-text text="📋 复制" event="copy{金霞錯日遲雲暮，回首摸空茶已涼。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fremove}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Archie}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,83 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Q8zfkjED/bb782462412a1acdd95840ece3b618bb79242c77.jpeg" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/CwsY1gnn/576604d194df15785aa05b8b7057d3f9b5a8eded.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Giant Alex: The Silent Watcher" event="url{https://modrinth.com/mod/giant-alex-the-silent-watcher}"
+...button-text text="The TNT Update" event="url{https://modrinth.com/mod/the-tnt-update}"
 
-👤 TNK | 📅 2026-06-14
+👤 SnurfTech | 📅 2026-06-14
 
-Giant Alex: The Silent Watcher - mod from legendary entity
+This mod adds a bunch of cool new types of TNT to the game.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/giant-alex-the-silent-watcher/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/giant-alex-the-silent-watcher}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/the-tnt-update/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/the-tnt-update}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/ssyvO6WG/24828632af55e53e7af0ae2321a7eee6dcdbbe0e_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/uhMtkFRI/e11fdf75c1adeaa6e3a215dc9ab060f6c91d9f54.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Open Together" event="url{https://modrinth.com/mod/open-together}"
+...button-text text="Feathery Elytra" event="url{https://modrinth.com/mod/feathery-elytra}"
 
-👤 Fuzs | 📅 2026-06-14
+👤 Hamada_MP4 | 📅 2026-06-14
 
-Open matching double doors, trapdoors, and fence gates with a single click.
+This Mod adds an extra elytra a weeker version of the elytra in minecraft
+It's made using
+2 Feathers
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/open-together/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/open-together}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/feathery-elytra/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/feathery-elytra}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/MDljZreW/d3127b4ea0bd4dd304192fbcacc7a693d424d3cb_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/2QYBwakg/f7b27c7757de1fb7c24aa2e64c3e162c4cdc916b_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Reach Behind" event="url{https://modrinth.com/mod/reach-behind}"
+...button-text text="Pomelo's Shop" event="url{https://modrinth.com/mod/pomelos-shop}"
 
-👤 Fuzs | 📅 2026-06-14
+👤 youziqwq539 | 📅 2026-06-14
 
-Click through decorations and interact with the blocks behind them.
+A feature-rich in-game shop mod for minecraft, allowing players to buy and sell items through a grap
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/reach-behind/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/reach-behind}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/pomelos-shop/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/pomelos-shop}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/6dj0XcBu/8d0de2008a6be5fce48a88380f5ec18a65c03706_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/TVhOvEMf/2583c34402019d43b87f251f8c90d00176dbe14e_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Arrow Attachments" event="url{https://modrinth.com/mod/arrow-attachments}"
+...button-text text="Create Furnace Lava Adapter" event="url{https://modrinth.com/mod/create-furnace-lava-adapter}"
 
-👤 BLIZZ606 | 📅 2026-06-14
+👤 Bocha9031 | 📅 2026-06-14
 
-Fuse items onto arrows, just like in Zelda.
+A simple block that allows for direct input of liquid lava into furnaces.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/arrow-attachments/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/arrow-attachments}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-furnace-lava-adapter/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-furnace-lava-adapter}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/eEdTSEGj/940bebc95aa4a5e51dcb667dedae0acbd3bd8238_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/sVfGg5Ds/8fc92276321de2aeb5b1aa03ec8357ca99df4540_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Deo's Portal Gun" event="url{https://modrinth.com/mod/deos-portal-gun-mod}"
+...button-text text="Create: Hammers" event="url{https://modrinth.com/mod/create-hammers}"
 
-👤 Lt-DO7 | 📅 2026-06-14
+👤 .superintendent | 📅 2026-06-14
 
-This is a mod heavily based off the Portal Travel from Rick and Morty. Do not worry! More fandoms sh
+Adds the ability to create sheets via your inventory, without having to go to a press to make sheets
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/deos-portal-gun-mod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/deos-portal-gun-mod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-hammers/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-hammers}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +180,9 @@ This is a mod heavily based off the Portal Travel from Rick and Morty. Do not wo
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Commands/remove](https://minecraft.wiki/Commands%2Fremove)
+📖 **Wiki 推荐**：[Archie](https://minecraft.wiki/Archie)
 
-⏰ 更新时间：2026-06-14 04:56:48
+⏰ 更新时间：2026-06-14 14:20:40
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
