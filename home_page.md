@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-15 17:24:46
+// 生成时间：2026-06-16 05:19:58
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"山赶着山，山山漫漫结成关；人赶着人，人人草草尽走散。"*
+> *"你为了你的正义，我为了我的正义。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{山赶着山，山山漫漫结成关；人赶着人，人人草草尽走散。}"
+...button-text text="📋 复制" event="copy{你为了你的正义，我为了我的正义。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Gui.png-atlas}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FStructure_Void}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/ehmUxaIw/942787e9d88ac48a92e56cfd3bc02e62546b789f.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/gbbpz0vV/1e85b4e5807faa880c4aaac2946533aef2e48075.gif" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Delete Empty Folders On Game Close" event="url{https://modrinth.com/mod/delete-empty-folders-on-game-close}"
+...button-text text="Bow strength fix" event="url{https://modrinth.com/mod/bow-strength-fix}"
 
-👤 SmilerRyan | 📅 2026-06-15
+👤 Gvoper | 📅 2026-06-16
 
-When the game closes, it searches for and deletes any empty folders.
+🗸 Your bow's damage will now increase if you have a strength effect!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/delete-empty-folders-on-game-close/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/delete-empty-folders-on-game-close}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bow-strength-fix/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bow-strength-fix}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/HxYpZgrW/5c81a63884d076c9acc0fd2f3a061c50c4a3c1c0_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/io0mUBIu/439f1275e673ba231f364556334aa1d64894a316.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="LavaDamageFixerForJEGN" event="url{https://modrinth.com/mod/lavadamagefixerforjegn}"
+...button-text text="Tomato Craft" event="url{https://modrinth.com/mod/tomato-craft}"
 
-👤 hellscythe88p | 📅 2026-06-15
+👤 busik8219 | 📅 2026-06-16
 
-A NeoForge mod that fixes the instant-death bug caused by environmental damage when using JEGN (Just
+This mod adds a new ore—tomato. You can craft armor, tools, and even a shield from this ore. At nigh
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/lavadamagefixerforjegn/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/lavadamagefixerforjegn}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/tomato-craft/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/tomato-craft}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/zhqcwJVr/31e6605f5e0860246e125c40b4d757cb207d2a31_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/53ZxGFK5/68318f91681a679b946c81083b69d42cdd2b4907_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Sprint Enhancer" event="url{https://modrinth.com/mod/sprint-enhancer}"
+...button-text text="Hotbar Extensions" event="url{https://modrinth.com/mod/hotbar-extensions}"
 
-👤 ByteSlayer | 📅 2026-06-15
+👤 coah | 📅 2026-06-16
 
-Disables sprinting immediately after the sprint key is released even if the forward key is still hel
+adds hotbar extensions that show health of armor, and how many blocks you have left in your inventor
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sprint-enhancer/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sprint-enhancer}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/hotbar-extensions/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/hotbar-extensions}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/hBaXGu88/0cc535cc7f1e60f44118b276a55b36d3fa203d3a_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/SSzdD0ZS/b5454ec0f0e76d87849d5f667f758c036852f57b_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Accurate Block Placement Reforked" event="url{https://modrinth.com/mod/accurate-block-placement-reforked}"
+...button-text text="Astral Foundations" event="url{https://modrinth.com/mod/astral-foundations}"
 
-👤 nameisxy | 📅 2026-06-15
+👤 Solarz | 📅 2026-06-16
 
-Makes block placement smarter by timing it for you.
+A vanilla-friendly mod that adds a copper equipment tier and three metals mined from fallen meteorit
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/accurate-block-placement-reforked/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/accurate-block-placement-reforked}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/astral-foundations/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/astral-foundations}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/NKqRTplo/87d11df61dcd35168ea601450971cd71555bd068_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/8Pj8O49m/1772dc5f61c581855b8f9f1ba0d3446ba8753eeb_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Isometric Chunk" event="url{https://modrinth.com/mod/isometric-chunk}"
+...button-text text="Create Heads Up Display" event="url{https://modrinth.com/mod/create-heads-up-display}"
 
-👤 DoubtfulFanboy | 📅 2026-06-15
+👤 HAOYIYU994 | 📅 2026-06-16
 
-This mod adds a new isometric chunkminimap to the HUD in both a 3x3 or 1x1 chunk. There is an also o
+Create Heads Up Display is an addon for the Create mod that lets players freely display custom infor
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/isometric-chunk/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/isometric-chunk}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-heads-up-display/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-heads-up-display}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ This mod adds a new isometric chunkminimap to the HUD in both a 3x3 or 1x1 chunk
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Gui.png-atlas](https://minecraft.wiki/Gui.png-atlas)
+📖 **Wiki 推荐**：[Java Edition block render history/Structure Void](https://minecraft.wiki/Java_Edition_block_render_history%2FStructure_Void)
 
-⏰ 更新时间：2026-06-15 17:24:46
+⏰ 更新时间：2026-06-16 05:19:58
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
