@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-17 04:59:22
+// 生成时间：2026-06-17 15:54:42
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"我希望兜兜转转之后那个人还是你。"*
+> *"说时依旧,有泪如倾"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{我希望兜兜转转之后那个人还是你。}"
+...button-text text="📋 复制" event="copy{说时依旧,有泪如倾}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Block_of_Diamond}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Copper_Torch}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Cs9p7NNO/c5668dd27dad03416c2af42bb92edce76269eab4_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/syHecAZ6/28d8ba2fd0ce9f720b6c3fc40189a033ea128dfd_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="intuition" event="url{https://modrinth.com/mod/intuition}"
+...button-text text="veinminer++" event="url{https://modrinth.com/mod/veinminer-plus-plus}"
 
-👤 Gvoper | 📅 2026-06-17
+👤 kestalkayden | 📅 2026-06-17
 
-🗸 Transforms survival instincts into hotbar thoughts. Useful when you can't keep track of values or
+Vein Miner, Ore Harvester, Shovel Master, Tree Feller. Guided area. All rolled into one nice package
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/intuition/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/intuition}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/veinminer-plus-plus/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/veinminer-plus-plus}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/euISdY3d/3e96f1c769d28f5cbc746c3928923b4fc1ed793e_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/xRMFhybq/a5af5a13e7123591c1905bcb986b1fc1c64d7297_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Mining Assistant" event="url{https://modrinth.com/mod/mining-assistant}"
+...button-text text="Mob scale randomizer" event="url{https://modrinth.com/mod/mob-scale-randomizer}"
 
-👤 Timexo_YT | 📅 2026-06-17
+👤 mobfucker | 📅 2026-06-17
 
-Mining Assistant is a vanilla-friendly Fabric mod that provides real-time mining information, ore re
+Randomizes mob scale
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mining-assistant/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mining-assistant}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mob-scale-randomizer/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mob-scale-randomizer}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Xh59ySP7/52ac41ade18b9908160a94dad60ee18d1cfc389f_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/DqQmfNRg/7dcd150864d39c9bf6bee425c3df2f7ab82d5745.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Redstone Armor" event="url{https://modrinth.com/mod/redstone-armor}"
+...button-text text="Froggy Throwables" event="url{https://modrinth.com/mod/froggy-throwables}"
 
-👤 guigeek67100 | 📅 2026-06-17
+👤 Just_A_Froggy | 📅 2026-06-17
 
-This mod adds a new redstone armor to the game
+This Mod allows you to throw any item by holding the drop key.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/redstone-armor/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/redstone-armor}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/froggy-throwables/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/froggy-throwables}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/VJXaxPgI/387b9b3608db817e8557786642dfed4d6805741a_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/OWPDND8a/7df908b34fa236b89a6842332604ccc7cc4e44d5_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="MTAB: FastCraft MC" event="url{https://modrinth.com/mod/mtab-fastcraft-mc}"
+...button-text text="Happy Ghast: Automation" event="url{https://modrinth.com/mod/happy-ghast-automation}"
 
-👤 Anakin_Guy | 📅 2026-06-17
+👤 celeryyyyyyy | 📅 2026-06-17
 
-Bringing Legacy Console Crafting Back to Minecraft Java Edition.
+Automated station routes for Happy Ghasts, like a flying train.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mtab-fastcraft-mc/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mtab-fastcraft-mc}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/happy-ghast-automation/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/happy-ghast-automation}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/k23np3Sj/b4c365a44a28b0b7c4a955db14445eda5e28faa6.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/OPApM7gf/e5c738f4644f484b151900409c9ca2b703dba7e2_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Fullbright" event="url{https://modrinth.com/mod/fullbright-gain}"
+...button-text text="Ad Astra: Star" event="url{https://modrinth.com/mod/ad-astra-star}"
 
-👤 gain | 📅 2026-06-17
+👤 qeqes13141 | 📅 2026-06-17
 
-Fullbright mod makes everything bright, pretty and removes glooming darkness of beta 1.7.3.
+Attempting to land on a star in Ad Astra.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/fullbright-gain/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/fullbright-gain}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ad-astra-star/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ad-astra-star}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ Fullbright mod makes everything bright, pretty and removes glooming darkness of 
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Block of Diamond](https://minecraft.wiki/Block_of_Diamond)
+📖 **Wiki 推荐**：[Copper Torch](https://minecraft.wiki/Copper_Torch)
 
-⏰ 更新时间：2026-06-17 04:59:22
+⏰ 更新时间：2026-06-17 15:54:42
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
