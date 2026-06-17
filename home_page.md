@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-16 17:12:06
+// 生成时间：2026-06-17 04:59:22
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"所谓辉煌的人生，不过是欲望的囚徒。"*
+> *"我希望兜兜转转之后那个人还是你。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{所谓辉煌的人生，不过是欲望的囚徒。}"
+...button-text text="📋 复制" event="copy{我希望兜兜转转之后那个人还是你。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Collapse}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Block_of_Diamond}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/z25hqseO/ad5e89d6c5244a3259d5495a1e302cf3035cd761_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Cs9p7NNO/c5668dd27dad03416c2af42bb92edce76269eab4_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="MMR - Moog's Mineshafts Reimagined" event="url{https://modrinth.com/mod/mmr-moogs-mineshafts-reimagined}"
+...button-text text="intuition" event="url{https://modrinth.com/mod/intuition}"
 
-👤 FinnDog_123 | 📅 2026-06-16
+👤 Gvoper | 📅 2026-06-17
 
-Large and complex mineshafts themed for various biomes and dimensions. Filled with loot and mobs
+🗸 Transforms survival instincts into hotbar thoughts. Useful when you can't keep track of values or
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mmr-moogs-mineshafts-reimagined/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mmr-moogs-mineshafts-reimagined}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/intuition/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/intuition}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/v7w63Mwj/8fa02be9dab46f119a8ca4d7ee01f8c23a871272_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/euISdY3d/3e96f1c769d28f5cbc746c3928923b4fc1ed793e_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Vibrant Parrots" event="url{https://modrinth.com/mod/vibrant-parrots}"
+...button-text text="Mining Assistant" event="url{https://modrinth.com/mod/mining-assistant}"
 
-👤 Fuzs | 📅 2026-06-16
+👤 Timexo_YT | 📅 2026-06-17
 
-New colorful parrots, breeding, eggs, and portable cages for the ultimate bird companion.
+Mining Assistant is a vanilla-friendly Fabric mod that provides real-time mining information, ore re
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/vibrant-parrots/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/vibrant-parrots}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mining-assistant/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mining-assistant}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/m8SNwMN7/da3c1aef49f7d8ab7098089df2595e2953443969_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Xh59ySP7/52ac41ade18b9908160a94dad60ee18d1cfc389f_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Woolify" event="url{https://modrinth.com/mod/woolify}"
+...button-text text="Redstone Armor" event="url{https://modrinth.com/mod/redstone-armor}"
 
-👤 mr.fabian.lang | 📅 2026-06-16
+👤 guigeek67100 | 📅 2026-06-17
 
-Change the color of wool with a single click.
+This mod adds a new redstone armor to the game
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/woolify/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/woolify}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/redstone-armor/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/redstone-armor}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/7kP83Tjt/b36bedc6d8694b5c57926c46a422d612af3e718a.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/VJXaxPgI/387b9b3608db817e8557786642dfed4d6805741a_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Entity Dithering" event="url{https://modrinth.com/mod/entity-dithering}"
+...button-text text="MTAB: FastCraft MC" event="url{https://modrinth.com/mod/mtab-fastcraft-mc}"
 
-👤 LopyMine | 📅 2026-06-16
+👤 Anakin_Guy | 📅 2026-06-17
 
-Adds bedrock-like transparency effect to entities. Compatible with any shaders!
+Bringing Legacy Console Crafting Back to Minecraft Java Edition.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/entity-dithering/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/entity-dithering}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/mtab-fastcraft-mc/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/mtab-fastcraft-mc}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/gbbpz0vV/1e85b4e5807faa880c4aaac2946533aef2e48075.gif" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/k23np3Sj/b4c365a44a28b0b7c4a955db14445eda5e28faa6.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Bow strength fix" event="url{https://modrinth.com/mod/bow-strength-fix}"
+...button-text text="Fullbright" event="url{https://modrinth.com/mod/fullbright-gain}"
 
-👤 Gvoper | 📅 2026-06-16
+👤 gain | 📅 2026-06-17
 
-🗸 Your bow's damage will now increase if you have a strength effect!
+Fullbright mod makes everything bright, pretty and removes glooming darkness of beta 1.7.3.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bow-strength-fix/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bow-strength-fix}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/fullbright-gain/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/fullbright-gain}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ Adds bedrock-like transparency effect to entities. Compatible with any shaders!
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Collapse](https://minecraft.wiki/Collapse)
+📖 **Wiki 推荐**：[Block of Diamond](https://minecraft.wiki/Block_of_Diamond)
 
-⏰ 更新时间：2026-06-16 17:12:06
+⏰ 更新时间：2026-06-17 04:59:22
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
