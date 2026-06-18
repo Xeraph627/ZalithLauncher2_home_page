@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-18 04:48:53
+// 生成时间：2026-06-18 15:44:41
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"告诉你一个发现，你和我都会感动，世界很小是个家庭。"*
+> *"有了她灿烂的笑脸,有了活下去面对每一天的勇气。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{告诉你一个发现，你和我都会感动，世界很小是个家庭。}"
+...button-text text="📋 复制" event="copy{有了她灿烂的笑脸,有了活下去面对每一天的勇气。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_item_texture_history%2FMinecart_with_Hopper}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Redstone_circuits%2FPiston%2FEdge_Detectors_Inline}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/roISWAva/e76431b2385de97a67f1c67feab35235066ed96b.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/fbE5JtMI/1f77086c81b3971cd2d9a1b5900e8a947b0f3740_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Bird Feeder" event="url{https://modrinth.com/mod/bird-feeder}"
+...button-text text="CBC:Enhanced Shell Armor [Create Big Cannons]" event="url{https://modrinth.com/mod/cbcenhanced-shell-armor-create-big-cannons}"
 
-👤 LeoBeo | 📅 2026-06-18
+👤 zwachinabottle | 📅 2026-06-18
 
-Feed the Bird, Allay, Bee in your New Bird Feeder And Water Spender
+Adds armored variants of vanilla blocks with configurable CBC toughness, blast resistance, and Sable
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/bird-feeder/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/bird-feeder}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/cbcenhanced-shell-armor-create-big-cannons/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/cbcenhanced-shell-armor-create-big-cannons}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/HiC89MkA/97a54dd01e152c37688a75e211fb7ec791240153_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/hkAW7bCM/d82ebb4fdcfb6d0a10d626174f96215846155067_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Better Chunk Borders" event="url{https://modrinth.com/mod/better-chunk-borders}"
+...button-text text="Aeronautics Levitite Server Fix" event="url{https://modrinth.com/mod/aeronautics-levitite-server-fix}"
 
-👤 L3_N0X | 📅 2026-06-18
+👤 dacite | 📅 2026-06-18
 
-Improves the visual appearance of chunk borders
+Lets Levitite Blend crystallize on dedicated servers for Create: Aeronautics 1.2.1 and older (fixed 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/better-chunk-borders/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/better-chunk-borders}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/aeronautics-levitite-server-fix/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/aeronautics-levitite-server-fix}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/11TJ6Wdi/f8319e17d5ee36348074c9ec2fa7ea89c76bb5ab_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/ITsjdt0q/134d04493d922e865e1731abe8b631f3f4bc07bf_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Inventory Manager: Smart Storage" event="url{https://modrinth.com/mod/inventory-manager-smart-storage}"
+...button-text text="DisableLightningFlash" event="url{https://modrinth.com/mod/disablelightningflash}"
 
-👤 CoopTechGames | 📅 2026-06-18
+👤 kathund | 📅 2026-06-18
 
-A simple and powerful Minecraft inventory and chest management mod.
+Disable Lightning Flash
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/inventory-manager-smart-storage/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/inventory-manager-smart-storage}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/disablelightningflash/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/disablelightningflash}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/SgW9mQeM/04aa9d8c0f30492faaab5ca6951e5f2845929bab_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/yMRHYzX9/4665a2bf4fbc715b14131ecfcb15586ad2385418_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Ender IO: Conduit Optimizer" event="url{https://modrinth.com/mod/ender-io-conduit-optimizer}"
+...button-text text="Create: AlcoCraft+" event="url{https://modrinth.com/mod/create-alcocraft}"
 
-👤 Saku_rain | 📅 2026-06-18
+👤 itzme1on | 📅 2026-06-18
 
-Optimizes Ender IO conduits with customizable tick intervals and smart algorithms to maximize endgam
+Bring Create automation to AlcoCraft+ brewing. Pipe water into your keg, pump the finished beer back
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ender-io-conduit-optimizer/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ender-io-conduit-optimizer}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-alcocraft/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-alcocraft}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/S8yfKmO3/d84f3116a0eddfda0c095eccfbcbb65ed4496b2c_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/BXeGCdww/a0e1cc4ff544532453ce99b885a1367bba95b425_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Create Cursor Anchor Fix" event="url{https://modrinth.com/mod/create-cursor-anchor-fix}"
+...button-text text="Featurify - Feature Control" event="url{https://modrinth.com/mod/featurify}"
 
-👤 LowaSC | 📅 2026-06-18
+👤 faboslav | 📅 2026-06-18
 
-Fixes cursor positioning in Create mod's settings screen on Linux Wayland/X11 via mixins with anchor
+A worldgen feature configuration mod that eliminates the need for datapacks.  Add, remove, and tweak
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-cursor-anchor-fix/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-cursor-anchor-fix}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/featurify/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/featurify}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ Fixes cursor positioning in Create mod's settings screen on Linux Wayland/X11 vi
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition item texture history/Minecart with Hopper](https://minecraft.wiki/Java_Edition_item_texture_history%2FMinecart_with_Hopper)
+📖 **Wiki 推荐**：[Redstone circuits/Piston/Edge Detectors Inline](https://minecraft.wiki/Redstone_circuits%2FPiston%2FEdge_Detectors_Inline)
 
-⏰ 更新时间：2026-06-18 04:48:53
+⏰ 更新时间：2026-06-18 15:44:41
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
