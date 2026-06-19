@@ -40,7 +40,7 @@
 
 ### 方式一：使用在线编辑器（推荐新手）
 
-1. 访问在线编辑器：`https://你的用户名.github.io/zalith-homepage/`
+1. 访问在线编辑器：`https://ssbtt114514.github.io/zalith-homepage/`
 2. 点击 **编辑** 按钮进入编辑模式
 3. 点击组件按钮快速插入卡片、按钮、图片等
 4. 编辑完成后点击 **下载** 保存文件
@@ -295,9 +295,9 @@ ssbtt114514
 
 🌟 支持项目
 
-如果这个项目对你有帮助，请给一个 Star ⭐
+如果这个项目对你有帮助，请给原作者的仓库一个 Star ⭐
 
-https://api.star-history.com/svg?repos=你的用户名/zalith-homepage&type=Date
+https://api.star-history.com/svg?repos=ssbtt114514/zalith-homepage&type=Date
 
 ```
 
