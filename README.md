@@ -70,7 +70,7 @@
 
 ```
 
-https://raw.githubusercontent.com/你的用户名/zalith-homepage/main/home_page.md
+https://raw.githubusercontent.com/你的用户名/ZalithLauncher2_home_page/main/home_page.md
 
 ```
 
