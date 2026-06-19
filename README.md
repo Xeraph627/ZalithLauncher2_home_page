@@ -3,7 +3,7 @@
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线编辑器-blue?logo=github)](https://ssbtt114514.github.io/zalith-homepage/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Actions](ssbtt114514)](https://github.com/你的用户名/zalith-homepage/actions)
+[![GitHub Actions](ssbtt114514)](https://github.com/ssbtt114514/zalith-homepage/actions)
 
 全自动生成的自定义主页，支持多种数据源实时更新，并配有**可视化编辑器**，无需记忆语法即可创建漂亮的启动器主页。
 
