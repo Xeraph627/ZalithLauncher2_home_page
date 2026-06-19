@@ -1,9 +1,9 @@
 
 # 🎮 Zalith Launcher 2 自定义主页
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线编辑器-blue?logo=github)](https://ssbtt114514.github.io/zalith-homepage/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线编辑器-blue?logo=github)](https://ssbtt114514.github.io/ZalithLauncher2_home_page/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Actions](ssbtt114514)](https://github.com/ssbtt114514/zalith-homepage/actions)
+[![GitHub Actions](ssbtt114514)](https://github.com/ssbtt114514/ZalithLauncher2_home_page/actions)
 
 全自动生成的自定义主页，支持多种数据源实时更新，并配有**可视化编辑器**，无需记忆语法即可创建漂亮的启动器主页。
 
@@ -40,7 +40,7 @@
 
 ### 方式一：使用在线编辑器（推荐新手）
 
-1. 访问在线编辑器：`https://ssbtt114514.github.io/zalith-homepage/`
+1. 访问在线编辑器：`https://ssbtt114514.github.io/ZalithLauncher2_home_page/`
 2. 点击 **编辑** 按钮进入编辑模式
 3. 点击组件按钮快速插入卡片、按钮、图片等
 4. 编辑完成后点击 **下载** 保存文件
@@ -80,7 +80,7 @@ https://raw.githubusercontent.com/你的用户名/ZalithLauncher2_home_page/main
 
 ```
 
-zalith-homepage/
+ZalithLauncher2_home_page/
 ├── index.html                 # 可视化编辑器
 ├── home_page.md               # 生成的自定义主页（自动更新）
 ├── README.md                  # 本文件
@@ -297,7 +297,7 @@ ssbtt114514
 
 如果这个项目对你有帮助，请给原作者的仓库一个 Star ⭐
 
-https://api.star-history.com/svg?repos=ssbtt114514/zalith-homepage&type=Date
+https://api.star-history.com/svg?repos=ssbtt114514/ZalithLauncher2_home_page&type=Date
 
 ```
 
@@ -307,7 +307,7 @@ https://api.star-history.com/svg?repos=ssbtt114514/zalith-homepage&type=Date
 
 ```
 
-zalith-homepage/
+ZalithLauncher2_home_page/
 ├── index.html                 # 可视化编辑器
 ├── home_page.md               # 生成的自定义主页
 ├── README.md                  # 本文件（已更新）
