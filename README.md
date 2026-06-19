@@ -297,7 +297,7 @@ ssbtt114514
 
 如果这个项目对你有帮助，请给原作者的仓库一个 Star ⭐
 
-https://api.star-history.com/svg?repos=ssbtt114514/ZalithLauncher2_home_page&type=Date
+[![Star History Chart](https://api.star-history.com/svg?repos=ssbtt114514/ZalithLauncher2_home_page&type=Date)](https://api.star-history.com/svg?repos=ssbtt114514/ZalithLauncher2_home_page&type=Date)
 
 ```
 
