@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-20 02:47:42
+// 生成时间：2026-06-20 07:45:42
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"且将新火试新茶，诗酒趁年华"*
+> *"使会场合而为一的歌曲。大家一起飞起来吧!"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{且将新火试新茶，诗酒趁年华}"
+...button-text text="📋 复制" event="copy{使会场合而为一的歌曲。大家一起飞起来吧!}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Mini_Agent_Mission}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_1.9.3}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/lzkJhu4e/95836e46ff37032e607ab48fcde63c8cd0ffa2f4.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/ynIwMFtH/ab3a5cc7483e608c11097489258b108092fe280d_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Simple Locks" event="url{https://modrinth.com/mod/simple-locks}"
+...button-text text="Just Dire Things [backport]" event="url{https://modrinth.com/mod/justdirethingsbackport}"
 
-👤 Qubit | 📅 2026-06-19
+👤 Perwd | 📅 2026-06-20
 
-Simple Locks is a simple mod that adds locks, keys, and lockpick.
+This is just a simple backport of justdirethings to 1.20.1 forge, alot of people were asking for it 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/simple-locks/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/simple-locks}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/justdirethingsbackport/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/justdirethingsbackport}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/e7rDBfh7/b385aecf848a3c4ef99dc19a4fea71a424726e9c.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/5SCq61TM/d3e695038989692e320bd00c8f207883e97affb8_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="waterupgrade" event="url{https://modrinth.com/mod/waterupgrade}"
+...button-text text="M0-DevTools" event="url{https://modrinth.com/mod/m0-devtools}"
 
-👤 xlxyvergil | 📅 2026-06-19
+👤 M0diis | 📅 2026-06-20
 
-A Sophisticated Backpacks addon that adds a Drinking Upgrade to automatically hydrate the player fro
+M0-Dev Tools is a client-side Fabric toolbox for Minecraft modders, builders, and technical players.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/waterupgrade/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/waterupgrade}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/m0-devtools/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/m0-devtools}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/iXmWUK7c/772a64bacb6d0e83edc83ff7715588c6886bf3ef_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/lAwDJjkD/b37b34ce47bdcaff413781c5f4e17132ceb282cf_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Nickname" event="url{https://modrinth.com/mod/s3don-nickname}"
+...button-text text="Pehkui Hurts" event="url{https://modrinth.com/mod/pehkui-hurts}"
 
-👤 S3don_Ms3od | 📅 2026-06-19
+👤 0P_0PTIC | 📅 2026-06-20
 
-Personalize your experience! Set a custom nickname and show off animated GIFs above your character w
+Adds mob collision damage based on size differences.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/s3don-nickname/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/s3don-nickname}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/pehkui-hurts/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/pehkui-hurts}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/geYM6spk/386916fd03950b68827cbeef8714f2edd08b3abf.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/587eEQmI/a6d7a327ad2be2285adf8d00727c7ba86675dea7_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="CobbleCatalyst" event="url{https://modrinth.com/mod/cobblecatalyst}"
+...button-text text="Alpha QoL" event="url{https://modrinth.com/mod/alpha-qol}"
 
-👤 norevex | 📅 2026-06-19
+👤 Anomalous55 | 📅 2026-06-20
 
-Adds Cobblemon trainer battle phases to Cataclysm boss fights, turning boss fights into hybrid comba
+This is a .jar mod for Minecraft Alpha 1.1.2_01 that only slightly changes the game for a better van
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/cobblecatalyst/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/cobblecatalyst}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/alpha-qol/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/alpha-qol}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/pWlmZ2UP/87cda4486618ea06b2202028e9cf3214e706c709.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Kle6w7W6/ac0778e2ae81b47f664c060ed3df92f7c4b3f9c9.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Particle Dithering" event="url{https://modrinth.com/mod/particle-dithering}"
+...button-text text="Shiny Pings" event="url{https://modrinth.com/mod/shiny-pings}"
 
-👤 LopyMine | 📅 2026-06-19
+👤 joshinyx | 📅 2026-06-20
 
-Adds dithered transparency effect to particles. Compatible with any shaders!
+Client-side mod to ping whatever you're looking at - mob glow + advancement-style toast, plus a live
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/particle-dithering/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/particle-dithering}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/shiny-pings/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/shiny-pings}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +178,9 @@ Adds dithered transparency effect to particles. Compatible with any shaders!
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Mini Agent Mission](https://minecraft.wiki/Mini_Agent_Mission)
+📖 **Wiki 推荐**：[Java Edition 1.9.3](https://minecraft.wiki/Java_Edition_1.9.3)
 
-⏰ 更新时间：2026-06-20 02:47:42
+⏰ 更新时间：2026-06-20 07:45:42
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
