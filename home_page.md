@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-19 14:51:29
+// 生成时间：2026-06-20 02:47:42
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.DragonBoatFestivalY26_ZH-CN5532138555_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.ArchedIceberg_ZH-CN2698040371_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"难道没被攻略的女主就要一辈子只爱恋男主孤独终老吗！"*
+> *"且将新火试新茶，诗酒趁年华"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{难道没被攻略的女主就要一辈子只爱恋男主孤独终老吗！}"
+...button-text text="📋 复制" event="copy{且将新火试新茶，诗酒趁年华}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Void_(disambiguation)}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Mini_Agent_Mission}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,82 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/tNNBiJIt/icon.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/lzkJhu4e/95836e46ff37032e607ab48fcde63c8cd0ffa2f4.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Herobrine`s weapons" event="url{https://modrinth.com/mod/herobrine`s-weapons}"
+...button-text text="Simple Locks" event="url{https://modrinth.com/mod/simple-locks}"
 
-👤 HEROBRIN3 | 📅 2026-06-19
+👤 Qubit | 📅 2026-06-19
 
-A tactical area-denial combat mod introducing lethal chemical payloads, blinding smoke screens, and 
+Simple Locks is a simple mod that adds locks, keys, and lockpick.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/herobrine`s-weapons/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/herobrine`s-weapons}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/simple-locks/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/simple-locks}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/SJPVBx6Y/6c1374a41d5ad746c38aa556940da17a1007cb79.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/e7rDBfh7/b385aecf848a3c4ef99dc19a4fea71a424726e9c.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Easier Gunpowder" event="url{https://modrinth.com/mod/easier-gunpowder}"
+...button-text text="waterupgrade" event="url{https://modrinth.com/mod/waterupgrade}"
 
-👤 Betaeta | 📅 2026-06-19
+👤 xlxyvergil | 📅 2026-06-19
 
-Custom recipe for crafting the gunpowder in version 26.2 (Using Charcoal)
+A Sophisticated Backpacks addon that adds a Drinking Upgrade to automatically hydrate the player fro
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/easier-gunpowder/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/easier-gunpowder}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/waterupgrade/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/waterupgrade}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/9vlbcnmn/e0fa10b39819fadcc4390f3df5969f9ebb9fceef_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/iXmWUK7c/772a64bacb6d0e83edc83ff7715588c6886bf3ef_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="More Than Realistic" event="url{https://modrinth.com/mod/more-than-realistic}"
+...button-text text="Nickname" event="url{https://modrinth.com/mod/s3don-nickname}"
 
-👤 GeniusofAB | 📅 2026-06-19
+👤 S3don_Ms3od | 📅 2026-06-19
 
-Mods adds realistic features in you minecraft
+Personalize your experience! Set a custom nickname and show off animated GIFs above your character w
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/more-than-realistic/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/more-than-realistic}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/s3don-nickname/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/s3don-nickname}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/ct6jPeuV/aad2c04da71974805af67a327c838bbd3dd8fdfb_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/geYM6spk/386916fd03950b68827cbeef8714f2edd08b3abf.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Nik's Craftables - Back to Basics" event="url{https://modrinth.com/mod/niks-craftables-back-to-basics}"
+...button-text text="CobbleCatalyst" event="url{https://modrinth.com/mod/cobblecatalyst}"
 
-👤 nik_at_knight | 📅 2026-06-19
+👤 norevex | 📅 2026-06-19
 
-Adds 562 crafting recipes to revert items back to their basic materials.
+Adds Cobblemon trainer battle phases to Cataclysm boss fights, turning boss fights into hybrid comba
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/niks-craftables-back-to-basics/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/niks-craftables-back-to-basics}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/cobblecatalyst/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/cobblecatalyst}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/h6FOoEc7/7488dd23c59b1bda58592da275cb53f99f511ab7_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/pWlmZ2UP/87cda4486618ea06b2202028e9cf3214e706c709.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Auto Biter" event="url{https://modrinth.com/mod/autobiter}"
+...button-text text="Particle Dithering" event="url{https://modrinth.com/mod/particle-dithering}"
 
-👤 916Isxxc | 📅 2026-06-19
+👤 LopyMine | 📅 2026-06-19
 
-🍖 AutoBiter
-Never starve. Ever again.
+Adds dithered transparency effect to particles. Compatible with any shaders!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/autobiter/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/autobiter}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/particle-dithering/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/particle-dithering}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -174,14 +173,14 @@ Never starve. Ever again.
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：龙吟古韵
-© 湖中的龙舟，中国 (©  Zhonghui Bao/Getty Images)
+🖼️ 壁纸：海洋中冰封的大教堂
+© 漂浮在南极半岛西部海域的拱形冰山, 南大洋 (© Steven Kazlowski/Nature Picture Library)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Void (disambiguation)](https://minecraft.wiki/Void_(disambiguation))
+📖 **Wiki 推荐**：[Mini Agent Mission](https://minecraft.wiki/Mini_Agent_Mission)
 
-⏰ 更新时间：2026-06-19 14:51:29
+⏰ 更新时间：2026-06-20 02:47:42
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
