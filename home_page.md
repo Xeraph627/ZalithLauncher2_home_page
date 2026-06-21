@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-21 08:23:46
+// 生成时间：2026-06-21 13:55:56
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"其实结束并不是真正的结束，而是美好的开始。"*
+> *"我的生命，本来就在不假思索地奔向死亡。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{其实结束并不是真正的结束，而是美好的开始。}"
+...button-text text="📋 复制" event="copy{我的生命，本来就在不假思索地奔向死亡。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBirch_Fence}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_Multiplayer_Test}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,82 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/K2T67aJ6/707987442f163ca907563d6d53ff72cad1375c9a.jpeg" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/eg9pjfOa/bd3515ab3f66600461558e9b47bdd3481c58f4b8_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="The Nightwalker" event="url{https://modrinth.com/mod/the-nightwalker}"
+...button-text text="Sandblast" event="url{https://modrinth.com/mod/sandblast}"
 
-👤 Luc1dMC | 📅 2026-06-21
+👤 GrandAviation | 📅 2026-06-21
 
-A little origin addon I made for fun
-made with: https://www.mathgeniuszach.com/apps/origin-creator/
+Make glass in a blast furnace!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/the-nightwalker/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/the-nightwalker}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sandblast/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sandblast}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/IjPNlGKK/12bbc24c7cfca2aea7e7dfda9af2630088bcd101_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/K1e4Zfxa/a7683a0a8c62d909afb86e3e1dfcacf37b78e70c_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Easy Anvils (Backport)" event="url{https://modrinth.com/mod/easy-anvils-backport}"
+...button-text text="Peaceful Plus" event="url{https://modrinth.com/mod/peaceful-plus}"
 
-👤 nameisxy | 📅 2026-06-21
+👤 GrandAviation | 📅 2026-06-21
 
-Overhauled anvils with stored items, fairer costs, and no more frustrating repair penalties.
+Beat the game in peaceful mode!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/easy-anvils-backport/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/easy-anvils-backport}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/peaceful-plus/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/peaceful-plus}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/DeDO7CUk/6cd31652322b8efe4761f7e80380325343b0bd64.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/CUqdOc9w/3bce6acaa00b80537a709dec40a00c03b0f29198_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Falling Star Rewards" event="url{https://modrinth.com/mod/falling-star-rewards}"
+...button-text text="Lava is Rising !" event="url{https://modrinth.com/mod/lava-is-rising-}"
 
-👤 Adammatthiesen | 📅 2026-06-21
+👤 M0lfkha | 📅 2026-06-21
 
-A Server-side mod that adds falling stars to the world, which can drop a variety of items where they
+The lava rises by one block every two seconds
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/falling-star-rewards/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/falling-star-rewards}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/lava-is-rising-/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/lava-is-rising-}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/UXNYTNay/72d1bb73b00e71524ed14e83f187b78761105a98.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/4rwxHF09/8f699cad073f57bc888d7142463ee7d21a430406.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Sweet Potato" event="url{https://modrinth.com/mod/sweetpotato_catcoder}"
+...button-text text="Ars Mekanica" event="url{https://modrinth.com/mod/ars-mekanica}"
 
-👤 CatCoder | 📅 2026-06-21
+👤 meigoc | 📅 2026-06-21
 
-Adds Sweet Potato
+Bridges Ars Nouveau and Mekanism for tighter cross-mod integration. Currently adds Mekanism sawmill 
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sweetpotato_catcoder/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sweetpotato_catcoder}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/ars-mekanica/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/ars-mekanica}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/EyIxgsZs/81807a9a8c3d0c8202660025e359d5d0e0e31713.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/ooA3n3rr/8e53117466fbc2aa9fc96a53181a3c7cf8c3f2a3.gif" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Weird Money Mod" event="url{https://modrinth.com/mod/weird-money-mod}"
+...button-text text="Early Craftable Elytra" event="url{https://modrinth.com/mod/early-craftable-elytra}"
 
-👤 mistyhasdiabetes | 📅 2026-06-21
+👤 Andy_71 | 📅 2026-06-21
 
-In game craftable/tradeable money you can spend for in game items! Check description!
+Adds a crafting recipe for the elytra.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/weird-money-mod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/weird-money-mod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/early-craftable-elytra/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/early-craftable-elytra}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -179,9 +178,9 @@ In game craftable/tradeable money you can spend for in game items! Check descrip
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition block render history/Birch Fence](https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBirch_Fence)
+📖 **Wiki 推荐**：[Java Edition Multiplayer Test](https://minecraft.wiki/Java_Edition_Multiplayer_Test)
 
-⏰ 更新时间：2026-06-21 08:23:46
+⏰ 更新时间：2026-06-21 13:55:56
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
