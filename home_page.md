@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-21 03:30:23
+// 生成时间：2026-06-21 08:23:46
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"背负着火影之名，我不能输！"*
+> *"其实结束并不是真正的结束，而是美好的开始。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{背负着火影之名，我不能输！}"
+...button-text text="📋 复制" event="copy{其实结束并不是真正的结束，而是美好的开始。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Key}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBirch_Fence}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,82 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/kfl02pjz/0633f6caa808cd909aaba0844a380153e6b963f8_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/K2T67aJ6/707987442f163ca907563d6d53ff72cad1375c9a.jpeg" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Choose player size" event="url{https://modrinth.com/mod/choose-player-size}"
+...button-text text="The Nightwalker" event="url{https://modrinth.com/mod/the-nightwalker}"
 
-👤 bobbymurphy | 📅 2026-06-21
+👤 Luc1dMC | 📅 2026-06-21
 
-This will affect the player's attributes
+A little origin addon I made for fun
+made with: https://www.mathgeniuszach.com/apps/origin-creator/
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/choose-player-size/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/choose-player-size}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/the-nightwalker/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/the-nightwalker}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/OFMcBUIP/696320b3e69406f866785e5a123848507d4b4697.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/IjPNlGKK/12bbc24c7cfca2aea7e7dfda9af2630088bcd101_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="consistentmenu" event="url{https://modrinth.com/mod/consistentmenu}"
+...button-text text="Easy Anvils (Backport)" event="url{https://modrinth.com/mod/easy-anvils-backport}"
 
-👤 neclusive | 📅 2026-06-21
+👤 nameisxy | 📅 2026-06-21
 
-Replaces the ugly new 26.2 icon buttons with a text only friends button.
+Overhauled anvils with stored items, fairer costs, and no more frustrating repair penalties.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/consistentmenu/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/consistentmenu}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/easy-anvils-backport/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/easy-anvils-backport}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/6BITJSVi/e65d5d9ec5f231c8783726f2a945b67e0fc9293c_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/DeDO7CUk/6cd31652322b8efe4761f7e80380325343b0bd64.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Create: Transit Tickets" event="url{https://modrinth.com/mod/create-transit-tickets}"
+...button-text text="Falling Star Rewards" event="url{https://modrinth.com/mod/falling-star-rewards}"
 
-👤 rslover521 | 📅 2026-06-21
+👤 Adammatthiesen | 📅 2026-06-21
 
-A Create addon that focuses on transit fares/ticketing system.
+A Server-side mod that adds falling stars to the world, which can drop a variety of items where they
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-transit-tickets/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-transit-tickets}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/falling-star-rewards/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/falling-star-rewards}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/M5TXw7UT/579747f7cfc4289730f41dec7dae863e9e553c12.gif" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/UXNYTNay/72d1bb73b00e71524ed14e83f187b78761105a98.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Jat's Inventory Auto Totem" event="url{https://modrinth.com/mod/jats-inventory-auto-totem}"
+...button-text text="Sweet Potato" event="url{https://modrinth.com/mod/sweetpotato_catcoder}"
 
-👤 JatLacksUnderstanding | 📅 2026-06-21
+👤 CatCoder | 📅 2026-06-21
 
-A simple mod that automaticly equips totems to the users offhand and hotbar when the players invento
+Adds Sweet Potato
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/jats-inventory-auto-totem/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/jats-inventory-auto-totem}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sweetpotato_catcoder/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sweetpotato_catcoder}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/LRNdjuIO/a4cdbb275d1fef1949a99fbeb991b1d0599bbb51_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/EyIxgsZs/81807a9a8c3d0c8202660025e359d5d0e0e31713.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Build Assist Wands" event="url{https://modrinth.com/mod/build-assist-wands}"
+...button-text text="Weird Money Mod" event="url{https://modrinth.com/mod/weird-money-mod}"
 
-👤 Genzyuro | 📅 2026-06-21
+👤 mistyhasdiabetes | 📅 2026-06-21
 
-Adds multiple wands that assist with block placement, making building and exploration more convenien
+In game craftable/tradeable money you can spend for in game items! Check description!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/build-assist-wands/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/build-assist-wands}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/weird-money-mod/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/weird-money-mod}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +179,9 @@ Adds multiple wands that assist with block placement, making building and explor
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Key](https://minecraft.wiki/Key)
+📖 **Wiki 推荐**：[Bedrock Edition block render history/Birch Fence](https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBirch_Fence)
 
-⏰ 更新时间：2026-06-21 03:30:23
+⏰ 更新时间：2026-06-21 08:23:46
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
