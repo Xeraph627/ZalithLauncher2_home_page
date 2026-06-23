@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-23 02:41:27
+// 生成时间：2026-06-23 07:42:57
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"故乡的云。上古的玉。随手的诗。十九岁的你。"*
+> *"方生方死，方死方生，方可方不可，方不可方可。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{故乡的云。上古的玉。随手的诗。十九岁的你。}"
+...button-text text="📋 复制" event="copy{方生方死，方死方生，方可方不可，方不可方可。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FSilverfish_Spawn_Egg}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_beta_1.14.2.50}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A Minecraft Challenges Mod. You have multiple challenges to choose from for exam
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition item texture history/Silverfish Spawn Egg](https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FSilverfish_Spawn_Egg)
+📖 **Wiki 推荐**：[Bedrock Edition beta 1.14.2.50](https://minecraft.wiki/Bedrock_Edition_beta_1.14.2.50)
 
-⏰ 更新时间：2026-06-23 02:41:27
+⏰ 更新时间：2026-06-23 07:42:57
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
