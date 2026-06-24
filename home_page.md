@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-24 02:42:05
+// 生成时间：2026-06-24 07:35:10
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"笑只是一个表情，与快乐无关。"*
+> *"你真的，不打算用自己喜欢的方式去过这一生吗？"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{笑只是一个表情，与快乐无关。}"
+...button-text text="📋 复制" event="copy{你真的，不打算用自己喜欢的方式去过这一生吗？}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_13w18a}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_Infdev_20100413-1951}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Kills players, if they disconnect in combat.
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition 13w18a](https://minecraft.wiki/Java_Edition_13w18a)
+📖 **Wiki 推荐**：[Java Edition Infdev 20100413-1951](https://minecraft.wiki/Java_Edition_Infdev_20100413-1951)
 
-⏰ 更新时间：2026-06-24 02:42:05
+⏰ 更新时间：2026-06-24 07:35:10
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
