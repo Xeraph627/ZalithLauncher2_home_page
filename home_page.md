@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-25 02:42:53
+// 生成时间：2026-06-25 07:37:35
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"boy，有什么开不了口。"*
+> *"无论做什么，记得为自己而做，那就毫无怨言。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{boy，有什么开不了口。}"
+...button-text text="📋 复制" event="copy{无论做什么，记得为自己而做，那就毫无怨言。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Redstone_circuits%2FLogic%2FXNOR}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/PlayStation_3_Edition_1.20}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Resize, move, and customize Minecraft's subtitles from a clean in-game menu with
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Redstone circuits/Logic/XNOR](https://minecraft.wiki/Redstone_circuits%2FLogic%2FXNOR)
+📖 **Wiki 推荐**：[PlayStation 3 Edition 1.20](https://minecraft.wiki/PlayStation_3_Edition_1.20)
 
-⏰ 更新时间：2026-06-25 02:42:53
+⏰ 更新时间：2026-06-25 07:37:35
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
