@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-26 07:44:46
+// 生成时间：2026-06-26 14:11:37
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"君子不器。"*
+> *"生命不止，奋斗不息。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{君子不器。}"
+...button-text text="📋 复制" event="copy{生命不止，奋斗不息。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Nether_Fortress%2FStructure}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_Preview_26.10.25}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Allows Mekanism's SPS to use custom recipes through JSON.
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Nether Fortress/Structure](https://minecraft.wiki/Nether_Fortress%2FStructure)
+📖 **Wiki 推荐**：[Bedrock Edition Preview 26.10.25](https://minecraft.wiki/Bedrock_Edition_Preview_26.10.25)
 
-⏰ 更新时间：2026-06-26 07:44:46
+⏰ 更新时间：2026-06-26 14:11:37
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
