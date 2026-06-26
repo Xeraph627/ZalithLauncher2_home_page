@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-25 14:12:57
+// 生成时间：2026-06-26 02:46:37
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.GrandPlace_ZH-CN8806496436_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.ThamesSummer_ZH-CN5292532714_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"麻雀妈妈给小麻雀扎头发，问小麻雀要什么发型，小麻雀说：啾啾。"*
+> *"所谓豪言壮志，只是为了安慰某刻的自己。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{麻雀妈妈给小麻雀扎头发，问小麻雀要什么发型，小麻雀说：啾啾。}"
+...button-text text="📋 复制" event="copy{所谓豪言壮志，只是为了安慰某刻的自己。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Launcher_2.6.10}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Potato_Bud}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -173,14 +173,14 @@ Allows Mekanism's SPS to use custom recipes through JSON.
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：在广场中感受历史
-© 布鲁塞尔大广场上的建筑群, 比利时 (© Vladislav Zolotov/Getty Images Plus)
+🖼️ 壁纸：时事
+© 泰晤士河, 伦敦, 英格兰 (© Daniel Lange/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Launcher 2.6.10](https://minecraft.wiki/Launcher_2.6.10)
+📖 **Wiki 推荐**：[Potato Bud](https://minecraft.wiki/Potato_Bud)
 
-⏰ 更新时间：2026-06-25 14:12:57
+⏰ 更新时间：2026-06-26 02:46:37
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
