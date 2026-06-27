@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-27 02:37:43
+// 生成时间：2026-06-27 06:49:01
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"浅相遇，深相知。久相念，长相思。"*
+> *"若非缠绵落雨中，怎知情意浓，点滴伴着浮生若梦。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{浅相遇，深相知。久相念，长相思。}"
+...button-text text="📋 复制" event="copy{若非缠绵落雨中，怎知情意浓，点滴伴着浮生若梦。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FPotato_Button}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FBookshelf}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Badges that give you neat perks!
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition block render history/Potato Button](https://minecraft.wiki/Java_Edition_block_render_history%2FPotato_Button)
+📖 **Wiki 推荐**：[Java Edition block render history/Bookshelf](https://minecraft.wiki/Java_Edition_block_render_history%2FBookshelf)
 
-⏰ 更新时间：2026-06-27 02:37:43
+⏰ 更新时间：2026-06-27 06:49:01
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
