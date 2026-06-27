@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-27 06:49:01
+// 生成时间：2026-06-27 13:20:13
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"若非缠绵落雨中，怎知情意浓，点滴伴着浮生若梦。"*
+> *"大家都是伪善者，世间充斥着不真实。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{若非缠绵落雨中，怎知情意浓，点滴伴着浮生若梦。}"
+...button-text text="📋 复制" event="copy{大家都是伪善者，世间充斥着不真实。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FBookshelf}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Battle_(mini_game)}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Badges that give you neat perks!
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition block render history/Bookshelf](https://minecraft.wiki/Java_Edition_block_render_history%2FBookshelf)
+📖 **Wiki 推荐**：[Battle (mini game)](https://minecraft.wiki/Battle_(mini_game))
 
-⏰ 更新时间：2026-06-27 06:49:01
+⏰ 更新时间：2026-06-27 13:20:13
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
