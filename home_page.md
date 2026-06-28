@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-28 07:46:06
+// 生成时间：2026-06-28 13:24:28
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"人这一生，匆匆而过，若说真有所图，也不过是一份温暖和惦记"*
+> *"祈祷着今后的你的人生，永远都有幸福的“魔法”相伴。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{人这一生，匆匆而过，若说真有所图，也不过是一份温暖和惦记}"
+...button-text text="📋 复制" event="copy{祈祷着今后的你的人生，永远都有幸福的“魔法”相伴。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Potato_Pressure_Plate}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_Preview_1.20.70.21}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Badges that give you neat perks!
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Potato Pressure Plate](https://minecraft.wiki/Potato_Pressure_Plate)
+📖 **Wiki 推荐**：[Bedrock Edition Preview 1.20.70.21](https://minecraft.wiki/Bedrock_Edition_Preview_1.20.70.21)
 
-⏰ 更新时间：2026-06-28 07:46:06
+⏰ 更新时间：2026-06-28 13:24:28
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
