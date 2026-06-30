@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-06-30 07:47:26
+// 生成时间：2026-06-30 14:06:42
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"为什么我眼睛一睁开，你就不是我的了。"*
+> *"别在最疲惫的时候审视自己的人生，你只是今天有点累。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{为什么我眼睛一睁开，你就不是我的了。}"
+...button-text text="📋 复制" event="copy{别在最疲惫的时候审视自己的人生，你只是今天有点累。}"
 ...row-end
 ...column-end
 ...card-end
@@ -32,7 +32,7 @@
 ...card-start title="📦 Minecraft 版本" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(6) horizontal=Start
 **最新正式版**: 26.2
-**最新快照**: 26.3-snapshot-1
+**最新快照**: 26.3-snapshot-2
 
 近期版本：
 - **26.2** (2026-06-16)
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Paws_and_Claws_Cosplay_Pack}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FPiglin_Spawn_Egg}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Lots of new beautiful skins for wings!
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Paws and Claws Cosplay Pack](https://minecraft.wiki/Paws_and_Claws_Cosplay_Pack)
+📖 **Wiki 推荐**：[Bedrock Edition item texture history/Piglin Spawn Egg](https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FPiglin_Spawn_Egg)
 
-⏰ 更新时间：2026-06-30 07:47:26
+⏰ 更新时间：2026-06-30 14:06:42
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
