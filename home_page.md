@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-01 08:06:18
+// 生成时间：2026-07-01 14:22:05
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"我们都不懂离别的重量，直到某天冷空气裹挟着回忆涌来。"*
+> *"是你赢了...哲..."*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{我们都不懂离别的重量，直到某天冷空气裹挟着回忆涌来。}"
+...button-text text="📋 复制" event="copy{是你赢了...哲...}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FPeelgrass_Block}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FDead_Coral_Fan}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -179,9 +179,9 @@ Delays mob melee damage until the attack swing animation finishes.
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition block render history/Peelgrass Block](https://minecraft.wiki/Java_Edition_block_render_history%2FPeelgrass_Block)
+📖 **Wiki 推荐**：[Java Edition block render history/Dead Coral Fan](https://minecraft.wiki/Java_Edition_block_render_history%2FDead_Coral_Fan)
 
-⏰ 更新时间：2026-07-01 08:06:18
+⏰ 更新时间：2026-07-01 14:22:05
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
