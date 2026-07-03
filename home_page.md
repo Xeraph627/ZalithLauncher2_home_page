@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-03 02:24:18
+// 生成时间：2026-07-03 06:56:59
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"所谓的「改变自己，世界就会随之改变」这种事，是不可能的。"*
+> *"看惯黑夜的人不应该习惯黑夜，而应该更习惯光明。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{所谓的「改变自己，世界就会随之改变」这种事，是不可能的。}"
+...button-text text="📋 复制" event="copy{看惯黑夜的人不应该习惯黑夜，而应该更习惯光明。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Data_component_format%2Frepair_cost}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Will_Arnett_is_Hosting_Minecon_Earth!}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A library that extends Player Animation Library and bendable-cuboids with improv
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Data component format/repair cost](https://minecraft.wiki/Data_component_format%2Frepair_cost)
+📖 **Wiki 推荐**：[Will Arnett is Hosting Minecon Earth!](https://minecraft.wiki/Will_Arnett_is_Hosting_Minecon_Earth!)
 
-⏰ 更新时间：2026-07-03 02:24:18
+⏰ 更新时间：2026-07-03 06:56:59
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
