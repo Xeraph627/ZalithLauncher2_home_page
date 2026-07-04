@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-04 06:42:45
+// 生成时间：2026-07-04 13:10:13
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"海内存知己，天涯若比邻。"*
+> *"风吹柳叶遮黄雀，薄翅不觉已落蝉。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{海内存知己，天涯若比邻。}"
+...button-text text="📋 复制" event="copy{风吹柳叶遮黄雀，薄翅不觉已落蝉。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_1.21.11_Pre-Release_3}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FGranite_Slab}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A library that extends Player Animation Library and bendable-cuboids with improv
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition 1.21.11 Pre-Release 3](https://minecraft.wiki/Java_Edition_1.21.11_Pre-Release_3)
+📖 **Wiki 推荐**：[Java Edition block render history/Granite Slab](https://minecraft.wiki/Java_Edition_block_render_history%2FGranite_Slab)
 
-⏰ 更新时间：2026-07-04 06:42:45
+⏰ 更新时间：2026-07-04 13:10:13
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
