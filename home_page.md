@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-04 13:10:13
+// 生成时间：2026-07-05 02:31:56
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.KaysersbergVillage_ZH-CN0445080679_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.LavenderRows_ZH-CN0676810895_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"风吹柳叶遮黄雀，薄翅不觉已落蝉。"*
+> *"宇宙是蚂蚁的梦。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{风吹柳叶遮黄雀，薄翅不觉已落蝉。}"
+...button-text text="📋 复制" event="copy{宇宙是蚂蚁的梦。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FGranite_Slab}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FCopper_Helmet}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -173,14 +173,14 @@ A library that extends Player Animation Library and bendable-cuboids with improv
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：此行，不虚绕道
-© 凯泽斯堡，阿尔萨斯，法国 (© Federica Gentile/Getty Images)
+🖼️ 壁纸：紫色花海
+© 瓦朗索勒高原的薰衣草行，普罗旺斯，法国 (© Robert Harding/Shutterstock)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition block render history/Granite Slab](https://minecraft.wiki/Java_Edition_block_render_history%2FGranite_Slab)
+📖 **Wiki 推荐**：[Bedrock Edition item texture history/Copper Helmet](https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FCopper_Helmet)
 
-⏰ 更新时间：2026-07-04 13:10:13
+⏰ 更新时间：2026-07-05 02:31:56
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
