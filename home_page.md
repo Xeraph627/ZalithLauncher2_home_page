@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-05 07:19:28
+// 生成时间：2026-07-05 13:18:35
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"待到秋来九月八，我花开后百花杀。"*
+> *"浮生短暂，终将归宁。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{待到秋来九月八，我花开后百花杀。}"
+...button-text text="📋 复制" event="copy{浮生短暂，终将归宁。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fspectate}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBamboo_Button}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A library that extends Player Animation Library and bendable-cuboids with improv
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Commands/spectate](https://minecraft.wiki/Commands%2Fspectate)
+📖 **Wiki 推荐**：[Bedrock Edition block render history/Bamboo Button](https://minecraft.wiki/Bedrock_Edition_block_render_history%2FBamboo_Button)
 
-⏰ 更新时间：2026-07-05 07:19:28
+⏰ 更新时间：2026-07-05 13:18:35
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
