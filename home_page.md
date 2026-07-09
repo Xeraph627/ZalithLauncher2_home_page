@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-09 02:24:53
+// 生成时间：2026-07-09 07:42:24
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"我希望兜兜转转之后那个人还是你。"*
+> *"从春夏到秋冬看流过的时空，像拂面过的微风。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{我希望兜兜转转之后那个人还是你。}"
+...button-text text="📋 复制" event="copy{从春夏到秋冬看流过的时空，像拂面过的微风。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_1.18%2Fgameplay-tweaks_%40_8f847b11fb2}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Commands%2Fspectate}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ a mod that locks some utility block behind manuals
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition 1.18/gameplay-tweaks @ 8f847b11fb2](https://minecraft.wiki/Java_Edition_1.18%2Fgameplay-tweaks_%40_8f847b11fb2)
+📖 **Wiki 推荐**：[Commands/spectate](https://minecraft.wiki/Commands%2Fspectate)
 
-⏰ 更新时间：2026-07-09 02:24:53
+⏰ 更新时间：2026-07-09 07:42:24
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
