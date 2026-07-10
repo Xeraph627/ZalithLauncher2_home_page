@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-10 07:30:20
+// 生成时间：2026-07-10 14:08:26
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"越想贴近事实，不明白的事情就越多。"*
+> *"只要全力以赴，就无所谓失败。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{越想贴近事实，不明白的事情就越多。}"
+...button-text text="📋 复制" event="copy{只要全力以赴，就无所谓失败。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FWooden_Pickaxe}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_Classic_0.0.14a_05}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Makes Create: Diesel Generator Diesel and Biodiesel Compatible in the Immersive 
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition item texture history/Wooden Pickaxe](https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FWooden_Pickaxe)
+📖 **Wiki 推荐**：[Java Edition Classic 0.0.14a 05](https://minecraft.wiki/Java_Edition_Classic_0.0.14a_05)
 
-⏰ 更新时间：2026-07-10 07:30:20
+⏰ 更新时间：2026-07-10 14:08:26
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
