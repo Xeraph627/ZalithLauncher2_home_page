@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-11 02:03:51
+// 生成时间：2026-07-11 06:08:23
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"青木披山岚，绿漪漾水河。"*
+> *"Let the hacking begin."*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{青木披山岚，绿漪漾水河。}"
+...button-text text="📋 复制" event="copy{Let the hacking begin.}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Number_Block}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/SpongeBob_SquarePants}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Makes Create: Diesel Generator Diesel and Biodiesel Compatible in the Immersive 
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Number Block](https://minecraft.wiki/Number_Block)
+📖 **Wiki 推荐**：[SpongeBob SquarePants](https://minecraft.wiki/SpongeBob_SquarePants)
 
-⏰ 更新时间：2026-07-11 02:03:51
+⏰ 更新时间：2026-07-11 06:08:23
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
