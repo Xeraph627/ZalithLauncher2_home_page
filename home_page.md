@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-13 02:09:01
+// 生成时间：2026-07-13 06:48:14
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"一本书上每多一个公式，就会减少一半读者。"*
+> *"洪水般的爱情像灾难，爱在一点点时，最珍贵！"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{一本书上每多一个公式，就会减少一半读者。}"
+...button-text text="📋 复制" event="copy{洪水般的爱情像灾难，爱在一点点时，最珍贵！}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_Indev_20100212-1210}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FNetherite_Hoe}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A lightweight mod to block specific mob spawns
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition Indev 20100212-1210](https://minecraft.wiki/Java_Edition_Indev_20100212-1210)
+📖 **Wiki 推荐**：[Bedrock Edition item texture history/Netherite Hoe](https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FNetherite_Hoe)
 
-⏰ 更新时间：2026-07-13 02:09:01
+⏰ 更新时间：2026-07-13 06:48:14
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
