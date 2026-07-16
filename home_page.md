@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-16 06:12:11
+// 生成时间：2026-07-16 13:29:03
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"世间本无公平可言，除非公平掌握在自己手中。"*
+> *"我在最没有能力的年纪，遇见了最想照顾一生的人。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{世间本无公平可言，除非公平掌握在自己手中。}"
+...button-text text="📋 复制" event="copy{我在最没有能力的年纪，遇见了最想照顾一生的人。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Pocket_Edition_v0.3.3_alpha}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_1.20_Pre-release_2}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Makes all arrows shot by any entity pickable.
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Pocket Edition v0.3.3 alpha](https://minecraft.wiki/Pocket_Edition_v0.3.3_alpha)
+📖 **Wiki 推荐**：[Java Edition 1.20 Pre-release 2](https://minecraft.wiki/Java_Edition_1.20_Pre-release_2)
 
-⏰ 更新时间：2026-07-16 06:12:11
+⏰ 更新时间：2026-07-16 13:29:03
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
