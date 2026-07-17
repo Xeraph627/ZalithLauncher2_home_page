@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-17 02:05:16
+// 生成时间：2026-07-17 06:10:58
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"因为不可能，所以才值得相信。"*
+> *"爱的承诺，失去的苦楚，赎罪的欢愉。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{因为不可能，所以才值得相信。}"
+...button-text text="📋 复制" event="copy{爱的承诺，失去的苦楚，赎罪的欢愉。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Nautilus_Shell}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_mob_render_history%2FFrog}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A Fabric client-side chain mining & smart farming mod — hold ` to vein-mine, t
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Nautilus Shell](https://minecraft.wiki/Nautilus_Shell)
+📖 **Wiki 推荐**：[Bedrock Edition mob render history/Frog](https://minecraft.wiki/Bedrock_Edition_mob_render_history%2FFrog)
 
-⏰ 更新时间：2026-07-17 02:05:16
+⏰ 更新时间：2026-07-17 06:10:58
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
