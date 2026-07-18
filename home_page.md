@@ -1,19 +1,19 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-17 13:14:51
+// 生成时间：2026-07-18 01:54:37
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
 // --- Bing 每日壁纸横幅 ---
-...image url="https://cn.bing.com/th?id=OHR.VaiUmbrellas_ZH-CN1271422272_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
+...image url="https://cn.bing.com/th?id=OHR.DevilsBridge_ZH-CN2164982440_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" width=100% shape=0dp
 
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"能轻易离开的人确实谈不上遗憾"*
+> *"胜固欣然，败亦可喜。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{能轻易离开的人确实谈不上遗憾}"
+...button-text text="📋 复制" event="copy{胜固欣然，败亦可喜。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bars}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Stone_Button}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -67,81 +67,81 @@
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/uskAR81c/8cec62e68f9c40b7eb9d2c2ddf57e974c0ef2d04.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/dLnuHztJ/6110e0a5aa6570c33b253504004d8ccdee5b45d2_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Trading Stalls" event="url{https://modrinth.com/mod/trading-stalls}"
+...button-text text="The Unseen Origin" event="url{https://modrinth.com/mod/the-unseen-origin}"
 
-👤 KuKuuu69 | 📅 2026-07-17
+👤 Mark_CG_048 | 📅 2026-07-18
 
-Set up player-owned trading stalls, price your goods, and sell to players or villagers
+This is a custom origin I call "The Unseen Origin" for the Origins mod.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/trading-stalls/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/trading-stalls}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/the-unseen-origin/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/the-unseen-origin}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/DxsKlq8A/d15905909371277881a283ab924d2d7c24bb3e40.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/hmopNc8L/0f45b50d909bad5061b4ab738887882ef21f3222_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Jest's Artefacts PLUS" event="url{https://modrinth.com/mod/jests-artefacts-plus}"
+...button-text text="Quick Homes" event="url{https://modrinth.com/mod/quick-series-homes}"
 
-👤 AxisTheJester | 📅 2026-07-17
+👤 joxer021 | 📅 2026-07-18
 
-An addon for Jest's Swords PLUS, Jest's Artefacts PLUS aims to add a number of smaller items and wea
+Allows players to set homes and teleport to them using the Quick Actions menu.
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/jests-artefacts-plus/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/jests-artefacts-plus}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/quick-series-homes/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/quick-series-homes}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/WA5Ki1fq/6d8a64d4c31deeffad50f581692250c9c23294cb.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/E8vOB8XM/5da1784fa73031f6632dff5f7a4802f4b194b442.gif" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="AdvancementUnlockedMod" event="url{https://modrinth.com/mod/advancementunlockedmod}"
+...button-text text="Highroller Origins" event="url{https://modrinth.com/mod/highroller-origins}"
 
-👤 EdvardCode | 📅 2026-07-17
+👤 Wawacatswiss | 📅 2026-07-18
 
-Adds 30+ fun and humorous advancements to your Minecraft world, organized into 6 categories!
+A custom origin that add the highroller origin (might be op)
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/advancementunlockedmod/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/advancementunlockedmod}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/highroller-origins/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/highroller-origins}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/ha7TAvj9/6d25979aea751336a56eed0b37beea07f097e14b.png" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/Dpnl1uQf/94cd9da522bdc1d0d325220e353e3000960c5652_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="TheTidengFarstMod_ChainMining" event="url{https://modrinth.com/mod/thetidengfarstmod_chainmining}"
+...button-text text="Guns" event="url{https://modrinth.com/mod/zoyluo-guns}"
 
-👤 tideng | 📅 2026-07-17
+👤 zoyluo | 📅 2026-07-18
 
-A Fabric client-side chain mining & smart farming mod — hold ` to vein-mine, till, plant, and harves
+Server-authoritative Fabric weapons for Minecraft 1.21.3: six survival-craftable guns, ammunition, r
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/thetidengfarstmod_chainmining/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/thetidengfarstmod_chainmining}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/zoyluo-guns/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/zoyluo-guns}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/TJNGC5Rp/2dd66f2e28a0e5262d8e8ebcf2fc62d668ba0a4e_96.webp" width=40dp shape=8dp
+...image url="https://cdn.modrinth.com/data/dP69yvhb/ee08a79e212940d20fe708e543779f16578a90c3.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
-...button-text text="Anti Magic" event="url{https://modrinth.com/mod/anti-magic}"
+...button-text text="The easy way out" event="url{https://modrinth.com/mod/the-easy-way-out}"
 
-👤 arcforgelab | 📅 2026-07-17
+👤 bb771 | 📅 2026-07-18
 
-A powered containment system for selectively suppressing vanilla supernatural mechanics in Minecraft
+a quick way to respawn back to your base using a gun!
 
 ...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/anti-magic/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/anti-magic}" weight=(1)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/the-easy-way-out/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/the-easy-way-out}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -173,14 +173,14 @@ A powered containment system for selectively suppressing vanilla supernatural me
 ...column-start vertical=spacedBy(4) horizontal=Center
 **Zalith Launcher 2** 自动更新主页
 
-🖼️ 壁纸：希腊式的逃离
-© 瓦伊海滩上的日光浴躺椅，克里特岛，希腊 (© borchee/Getty Images)
+🖼️ 壁纸：环影圆成
+© 恶魔桥在克罗姆劳杜鹃花公园，萨克森州，德国 (© Mike Mareen/Getty Images)
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bars](https://minecraft.wiki/Bars)
+📖 **Wiki 推荐**：[Stone Button](https://minecraft.wiki/Stone_Button)
 
-⏰ 更新时间：2026-07-17 13:14:51
+⏰ 更新时间：2026-07-18 01:54:37
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
