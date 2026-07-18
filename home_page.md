@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-18 01:54:37
+// 生成时间：2026-07-18 05:59:35
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"胜固欣然，败亦可喜。"*
+> *"回过神来，不知何时，我就已经化为了我。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{胜固欣然，败亦可喜。}"
+...button-text text="📋 复制" event="copy{回过神来，不知何时，我就已经化为了我。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Stone_Button}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Careful_Restoration}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -66,6 +66,23 @@
 // --- 🧩 Modrinth 最新模组 ---
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
+...row-start horizontal=spacedBy(8) vertical=Center
+...image url="https://cdn.modrinth.com/data/n9pE8Wpa/d786b81755238045c5add36acc5e4f940e6e0174_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
+...button-text text="Sable-Vivecraft-Fix" event="url{https://modrinth.com/mod/sable-vivecraft-fix}"
+
+👤 finkkk | 📅 2026-07-18
+
+A compatibility patch for Sable and Vivecraft.
+Fixes issues that occur when VR players use teleport 
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/sable-vivecraft-fix/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/sable-vivecraft-fix}" weight=(1)
+...row-end
+...column-end
+...row-end
+
 ...row-start horizontal=spacedBy(8) vertical=Center
 ...image url="https://cdn.modrinth.com/data/dLnuHztJ/6110e0a5aa6570c33b253504004d8ccdee5b45d2_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
@@ -99,38 +116,6 @@ Allows players to set homes and teleport to them using the Quick Actions menu.
 ...row-end
 
 ...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/E8vOB8XM/5da1784fa73031f6632dff5f7a4802f4b194b442.gif" width=40dp shape=8dp
-...column-start vertical=spacedBy(4)
-...button-text text="Highroller Origins" event="url{https://modrinth.com/mod/highroller-origins}"
-
-👤 Wawacatswiss | 📅 2026-07-18
-
-A custom origin that add the highroller origin (might be op)
-
-...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/highroller-origins/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/highroller-origins}" weight=(1)
-...row-end
-...column-end
-...row-end
-
-...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/Dpnl1uQf/94cd9da522bdc1d0d325220e353e3000960c5652_96.webp" width=40dp shape=8dp
-...column-start vertical=spacedBy(4)
-...button-text text="Guns" event="url{https://modrinth.com/mod/zoyluo-guns}"
-
-👤 zoyluo | 📅 2026-07-18
-
-Server-authoritative Fabric weapons for Minecraft 1.21.3: six survival-craftable guns, ammunition, r
-
-...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/zoyluo-guns/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/zoyluo-guns}" weight=(1)
-...row-end
-...column-end
-...row-end
-
-...row-start horizontal=spacedBy(8) vertical=Center
 ...image url="https://cdn.modrinth.com/data/dP69yvhb/ee08a79e212940d20fe708e543779f16578a90c3.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
 ...button-text text="The easy way out" event="url{https://modrinth.com/mod/the-easy-way-out}"
@@ -142,6 +127,22 @@ a quick way to respawn back to your base using a gun!
 ...row-start horizontal=spacedBy(8)
 ...button text="⬇️ 下载" event="url{https://modrinth.com/mod/the-easy-way-out/versions}" weight=(1)
 ...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/the-easy-way-out}" weight=(1)
+...row-end
+...column-end
+...row-end
+
+...row-start horizontal=spacedBy(8) vertical=Center
+...image url="https://cdn.modrinth.com/data/Zpxwpmaw/a1ae6d93135cdeda2a43e3dff92953a74f06ae5c_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
+...button-text text="TruePearls" event="url{https://modrinth.com/mod/truepearls}"
+
+👤 Yashh_Penchi | 📅 2026-07-18
+
+Never lose track of your ender pearl in a fight again - custom textures per thrower, live-configurab
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/truepearls/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/truepearls}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -178,9 +179,9 @@ a quick way to respawn back to your base using a gun!
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Stone Button](https://minecraft.wiki/Stone_Button)
+📖 **Wiki 推荐**：[Careful Restoration](https://minecraft.wiki/Careful_Restoration)
 
-⏰ 更新时间：2026-07-18 01:54:37
+⏰ 更新时间：2026-07-18 05:59:35
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
