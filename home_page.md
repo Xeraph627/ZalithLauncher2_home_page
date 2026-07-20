@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-20 02:25:53
+// 生成时间：2026-07-20 06:40:44
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"在黑暗中，我们看到光明。"*
+> *"少年戏本唱到最后一则，故事里的人也昏聩转醒。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{在黑暗中，我们看到光明。}"
+...button-text text="📋 复制" event="copy{少年戏本唱到最后一则，故事里的人也昏聩转醒。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Pocket_Edition_v0.16.2_alpha}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Data_component_format%2Fitem_name}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Create your own custom FPV drones with aeronautics
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Pocket Edition v0.16.2 alpha](https://minecraft.wiki/Pocket_Edition_v0.16.2_alpha)
+📖 **Wiki 推荐**：[Data component format/item name](https://minecraft.wiki/Data_component_format%2Fitem_name)
 
-⏰ 更新时间：2026-07-20 02:25:53
+⏰ 更新时间：2026-07-20 06:40:44
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
