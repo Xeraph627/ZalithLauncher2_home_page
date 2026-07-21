@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-21 06:23:36
+// 生成时间：2026-07-21 13:24:43
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"三万年的距离，也不及你我的爱河。"*
+> *"青山一道同云雨，明月何曾是两乡。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{三万年的距离，也不及你我的爱河。}"
+...button-text text="📋 复制" event="copy{青山一道同云雨，明月何曾是两乡。}"
 ...row-end
 ...column-end
 ...card-end
@@ -32,7 +32,7 @@
 ...card-start title="📦 Minecraft 版本" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(6) horizontal=Start
 **最新正式版**: 26.2
-**最新快照**: 26.3-snapshot-4
+**最新快照**: 26.3-snapshot-5
 
 近期版本：
 - **26.2** (2026-06-16)
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Saxs_Persson}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Stained_Glass_Pane}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Convenient tick control: one-key tick stepping, freeze toggle, hold-to-slow-moti
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Saxs Persson](https://minecraft.wiki/Saxs_Persson)
+📖 **Wiki 推荐**：[Stained Glass Pane](https://minecraft.wiki/Stained_Glass_Pane)
 
-⏰ 更新时间：2026-07-21 06:23:36
+⏰ 更新时间：2026-07-21 13:24:43
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
