@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-23 02:09:43
+// 生成时间：2026-07-23 06:25:37
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"人生偶尔会走上一条陌路，像是没有指标的地图。"*
+> *"神啊，我的人生到底为何而存在呢？"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{人生偶尔会走上一条陌路，像是没有指标的地图。}"
+...button-text text="📋 复制" event="copy{神啊，我的人生到底为何而存在呢？}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_Alpha_v1.0.2_01}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Ruby}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Stackable Potion Bread
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition Alpha v1.0.2 01](https://minecraft.wiki/Java_Edition_Alpha_v1.0.2_01)
+📖 **Wiki 推荐**：[Ruby](https://minecraft.wiki/Ruby)
 
-⏰ 更新时间：2026-07-23 02:09:43
+⏰ 更新时间：2026-07-23 06:25:37
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
