@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-27 02:23:14
+// 生成时间：2026-07-27 06:57:17
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"似水流年是一个人所有的一切，只有这个东西，才真正归你所有。"*
+> *"不敢打开信封啊。因为，打开了就结束了啊。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{似水流年是一个人所有的一切，只有这个东西，才真正归你所有。}"
+...button-text text="📋 复制" event="copy{不敢打开信封啊。因为，打开了就结束了啊。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/CommuniKate}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Random_sequence_format}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Remove Copper Ore from your worldgen without suffering consequences for it. Clea
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[CommuniKate](https://minecraft.wiki/CommuniKate)
+📖 **Wiki 推荐**：[Random sequence format](https://minecraft.wiki/Random_sequence_format)
 
-⏰ 更新时间：2026-07-27 02:23:14
+⏰ 更新时间：2026-07-27 06:57:17
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
