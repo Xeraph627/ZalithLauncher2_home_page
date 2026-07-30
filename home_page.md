@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-30 01:51:40
+// 生成时间：2026-07-30 06:21:54
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"真可悲，你什么都不知道，在这个世界上没有什么是不重要的！"*
+> *"雨滴落下的速度是每秒十厘米，我该用怎样的速度，才能将你挽留。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{真可悲，你什么都不知道，在这个世界上没有什么是不重要的！}"
+...button-text text="📋 复制" event="copy{雨滴落下的速度是每秒十厘米，我该用怎样的速度，才能将你挽留。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Brick}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FCyan_Dye}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A chaotic multiplayer survival challenge featuring a synchronized shared health 
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Brick](https://minecraft.wiki/Brick)
+📖 **Wiki 推荐**：[Bedrock Edition item texture history/Cyan Dye](https://minecraft.wiki/Bedrock_Edition_item_texture_history%2FCyan_Dye)
 
-⏰ 更新时间：2026-07-30 01:51:40
+⏰ 更新时间：2026-07-30 06:21:54
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
