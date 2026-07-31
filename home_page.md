@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-07-31 02:10:09
+// 生成时间：2026-07-31 06:38:46
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"变好的过程都不太舒服，试试再努力点。"*
+> *"嗟叹红颜泪、英雄殁，人世苦多。山河永寂、怎堪欢颜。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{变好的过程都不太舒服，试试再努力点。}"
+...button-text text="📋 复制" event="copy{嗟叹红颜泪、英雄殁，人世苦多。山河永寂、怎堪欢颜。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Enderman_(disambiguation)}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Getting_an_Upgrade}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Removes first-person hand shake
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Enderman (disambiguation)](https://minecraft.wiki/Enderman_(disambiguation))
+📖 **Wiki 推荐**：[Getting an Upgrade](https://minecraft.wiki/Getting_an_Upgrade)
 
-⏰ 更新时间：2026-07-31 02:10:09
+⏰ 更新时间：2026-07-31 06:38:46
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
