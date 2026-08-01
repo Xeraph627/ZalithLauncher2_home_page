@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-08-01 02:11:17
+// 生成时间：2026-08-01 06:22:57
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"“把剑放下，成为本王的妻子吧。”"*
+> *"哪一场仗不难打，越难打，就更要打。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{“把剑放下，成为本王的妻子吧。”}"
+...button-text text="📋 复制" event="copy{哪一场仗不难打，越难打，就更要打。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Arrow_(disambiguation)}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Windswept_Gravelly_Hills}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -179,9 +179,9 @@ Reduces the flame texture size on burning arrows and mobs.
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Arrow (disambiguation)](https://minecraft.wiki/Arrow_(disambiguation))
+📖 **Wiki 推荐**：[Windswept Gravelly Hills](https://minecraft.wiki/Windswept_Gravelly_Hills)
 
-⏰ 更新时间：2026-08-01 02:11:17
+⏰ 更新时间：2026-08-01 06:22:57
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
