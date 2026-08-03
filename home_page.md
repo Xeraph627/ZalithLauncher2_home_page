@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-08-03 06:54:19
+// 生成时间：2026-08-03 14:25:32
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"经过上千年的修炼，你学到的就是这个吗？"*
+> *"情到深处人孤独。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{经过上千年的修炼，你学到的就是这个吗？}"
+...button-text text="📋 复制" event="copy{情到深处人孤独。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_item_texture_history%2FCooked_Chicken}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_Preview_1.19.30.22}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A Mekanism addon that adds methods for handling late-game radioactive materials.
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition item texture history/Cooked Chicken](https://minecraft.wiki/Java_Edition_item_texture_history%2FCooked_Chicken)
+📖 **Wiki 推荐**：[Bedrock Edition Preview 1.19.30.22](https://minecraft.wiki/Bedrock_Edition_Preview_1.19.30.22)
 
-⏰ 更新时间：2026-08-03 06:54:19
+⏰ 更新时间：2026-08-03 14:25:32
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
