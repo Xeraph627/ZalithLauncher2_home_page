@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-08-04 06:22:03
+// 生成时间：2026-08-04 13:55:26
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"锦瑟无端五十弦，一弦一柱思华年。"*
+> *"你是否会等待着我？我会变得更加完美！"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{锦瑟无端五十弦，一弦一柱思华年。}"
+...button-text text="📋 复制" event="copy{你是否会等待着我？我会变得更加完美！}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Bedrock_Edition_Preview_1.20.20.21}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Ocean_Ruins%2FStructure%2FRuin_Warm_4}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Craft Bedrock in survival, forge a powerful Bedrock Armor set, and unlock a new 
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Bedrock Edition Preview 1.20.20.21](https://minecraft.wiki/Bedrock_Edition_Preview_1.20.20.21)
+📖 **Wiki 推荐**：[Ocean Ruins/Structure/Ruin Warm 4](https://minecraft.wiki/Ocean_Ruins%2FStructure%2FRuin_Warm_4)
 
-⏰ 更新时间：2026-08-04 06:22:03
+⏰ 更新时间：2026-08-04 13:55:26
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
