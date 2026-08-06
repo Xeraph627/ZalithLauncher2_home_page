@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-08-06 01:59:16
+// 生成时间：2026-08-06 06:24:29
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"将行之事，必将已行；已行之事，必将再行。"*
+> *"不要太小看人类了！"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{将行之事，必将已行；已行之事，必将再行。}"
+...button-text text="📋 复制" event="copy{不要太小看人类了！}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_16w50a}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Ocean_Ruins%2FStructure%2FBig_Ruin_8_Brick}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -66,6 +66,22 @@
 // --- 🧩 Modrinth 最新模组 ---
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
+...row-start horizontal=spacedBy(8) vertical=Center
+...image url="https://cdn.modrinth.com/data/4fFF2N5V/126221401dbbfc6184a1f3fff91674b7c13cb1d0_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
+...button-text text="OakBot" event="url{https://modrinth.com/mod/oakbot}"
+
+👤 Partially | 📅 2026-08-06
+
+OakBot lets you spawn smart server-side bots to practice PvP in multiple gamemodes: Carts, Sword, UH
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/oakbot/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/oakbot}" weight=(1)
+...row-end
+...column-end
+...row-end
+
 ...row-start horizontal=spacedBy(8) vertical=Center
 ...image url="https://cdn.modrinth.com/data/2JWWdEgd/b1d0e0ac4efe63131c2ae9b6f06688500853f8bc.png" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
@@ -130,22 +146,6 @@ Fixes Bee Related Bugs on both client and server side
 ...column-end
 ...row-end
 
-...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/IwW8VN8L/e29a7c737ed72dc89f385016c5f45b49b8ed1439_96.webp" width=40dp shape=8dp
-...column-start vertical=spacedBy(4)
-...button-text text="wet-sand-dedicated-server-fix" event="url{https://modrinth.com/mod/wet-sand-dedicated-server-fix}"
-
-👤 badocs | 📅 2026-08-05
-
-Modified wet sand jar to support loading onto servers
-
-...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/wet-sand-dedicated-server-fix/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/wet-sand-dedicated-server-fix}" weight=(1)
-...row-end
-...column-end
-...row-end
-
 ...row-start horizontal=spacedBy(8)
 ...button text="📥 访问 Modrinth" event="url{https://modrinth.com/mods}" weight=(1)
 ...row-end
@@ -178,9 +178,9 @@ Modified wet sand jar to support loading onto servers
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition 16w50a](https://minecraft.wiki/Java_Edition_16w50a)
+📖 **Wiki 推荐**：[Ocean Ruins/Structure/Big Ruin 8 Brick](https://minecraft.wiki/Ocean_Ruins%2FStructure%2FBig_Ruin_8_Brick)
 
-⏰ 更新时间：2026-08-06 01:59:16
+⏰ 更新时间：2026-08-06 06:24:29
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
