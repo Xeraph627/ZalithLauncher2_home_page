@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-08-06 06:24:29
+// 生成时间：2026-08-06 13:50:02
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"不要太小看人类了！"*
+> *"请同我追寻高天的境地，送给天下愉悦欢欣。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{不要太小看人类了！}"
+...button-text text="📋 复制" event="copy{请同我追寻高天的境地，送给天下愉悦欢欣。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Ocean_Ruins%2FStructure%2FBig_Ruin_8_Brick}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Anvil_file_format}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ Fixes Bee Related Bugs on both client and server side
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Ocean Ruins/Structure/Big Ruin 8 Brick](https://minecraft.wiki/Ocean_Ruins%2FStructure%2FBig_Ruin_8_Brick)
+📖 **Wiki 推荐**：[Anvil file format](https://minecraft.wiki/Anvil_file_format)
 
-⏰ 更新时间：2026-08-06 06:24:29
+⏰ 更新时间：2026-08-06 13:50:02
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
