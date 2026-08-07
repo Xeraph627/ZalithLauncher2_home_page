@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-08-07 02:21:46
+// 生成时间：2026-08-07 05:30:31
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"安慰别人一套一套，安慰自己三二一跳。"*
+> *"你也只活了一次，凭什么说，我选择的人生是错的。"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{安慰别人一套一套，安慰自己三二一跳。}"
+...button-text text="📋 复制" event="copy{你也只活了一次，凭什么说，我选择的人生是错的。}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FOak_Leaves}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Minecraft_x_Sonic_Racing%3A_CrossWorlds_(Original_Soundtrack)}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -178,9 +178,9 @@ A server-side RPG overhaul: a points-based skill tree, a two-currency bounty eco
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition block render history/Oak Leaves](https://minecraft.wiki/Java_Edition_block_render_history%2FOak_Leaves)
+📖 **Wiki 推荐**：[Minecraft x Sonic Racing: CrossWorlds (Original Soundtrack)](https://minecraft.wiki/Minecraft_x_Sonic_Racing%3A_CrossWorlds_(Original_Soundtrack))
 
-⏰ 更新时间：2026-08-07 02:21:46
+⏰ 更新时间：2026-08-07 05:30:31
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
