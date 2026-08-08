@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-08-08 04:50:03
+// 生成时间：2026-08-08 12:34:12
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"让魔法的风暴，成为你们的终章！"*
+> *"救救我啊奥特曼，哪怕你只能撑三分钟…"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{让魔法的风暴，成为你们的终章！}"
+...button-text text="📋 复制" event="copy{救救我啊奥特曼，哪怕你只能撑三分钟…}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Damage}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Debug_hotkey}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -78,6 +78,22 @@ An improved version of the mod that makes deleted elements, crafts, and items av
 ...row-start horizontal=spacedBy(8)
 ...button text="⬇️ 下载" event="url{https://modrinth.com/mod/oldcraftallow-plus/versions}" weight=(1)
 ...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/oldcraftallow-plus}" weight=(1)
+...row-end
+...column-end
+...row-end
+
+...row-start horizontal=spacedBy(8) vertical=Center
+...image url="https://cdn.modrinth.com/data/8TVKynTx/238b1e807e109e0cbef03fbcf7dd344b3dbb3644_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
+...button-text text="Celestial Adventure" event="url{https://modrinth.com/mod/celestial_adventure}"
+
+👤 hde020812 | 📅 2026-08-08
+
+Explore a brand new celestial dimension filled with unique biomes, ancient ruins, mysterious structu
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/celestial_adventure/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/celestial_adventure}" weight=(1)
 ...row-end
 ...column-end
 ...row-end
@@ -130,22 +146,6 @@ Interactive & swaying foliage, new grass types, & other effects!
 ...column-end
 ...row-end
 
-...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/rDqMGzW4/icon.png" width=40dp shape=8dp
-...column-start vertical=spacedBy(4)
-...button-text text="G'Lib" event="url{https://modrinth.com/mod/glib}"
-
-👤 greyifer | 📅 2026-08-07
-
-The library mod used for other G' mods.
-
-...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/glib/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/glib}" weight=(1)
-...row-end
-...column-end
-...row-end
-
 ...row-start horizontal=spacedBy(8)
 ...button text="📥 访问 Modrinth" event="url{https://modrinth.com/mods}" weight=(1)
 ...row-end
@@ -178,9 +178,9 @@ The library mod used for other G' mods.
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Damage](https://minecraft.wiki/Damage)
+📖 **Wiki 推荐**：[Debug hotkey](https://minecraft.wiki/Debug_hotkey)
 
-⏰ 更新时间：2026-08-08 04:50:03
+⏰ 更新时间：2026-08-08 12:34:12
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
