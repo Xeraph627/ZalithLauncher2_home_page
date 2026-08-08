@@ -1,6 +1,6 @@
 // ============================================
 // 🎮 Zalith Launcher 2 - 全自动更新主页
-// 生成时间：2026-08-08 01:07:29
+// 生成时间：2026-08-08 04:50:03
 // 数据来源：Bing | 一言 | Mojang | Modrinth | Minecraft Wiki
 // ============================================
 
@@ -10,10 +10,10 @@
 // --- 每日一言 ---
 ...card-start title="📜 每日一言" shape=large contentPadding=(16,12)
 ...column-start vertical=spacedBy(8) horizontal=Center
-> *"描绘只能靠经历来解决，没有经历过，就无法陈述出不同。"*
+> *"让魔法的风暴，成为你们的终章！"*
 
 ...row-start horizontal=spacedBy(12)
-...button-text text="📋 复制" event="copy{描绘只能靠经历来解决，没有经历过，就无法陈述出不同。}"
+...button-text text="📋 复制" event="copy{让魔法的风暴，成为你们的终章！}"
 ...row-end
 ...column-end
 ...card-end
@@ -54,7 +54,7 @@
 ...button-filled-tonal text="🔍 模组列表" event="url{https://www.mcmod.cn/modlist.html}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
-...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Java_Edition_block_render_history%2FPolished_Tuff_Stairs}" weight=(1)
+...button-filled-tonal text="📖 Minecraft Wiki" event="url{https://minecraft.wiki/Damage}" weight=(1)
 ...button text="🌐 CurseForge" event="url{https://www.curseforge.com/minecraft/mcmods}" weight=(1)
 ...row-end
 ...row-start horizontal=spacedBy(8)
@@ -66,6 +66,22 @@
 // --- 🧩 Modrinth 最新模组 ---
 ...card-start title="🧩 Modrinth 最新模组" shape=medium contentPadding=(12)
 ...column-start vertical=spacedBy(12) horizontal=Start
+...row-start horizontal=spacedBy(8) vertical=Center
+...image url="https://cdn.modrinth.com/data/mWSmwotH/fb6315134e83fb15c6f0a0b46b5a9e725bba2112_96.webp" width=40dp shape=8dp
+...column-start vertical=spacedBy(4)
+...button-text text="oldcraftallow plus" event="url{https://modrinth.com/mod/oldcraftallow-plus}"
+
+👤 PCniconi88 | 📅 2026-08-08
+
+An improved version of the mod that makes deleted elements, crafts, and items available again
+
+...row-start horizontal=spacedBy(8)
+...button text="⬇️ 下载" event="url{https://modrinth.com/mod/oldcraftallow-plus/versions}" weight=(1)
+...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/oldcraftallow-plus}" weight=(1)
+...row-end
+...column-end
+...row-end
+
 ...row-start horizontal=spacedBy(8) vertical=Center
 ...image url="https://cdn.modrinth.com/data/SPwj3USf/8d3850dbf71ab52a6f016a7808c9aec43ae09fe8_96.webp" width=40dp shape=8dp
 ...column-start vertical=spacedBy(4)
@@ -130,22 +146,6 @@ The library mod used for other G' mods.
 ...column-end
 ...row-end
 
-...row-start horizontal=spacedBy(8) vertical=Center
-...image url="https://cdn.modrinth.com/data/IGVrnkhH/b920665440ebf5ebda8fbf5d89b563cb300245f1_96.webp" width=40dp shape=8dp
-...column-start vertical=spacedBy(4)
-...button-text text="Create: Flight Control" event="url{https://modrinth.com/mod/create-flight-control}"
-
-👤 AceVolca | 📅 2026-08-07
-
-A Minecraft Create addon for physics-based flight control
-
-...row-start horizontal=spacedBy(8)
-...button text="⬇️ 下载" event="url{https://modrinth.com/mod/create-flight-control/versions}" weight=(1)
-...button-outlined text="📖 详情" event="url{https://modrinth.com/mod/create-flight-control}" weight=(1)
-...row-end
-...column-end
-...row-end
-
 ...row-start horizontal=spacedBy(8)
 ...button text="📥 访问 Modrinth" event="url{https://modrinth.com/mods}" weight=(1)
 ...row-end
@@ -178,9 +178,9 @@ A Minecraft Create addon for physics-based flight control
 
 👤 **作者**：[ssbtt114514](ssbtt114514)
 
-📖 **Wiki 推荐**：[Java Edition block render history/Polished Tuff Stairs](https://minecraft.wiki/Java_Edition_block_render_history%2FPolished_Tuff_Stairs)
+📖 **Wiki 推荐**：[Damage](https://minecraft.wiki/Damage)
 
-⏰ 更新时间：2026-08-08 01:07:29
+⏰ 更新时间：2026-08-08 04:50:03
 
 ...row-start horizontal=spacedBy(12)
 ...button-text text="📖 Markdown教程" event="url{https://www.runoob.com/markdown/md-tutorial.html}"
